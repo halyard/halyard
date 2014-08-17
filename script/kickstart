@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+sudo mkdir -p /opt/boxen
+sudo chown ${USER}:staff /opt/boxen
+git clone git://github.com/akerl-boxen/boxen /opt/boxen/repo
+cd /opt/boxen/repo
+exec ./script/boxen
+
