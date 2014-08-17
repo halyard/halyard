@@ -12,7 +12,6 @@
 :yaml:
   :datadir: "%{::boxen_home}/repo/hiera"
 :hierarchy:
-  - "hosts/%{$::hostname}"
   - "users/%{github_login}"
   - common
 
