@@ -24,6 +24,3 @@ ENV['BOXEN_REPO_NAME'] = 'akerl-boxen/boxen'
 # required for Github Enterprise (defaults to "https://github.com/%s")
 # ENV['BOXEN_REPO_URL_TEMPLATE'] = 'https://github.yourdomain.com/%s'
 #
-class Boxen::Preflight::OS < Boxen::Preflight
-  SUPPORTED_RELEASES << '10.10'
-end
