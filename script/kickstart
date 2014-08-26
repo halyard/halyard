@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 xcode-select -p &>/dev/null
-if [ -n $? ] ; then
+if [ "$?" != "0" ] ; then
     echo 'Please follow the prompt to install Xcode command line tools, then re-run this command'
     xcode-select --install &>/dev/null
     exit 0
