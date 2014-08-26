@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
 
-set -e
-
 xcode-select -p &>/dev/null
-
 if [ -n $? ] ; then
     echo 'Please follow the prompt to install Xcode command line tools, then re-run this command'
     xcode-select --install
     exit 0
 fi
+
+set -e
 
 sudo mkdir -p /opt/boxen
 sudo chown ${USER}:staff /opt/boxen
