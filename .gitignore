@@ -9,5 +9,7 @@
 /tmp
 /shared/*
 !/shared/README.md
-/vendor/gems/
-/vendor/cache/ruby/
+/vendor/
+/Gemfile.lock
+/Puppetfile.lock
+
