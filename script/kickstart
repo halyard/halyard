@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh" > ~/.profile
+
 echo 'Checking for pending software updates'
 softwareupdate -i -a
 
@@ -15,7 +17,7 @@ set -e
 
 sudo mkdir -p /opt/boxen
 sudo chown ${USER}:staff /opt/boxen
-git clone git://github.com/akerl-boxen/boxen /opt/boxen/repo
+git clone git://github.com/halyard/halyard /opt/boxen/repo
 cd /opt/boxen/repo
 exec ./script/boxen
 
