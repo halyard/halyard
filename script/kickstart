@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+echo 'Checking for pending software updates'
+software-update -i -a
+
+echo 'Checking for Xcode command line tools'
 xcode-select -p &>/dev/null
 if [ "$?" != "0" ] ; then
     echo 'Please follow the prompt to install Xcode command line tools, then re-run this command'
