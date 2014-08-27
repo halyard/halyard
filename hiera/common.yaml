@@ -8,6 +8,6 @@ ruby::version:
   - 2.1.1
   - 2.1.2
 ruby::global::version: 2.1.2
-ruby_gem::ruby_version: *
+ruby_gem::ruby_version: '*'
 boxen::environment::relative_bin_on_path: false
 
