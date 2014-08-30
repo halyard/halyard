@@ -174,7 +174,7 @@ node default {
       'halyard/casks/sequelpro',
       'halyard/casks/textexpander',
       'halyard/casks/the-unarchiver',
-      'halyard/casks/thunderbird',
+      'halyard/casks/thunderbird-beta',
       'halyard/casks/totalfinder',
       'halyard/casks/totalspaces',
       'halyard/casks/transmission',
