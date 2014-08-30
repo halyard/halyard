@@ -86,5 +86,5 @@ node default {
     require => Homebrew::Tap['homebrew/dupes']
   }
 
-  package { 'halyard/casks/iterm2': provider => 'brewcask' }
+  package { 'halyard/casks/iterm2-nightly': provider => 'brewcask' }
 }
