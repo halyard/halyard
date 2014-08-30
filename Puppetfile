@@ -36,6 +36,7 @@ github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 
 github "git",         "2.5.0"
 github "homebrew",    "1.9.4"
+github "brewcask",    "0.0.4", :repo => "halyard/puppet-brewcask"
 github "repository",  "2.3.0"
 github "ruby",        "8.1.2"
 github "stdlib",      "4.3.2", :repo => "puppetlabs/puppetlabs-stdlib"

@@ -1,5 +1,6 @@
 require boxen::environment
 require homebrew
+require brewcask
 
 Exec {
   group       => 'staff',
@@ -59,7 +60,6 @@ node default {
   homebrew::tap { 'homebrew/dupes': }
   homebrew::tap { 'halyard/formulae': }
   homebrew::tap { 'halyard/casks': }
-  homebrew::tap { 'caskroom/cask': }
 
   ruby::version { '1.8.7':
     require => Package['apple-gcc42']
@@ -86,10 +86,5 @@ node default {
     require => Homebrew::Tap['homebrew/dupes']
   }
 
-  package {
-    [
-      'brew-cask'
-    ]:
-    require => Homebrew::Tap['caskroom/cask']
-  }
+  package { 'halyard/casks/iterm2': provider => 'brewcask' }
 }
