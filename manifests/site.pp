@@ -56,6 +56,10 @@ node default {
   include git
   include ruby
 
+  homebrew::tap { 'homebrew/dupes': }
+  homebrew::tap { 'halyard/formulae': }
+  homebrew::tap { 'halyard/casks': }
+
   ruby::version { '1.8.7':
     require => Package['apple-gcc42']
   }
@@ -71,7 +75,14 @@ node default {
       'findutils',
       'gnu-tar',
       'git',
+      'brew-cask'
+    ]:
+  }
+
+  package {
+    [
       'apple-gcc42'
     ]:
+    require => Homebrew::Tap['homebrew/dupes']
   }
 }
