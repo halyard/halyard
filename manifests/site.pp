@@ -118,7 +118,6 @@ node default {
       'watch',
       'weechat',
       'wget',
-      'whois',
       'xz',
       'yuicompressor',
       'zsh',
