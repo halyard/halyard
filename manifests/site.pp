@@ -61,7 +61,6 @@ node default {
   homebrew::tap { 'homebrew/dupes': }
   homebrew::tap { 'halyard/formulae': }
   homebrew::tap { 'halyard/casks': }
-  homebrew::tap { 'homebrew/versions': }
 
   ruby::version { '1.8.7':
     require => Package['apple-gcc42']
@@ -92,7 +91,6 @@ node default {
       'go',
       'gpg-agent',
       'gpgme',
-      'grep',
       'htop-osx',
       'ipmitool',
       'ipmiutil',
@@ -107,7 +105,6 @@ node default {
       'qrencode',
       'readline',
       'redis',
-      'screen',
       'siege',
       'socat',
       'sqlite',
@@ -138,7 +135,9 @@ node default {
 
   package {
     [
-      'apple-gcc42'
+      'apple-gcc42',
+      'grep',
+      'screen'
     ]:
     require => Homebrew::Tap['homebrew/dupes']
   }
