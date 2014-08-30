@@ -86,5 +86,48 @@ node default {
     require => Homebrew::Tap['homebrew/dupes']
   }
 
-  package { 'halyard/casks/iterm2-nightly': provider => 'brewcask' }
+  package {
+    [
+      'halyard/casks/airmail-beta',
+      'halyard/casks/alfred',
+      'halyard/casks/asepsis',
+      'halyard/casks/bartender',
+      'halyard/casks/bettertouchtool',
+      'halyard/casks/cert-quicklook',
+      'halyard/casks/copy',
+      'halyard/casks/dropbox',
+      'halyard/casks/firefox-beta',
+      'halyard/casks/flux',
+      'halyard/casks/font-meslo-lg-for-powerline',
+      'halyard/casks/google-chrome-dev',
+      'halyard/casks/google-drive',
+      'halyard/casks/gpgtools',
+      'halyard/casks/grandperspective',
+      'halyard/casks/hyperspace',
+      'halyard/casks/istat-menus',
+      'halyard/casks/iterm2-nightly',
+      'halyard/casks/lingon-x',
+      'halyard/casks/little-snitch-nightly',
+      'halyard/casks/luxdelux',
+      'halyard/casks/navicat-for-mysql',
+      'halyard/casks/onepassword-beta',
+      'halyard/casks/openoffice',
+      'halyard/casks/osxfuse',
+      'halyard/casks/quicklook-json',
+      'halyard/casks/rstudio',
+      'halyard/casks/sequelpro',
+      'halyard/casks/textexpander',
+      'halyard/casks/the-unarchiver',
+      'halyard/casks/thunderbird',
+      'halyard/casks/totalfinder',
+      'halyard/casks/totalspaces',
+      'halyard/casks/transmission',
+      'halyard/casks/vagrant',
+      'halyard/casks/virtualbox-ext-pack',
+      'halyard/casks/virtualbox',
+      'halyard/casks/vlc',
+      'halyard/casks/xee'
+    ]:
+    provider => 'brewcask'
+  }
 }
