@@ -73,10 +73,65 @@ node default {
   package {
     [
       'ack',
+      'arping',
+      'bash',
+      'bash-completion',
+      'coreutils',
+      'cpanminus',
+      'ctags',
       'findutils',
+      'gawk',
+      'git',
+      'gnupg',
+      'gnupg2',
+      'gnuplot',
+      'gnutls',
       'gnu-tar',
-      'git'
+      'go',
+      'gpg-agent',
+      'gpgme',
+      'grep',
+      'htop-osx',
+      'ipmitool',
+      'ipmiutil',
+      'mutt',
+      'mysql',
+      'netcat',
+      'nmap',
+      'node',
+      'openssl',
+      'pinentry',
+      'pwgen',
+      'python',
+      'python3',
+      'qrencode',
+      'readline',
+      'redis',
+      'screen',
+      'siege',
+      'socat',
+      'sqlite',
+      'swig',
+      'tmux',
+      'tree',
+      'vim',
+      'watch',
+      'weechat',
+      'wget',
+      'whois',
+      'xz',
+      'yuicompressor',
+      'zsh',
+      'zsh-completions'
     ]:
+  }
+
+  package {
+    [
+      'halyard/formulae/encfs',
+      'halyard/formulae/openssh',
+    ]
+    require => Homebrew::Tap['halyard/formulae']
   }
 
   package {
