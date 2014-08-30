@@ -131,7 +131,7 @@ node default {
     ]:
     require => [
       Homebrew::Tap['halyard/formulae'],
-      Package['osxfuse']
+      Package['halyard/casks/osxfuse']
     ]
   }
 
