@@ -130,7 +130,7 @@ node default {
     [
       'halyard/formulae/encfs',
       'halyard/formulae/openssh',
-    ]
+    ]:
     require => Homebrew::Tap['halyard/formulae']
   }
 
