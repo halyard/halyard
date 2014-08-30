@@ -102,8 +102,6 @@ node default {
       'openssl',
       'pinentry',
       'pwgen',
-      'python',
-      'python3',
       'qrencode',
       'readline',
       'redis',
