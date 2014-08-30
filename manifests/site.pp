@@ -33,7 +33,8 @@ File {
 
 Package {
   provider => homebrew,
-  require  => Class['homebrew']
+  require  => Class['homebrew'],
+  install_options => ['--build-from-source']
 }
 
 Repository {
@@ -128,7 +129,8 @@ node default {
       'halyard/formulae/encfs',
       'halyard/formulae/openssh',
     ]:
-    require => Homebrew::Tap['halyard/formulae']
+    require => Homebrew::Tap['halyard/formulae'],
+    require => Package['osxfuse']
   }
 
   package {
