@@ -59,6 +59,7 @@ node default {
   homebrew::tap { 'homebrew/dupes': }
   homebrew::tap { 'halyard/formulae': }
   homebrew::tap { 'halyard/casks': }
+  homebrew::tap { 'caskroom/cask': }
 
   ruby::version { '1.8.7':
     require => Package['apple-gcc42']
@@ -74,8 +75,7 @@ node default {
       'ack',
       'findutils',
       'gnu-tar',
-      'git',
-      'brew-cask'
+      'git'
     ]:
   }
 
@@ -84,5 +84,12 @@ node default {
       'apple-gcc42'
     ]:
     require => Homebrew::Tap['homebrew/dupes']
+  }
+
+  package {
+    [
+      'brew-cask'
+    ]:
+    require => Homebrew::Tap['caskroom/cask']
   }
 }
