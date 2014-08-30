@@ -6,7 +6,7 @@ My configuration for [Boxen](https://boxen.github.io)
 ## Installation
 
 ```
-wget https://raw.githubusercontent.com/halyard/halyard/master/script/kickstart
+curl -o kickstart https://raw.githubusercontent.com/halyard/halyard/master/script/kickstart
 bash kickstart
 ```
 
