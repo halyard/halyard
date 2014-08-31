@@ -96,7 +96,6 @@ node default {
       'gpgme',
       'htop-osx',
       'ipmitool',
-      'ipmiutil',
       'mutt',
       'mysql',
       'netcat',
@@ -131,6 +130,7 @@ node default {
     [
       'halyard/formulae/encfs',
       'halyard/formulae/openssh',
+      'halyard/formulae/ipmiutil'
     ]:
     require => [
       Homebrew::Tap['halyard/formulae'],
