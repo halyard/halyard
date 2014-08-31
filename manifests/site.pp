@@ -46,12 +46,6 @@ Package {
   require  => Class['homebrew']
 }
 
-Service {
-  provider => ghlaunchd
-}
-
-Homebrew::Formula <| |> -> Package <| |>
-
 node default {
   include git
   include packages
