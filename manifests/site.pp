@@ -124,7 +124,7 @@ node default {
       'zsh',
       'zsh-completions'
     ]:
-    version => 'latest'
+    ensure => 'latest'
   }
 
   package {
@@ -133,7 +133,6 @@ node default {
       'halyard/formulae/openssh',
       'halyard/formulae/ipmiutil'
     ]:
-    version => 'latest',
     require => [
       Homebrew::Tap['halyard/formulae'],
       Package['halyard/casks/osxfuse']
@@ -146,7 +145,6 @@ node default {
       'grep',
       'screen'
     ]:
-    version => 'latest',
     require => Homebrew::Tap['homebrew/dupes']
   }
 
