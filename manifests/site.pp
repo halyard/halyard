@@ -58,6 +58,7 @@ node default {
   include osxoptions
   include rubyenv
   include hostname
+  include fdesetup
 
   file_line { 'add zsh to /etc/shells':
     path    => '/etc/shells',
