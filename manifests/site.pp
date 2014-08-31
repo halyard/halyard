@@ -57,6 +57,7 @@ Homebrew::Formula <| |> -> Package <| |>
 node default {
   include git
   include ruby
+  include java
 
   homebrew::tap { 'homebrew/dupes': }
   homebrew::tap { 'halyard/formulae': }
