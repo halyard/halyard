@@ -191,7 +191,6 @@ node default {
       'halyard/casks/vlc',
       'halyard/casks/xee'
     ]:
-    version => 'latest',
     provider => 'brewcask',
     require => Sudoers['brewcask-pkginstaller']
   }
