@@ -83,11 +83,11 @@ node default {
   include osx::software_update
 
   class { 'osx::global::key_repeat_delay':
-    delay => 10
+    delay => 0
   }
 
   class { 'osx::global::key_repeat_rate':
-    rate => 2
+    rate => 0
   }
 
   class { 'osx::dock::icon_size':
