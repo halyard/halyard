@@ -33,7 +33,6 @@ File {
 
 Package {
   provider => homebrew,
-  version => 'latest',
   require  => Class['homebrew'],
   install_options => ['--build-from-source']
 }
@@ -125,6 +124,7 @@ node default {
       'zsh',
       'zsh-completions'
     ]:
+    version => 'latest'
   }
 
   package {
@@ -133,6 +133,7 @@ node default {
       'halyard/formulae/openssh',
       'halyard/formulae/ipmiutil'
     ]:
+    version => 'latest',
     require => [
       Homebrew::Tap['halyard/formulae'],
       Package['halyard/casks/osxfuse']
@@ -145,6 +146,7 @@ node default {
       'grep',
       'screen'
     ]:
+    version => 'latest',
     require => Homebrew::Tap['homebrew/dupes']
   }
 
@@ -192,7 +194,10 @@ node default {
       'halyard/casks/xee'
     ]:
     provider => 'brewcask',
-    require => Sudoers['brewcask-pkginstaller']
+    require => [
+      Sudoers['brewcask-pkginstaller'],
+      Package['grep']
+    ]
   }
 
   sudoers { 'brewcask-pkginstaller':
