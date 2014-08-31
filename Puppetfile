@@ -35,6 +35,7 @@ github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 # some/most of these if you want, but it's not recommended.
 
 github "git",         "2.5.0"
+github "osx",         "2.7.1"
 github "homebrew",    "1.9.4"
 github "brewcask",    "0.0.5", :repo => "halyard/puppet-brewcask"
 github "repository",  "2.3.0"
