@@ -165,6 +165,7 @@ node default {
       'halyard/casks/gpgtools',
       'halyard/casks/grandperspective',
       'halyard/casks/hyperspace',
+      'halyard/casks/jre',
       'halyard/casks/istat-menus',
       'halyard/casks/iterm2-nightly',
       'halyard/casks/lingon-x',
