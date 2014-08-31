@@ -54,7 +54,6 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
   include git
-  include ruby
   include packages
   include osxoptions
   include rubyenv
