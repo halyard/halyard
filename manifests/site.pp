@@ -187,6 +187,16 @@ node default {
       'halyard/casks/vlc',
       'halyard/casks/xee'
     ]:
-    provider => 'brewcask'
+    provider => 'brewcask',
+    require => Sudoers['brewcask-pkginstaller']
+  }
+
+  sudoers { 'brewcask-pkginstaller':
+    users    => $::boxen_user,
+    hosts    => 'ALL',
+    commands => [
+      '(ALL) NOPASSWD : /usr/sbin/installer',
+    ],
+    type     => 'user_spec',
   }
 }
