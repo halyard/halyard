@@ -7,6 +7,14 @@ Package {
   install_options => ['--build-from-source']
 }
 
+homebrew::tap {
+  [
+    'homebrew/dupes',
+    'halyard/formulae',
+    'halyard/casks'
+  ]:
+}
+
 package {
   [
     'ack',
