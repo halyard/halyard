@@ -22,18 +22,8 @@ def dev(name, *args)
   mod name, :path => "#{ENV['HOME']}/src/boxen/puppet-#{name}"
 end
 
-# Includes many of our custom types and providers, as well as global
-# config. Required.
-
 github "boxen", "3.6.2"
-
-# Support for default hiera data in modules
-
 github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
-
-# Core modules for a basic development environment. You can replace
-# some/most of these if you want, but it's not recommended.
-
 github "git",         "2.5.0"
 github "osx",         "2.7.1"
 github "homebrew",    "1.9.4"
@@ -44,6 +34,4 @@ github "stdlib",      "4.3.2", :repo => "puppetlabs/puppetlabs-stdlib"
 github "inifile",     "1.1.1", :repo => "puppetlabs/puppetlabs-inifile"
 github "sudo",        "1.0.1", :repo => "halyard/puppet-sudo"
 github "xquartz",     "1.1.1"
-
-# Optional/custom modules. There are tons available at
-# https://github.com/boxen.
+github "packages",    "0.0.1", :repo => "halyard/puppet-packages"
