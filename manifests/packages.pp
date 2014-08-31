@@ -150,7 +150,7 @@ package {
   provider    => 'brewcask',
   require     => [
     Sudoers['brewcask-pkginstaller'],
-    Package['grep']
+    Homebrew::Tap['halyard/casks']
   ]
 }
 
