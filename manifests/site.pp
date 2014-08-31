@@ -287,18 +287,12 @@ node default {
   }
 
   exec { 'dotdotdot update':
-    command => [
-      '/Users/$::boxen_user/.../...',
-      'update'
-    ],
+    command => "/Users/${::boxen_user}/.../... update",
     require => File['dotdotdot config']
   }
 
   exec { 'dotdotdot install':
-    command => [
-      '/Users/$::boxen_user/.../...',
-      'install'
-    ],
+    command => "/Users/${::boxen_user}/.../... install",
     require => Exec['dotdotdot update']
   }
 }
