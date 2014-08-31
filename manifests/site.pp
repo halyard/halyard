@@ -59,6 +59,7 @@ node default {
   include rubyenv
   include hostname
   include fdesetup
+  include dotdotdot
 
   file_line { 'add zsh to /etc/shells':
     path    => '/etc/shells',
@@ -69,27 +70,5 @@ node default {
   osx_chsh { $::luser:
     shell   => "${boxen::config::homebrewdir}/bin/zsh",
     require => File_line['add zsh to /etc/shells'],
-  }
-
-  repository { 'dotdotdot repo':
-    path    => "/Users/${::boxen_user}/...",
-    source  => 'ingydotnet/...'
-  }
-
-  $dotdotdot_url = 'https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf'
-  exec { 'dotdotdot config':
-    command => "/Users/${::boxen_user}/.../... conf ${dotdotdot_url}",
-    creates => "/Users/${::boxen_user}/.../conf",
-    require => Repository['dotdotdot repo']
-  }
-
-  exec { 'dotdotdot update':
-    command => "/Users/${::boxen_user}/.../... update",
-    require => Exec['dotdotdot config']
-  }
-
-  exec { 'dotdotdot install':
-    command => "/Users/${::boxen_user}/.../... install",
-    require => Exec['dotdotdot update']
   }
 }
