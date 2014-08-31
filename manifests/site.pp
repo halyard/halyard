@@ -41,6 +41,11 @@ Repository {
   }
 }
 
+Package {
+  provider => homebrew,
+  require  => Class['homebrew']
+}
+
 Service {
   provider => ghlaunchd
 }
