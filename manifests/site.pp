@@ -93,7 +93,7 @@ node default {
   }
 
   class { 'osx::dock::hot_corners':
-    top_right => 'Start Screen Saver',
+    top_right   => 'Start Screen Saver',
     bottom_left => 'Dashboard'
   }
 
@@ -173,11 +173,11 @@ node default {
   }
 
   file { 'mtr-binary':
-    path => "${boxen::config::home}/homebrew/sbin/mtr",
-    links => 'follow',
-    owner => 'root',
-    group => 'wheel',
-    mode => '4755',
+    path    => "${boxen::config::home}/homebrew/sbin/mtr",
+    links   => 'follow',
+    owner   => 'root',
+    group   => 'wheel',
+    mode    => '4755',
     require => Package['mtr']
   }
 
@@ -245,60 +245,60 @@ node default {
       'halyard/casks/vlc',
       'halyard/casks/xee'
     ]:
-    provider => 'brewcask',
-    require => [
+    provider    => 'brewcask',
+    require     => [
       Sudoers['brewcask-pkginstaller'],
       Package['grep']
     ]
   }
 
   sudoers { 'brewcask-pkginstaller':
-    users => $::boxen_user,
-    hosts => 'ALL',
-    commands => [
+    users       => $::boxen_user,
+    hosts       => 'ALL',
+    commands    => [
       '(ALL) NOPASSWD:SETENV: /usr/sbin/installer',
     ],
-    type => 'user_spec',
+    type        => 'user_spec',
   }
 
   file_line { 'add zsh to /etc/shells':
-    path => '/etc/shells',
-    line => "${boxen::config::homebrewdir}/bin/zsh",
+    path    => '/etc/shells',
+    line    => "${boxen::config::homebrewdir}/bin/zsh",
     require => Package['zsh'],
   }
 
   osx_chsh { $::luser:
-    shell => "${boxen::config::homebrewdir}/bin/zsh",
+    shell   => "${boxen::config::homebrewdir}/bin/zsh",
     require => File_line['add zsh to /etc/shells'],
   }
 
-  repository { "dotdotdot repo":
-    path => "/Users/$::boxen_user/...",
-    source => 'ingydotnet/...'
+  repository { 'dotdotdot repo':
+    path    => "/Users/${::boxen_user}/...",
+    source  => 'ingydotnet/...'
   }
 
-  file { "dotdotdot config":
-    path => "/etc/apache2/trac/${name}.conf",
-    owner => $::boxen_user,
-    group => 'staff',
-    mode => '0644',
-    require => Repository["dotdotdot repo"],
+  file { 'dotdotdot config':
+    path    => "/etc/apache2/trac/${name}.conf",
+    owner   => $::boxen_user,
+    group   => 'staff',
+    mode    => '0644',
+    require => Repository['dotdotdot repo'],
     content => template('dotdotdot.conf')
   }
 
-  exec { "dotdotdot update":
+  exec { 'dotdotdot update':
     command => [
       '/Users/$::boxen_user/.../...',
       'update'
     ],
-    require => File["dotdotdot config"]
+    require => File['dotdotdot config']
   }
 
-  exec { "dotdotdot install":
+  exec { 'dotdotdot install':
     command => [
       '/Users/$::boxen_user/.../...',
       'install'
     ]
-    require => Exec["dotdotdot update"]
+    require => Exec['dotdotdot update']
   }
 }
