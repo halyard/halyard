@@ -283,7 +283,7 @@ node default {
     group   => 'staff',
     mode    => '0644',
     require => Repository['dotdotdot repo'],
-    content => "dots:\n- path: dotfiles\n- path: privdotfiles"
+    content => "dots:\n- path: dotfiles\n- path: privdotfiles\n"
   }
 
   exec { 'dotdotdot update':
