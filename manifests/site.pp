@@ -33,6 +33,7 @@ File {
 
 Package {
   provider => homebrew,
+  version => 'latest'
   require  => Class['homebrew'],
   install_options => ['--build-from-source']
 }
@@ -190,6 +191,7 @@ node default {
       'halyard/casks/vlc',
       'halyard/casks/xee'
     ]:
+    version => 'latest',
     provider => 'brewcask',
     require => Sudoers['brewcask-pkginstaller']
   }
