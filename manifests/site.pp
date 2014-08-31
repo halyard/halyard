@@ -105,8 +105,8 @@ node default {
 
   ruby { '1.8.7':
     environment => {
-      'RUBY_BUILD_CACHE_PATH'   => "${::boxen_home}/cache/rubies",
-      'CC'                      => "${::boxen_home}/homebrew/bin/gcc-4.2"
+      'RUBY_BUILD_CACHE_PATH' => "${::boxen::config::home}/cache/rubies",
+      'CC'                    => "${::boxen::config::home}/homebrew/bin/gcc-4.2"
     },
     require     => Package['apple-gcc42']
   }
