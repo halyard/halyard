@@ -33,7 +33,7 @@ File {
 
 Package {
   provider => homebrew,
-  version => 'latest'
+  version => 'latest',
   require  => Class['homebrew'],
   install_options => ['--build-from-source']
 }
