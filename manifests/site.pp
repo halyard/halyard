@@ -68,7 +68,6 @@ node default {
   include osx::global::enable_keyboard_control_access
 
   include osx::dock::autohide
-  include osx::dock::clear_dock
   include osx::dock::disable
 
   include osx::finder::show_external_hard_drives_on_desktop
