@@ -253,22 +253,52 @@ node default {
   }
 
   sudoers { 'brewcask-pkginstaller':
-    users    => $::boxen_user,
-    hosts    => 'ALL',
+    users => $::boxen_user,
+    hosts => 'ALL',
     commands => [
       '(ALL) NOPASSWD:SETENV: /usr/sbin/installer',
     ],
-    type     => 'user_spec',
+    type => 'user_spec',
   }
 
   file_line { 'add zsh to /etc/shells':
-    path    => '/etc/shells',
-    line    => "${boxen::config::homebrewdir}/bin/zsh",
+    path => '/etc/shells',
+    line => "${boxen::config::homebrewdir}/bin/zsh",
     require => Package['zsh'],
   }
 
   osx_chsh { $::luser:
-    shell   => "${boxen::config::homebrewdir}/bin/zsh",
+    shell => "${boxen::config::homebrewdir}/bin/zsh",
     require => File_line['add zsh to /etc/shells'],
+  }
+
+  repository { "dotdotdot repo":
+    path => "/Users/$::boxen_user/...":
+    source => 'ingydotnet/...'
+  }
+
+  file { "dotdotdot config":
+    path => "/etc/apache2/trac/${name}.conf",
+    owner => $::boxen_user,
+    group => 'staff',
+    mode => '0644',
+    require => Repository["dotdotdot repo"],
+    content => template('dotdotdot.conf')
+  }
+
+  exec { "dotdotdot update":
+    command => [
+      '/Users/$::boxen_user/.../...',
+      'update'
+    ],
+    require => File["dotdotdot config"]
+  }
+
+  exec { "dotdotdot install":
+    command => [
+      '/Users/$::boxen_user/.../...',
+      'install'
+    ]
+    require => Exec["dotdotdot update"]
   }
 }
