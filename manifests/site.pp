@@ -280,6 +280,7 @@ node default {
   $dotdotdot_config = 'https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf'
   exec { 'dotdotdot config':
     command => "/Users/${::boxen_user}/.../... conf ${dotdotdot_config}",
+    creates => "/Users/${::boxen_user}/.../conf"
     require => Repository['dotdotdot repo']
   }
 
