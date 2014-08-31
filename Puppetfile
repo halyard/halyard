@@ -43,7 +43,6 @@ github "stdlib",      "4.3.2", :repo => "puppetlabs/puppetlabs-stdlib"
 github "inifile",     "1.1.1", :repo => "puppetlabs/puppetlabs-inifile"
 github "sudo",        "1.0.1", :repo => "halyard/puppet-sudo"
 github "xquartz",     "1.1.1"
-github "java"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
