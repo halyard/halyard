@@ -12,6 +12,7 @@ Exec {
     "${boxen::config::home}/rbenv/bin",
     "${boxen::config::home}/rbenv/plugins/ruby-build/bin",
     "${boxen::config::home}/homebrew/bin",
+    "${boxen::config::home}/homebrew/sbin",
     '/usr/local/bin',
     '/usr/local/sbin',
     '/usr/bin',
