@@ -127,6 +127,21 @@ node default {
     ]:
   }
 
+  package { 'mtr':
+    install_options => [
+      '--build-from-source',
+      '--no-gtk+'
+    ]
+  }
+
+  file { 'mtr-binary':
+    path => "${boxen::config::home}/homebrew/sbin/mtr",
+    owner => 'root',
+    group => 'root',
+    mode => '4755',
+    require => Package['mtr']
+  }
+
   package {
     [
       'halyard/formulae/encfs',
