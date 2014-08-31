@@ -277,18 +277,15 @@ node default {
     source  => 'ingydotnet/...'
   }
 
-  file { 'dotdotdot config':
-    path    => "/Users/${::boxen_user}/.../conf",
-    owner   => $::boxen_user,
-    group   => 'staff',
-    mode    => '0644',
-    require => Repository['dotdotdot repo'],
-    content => "dots:\n- path: dotfiles\n- path: privdotfiles\n"
+  $dotdotdot_config = 'https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf'
+  exec { 'dotdotdot config':
+    command => "/Users/${::boxen_user}/.../... conf ${dotdotdot_config}",
+    require => Repository['dotdotdot repo']
   }
 
   exec { 'dotdotdot update':
     command => "/Users/${::boxen_user}/.../... update",
-    require => File['dotdotdot config']
+    require => Exec['dotdotdot config']
   }
 
   exec { 'dotdotdot install':
