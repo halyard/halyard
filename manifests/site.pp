@@ -124,7 +124,6 @@ node default {
       'zsh',
       'zsh-completions'
     ]:
-    ensure => 'latest'
   }
 
   package {
