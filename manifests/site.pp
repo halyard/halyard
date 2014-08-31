@@ -103,11 +103,7 @@ node default {
   homebrew::tap { 'halyard/formulae': }
   homebrew::tap { 'halyard/casks': }
 
-  ruby { '1.8.7':
-    environment => {
-      'RUBY_BUILD_CACHE_PATH' => "${::boxen::config::home}/cache/rubies",
-      'CC'                    => "${::boxen::config::home}/homebrew/bin/gcc-4.2"
-    },
+  ruby::version { '1.8.7':
     require     => Package['apple-gcc42']
   }
   ruby::version { '1.9.3': }

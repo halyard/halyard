@@ -1,6 +1,6 @@
 ---
 ruby::provider: rbenv
 ruby::version::env:
-  1.8.7:
+  1.8.7-p358:
     CC: /opt/boxen/homebrew/bin/gcc-4.2
 boxen::environment::relative_bin_on_path: false
