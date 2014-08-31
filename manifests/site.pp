@@ -87,7 +87,7 @@ node default {
   }
 
   class { 'osx::global::key_repeat_rate':
-    rate => 0
+    rate => 10
   }
 
   class { 'osx::dock::hot_corners':
