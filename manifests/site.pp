@@ -195,7 +195,7 @@ node default {
     users    => $::boxen_user,
     hosts    => 'ALL',
     commands => [
-      '(ALL) NOPASSWD : /usr/sbin/installer',
+      '(ALL) NOPASSWD:SETENV: /usr/sbin/installer',
     ],
     type     => 'user_spec',
   }
