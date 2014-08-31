@@ -80,6 +80,8 @@ node default {
   include osx::no_network_dsstores
   include osx::keyboard::capslock_to_control
 
+  include osx::software_update
+
   class { 'osx::global::key_repeat_delay':
     delay => 10
   }
