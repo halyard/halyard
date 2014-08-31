@@ -273,7 +273,7 @@ node default {
   }
 
   repository { "dotdotdot repo":
-    path => "/Users/$::boxen_user/...":
+    path => "/Users/$::boxen_user/...",
     source => 'ingydotnet/...'
   }
 
