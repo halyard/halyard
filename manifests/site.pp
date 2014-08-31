@@ -278,7 +278,7 @@ node default {
   }
 
   file { 'dotdotdot config':
-    path    => "/etc/apache2/trac/${name}.conf",
+    path    => "/Users/${::boxen_user}/.../conf",
     owner   => $::boxen_user,
     group   => 'staff',
     mode    => '0644',
