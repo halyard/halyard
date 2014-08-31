@@ -48,8 +48,7 @@ Service {
 node default {
   include git
   include ruby
-
-  import 'packages'
+  include packages
 
   include osx::global::disable_key_press_and_hold
   include osx::global::expand_save_dialog
