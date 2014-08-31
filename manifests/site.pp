@@ -277,8 +277,7 @@ node default {
     source  => 'ingydotnet/...'
   }
 
-  $dotdotdot_url = \
-    'https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf'
+  $dotdotdot_url = 'https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf'
   exec { 'dotdotdot config':
     command => "/Users/${::boxen_user}/.../... conf ${dotdotdot_config}",
     creates => "/Users/${::boxen_user}/.../conf",
