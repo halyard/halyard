@@ -136,6 +136,7 @@ node default {
 
   file { 'mtr-binary':
     path => "${boxen::config::home}/homebrew/sbin/mtr",
+    links => 'follow',
     owner => 'root',
     group => 'wheel',
     mode => '4755',
