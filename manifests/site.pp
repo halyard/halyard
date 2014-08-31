@@ -90,10 +90,6 @@ node default {
     rate => 0
   }
 
-  class { 'osx::dock::icon_size':
-    size => 20
-  }
-
   class { 'osx::dock::hot_corners':
     top_right   => 'Start Screen Saver',
     bottom_left => 'Dashboard'
