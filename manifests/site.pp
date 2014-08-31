@@ -298,7 +298,7 @@ node default {
     command => [
       '/Users/$::boxen_user/.../...',
       'install'
-    ]
+    ],
     require => Exec['dotdotdot update']
   }
 }
