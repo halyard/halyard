@@ -55,4 +55,5 @@ node default {
   include fdesetup
   include dotdotdot
   include zsh
+  include repos
 }
