@@ -12,7 +12,7 @@ def github(name, *args)
     mod name, :path => path
   else
     version = args.first
-    options[:repo] ||= "boxen/puppet-#{name}"
+    options[:repo] ||= "halyard/puppet-#{name}"
     mod name, version, :github_tarball => options[:repo]
   end
 end
@@ -22,22 +22,22 @@ def dev(name, *args)
   mod name, :path => "#{ENV['HOME']}/src/boxen/puppet-#{name}"
 end
 
-github "boxen", "3.6.2"
-github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
-github "git",         "2.5.0"
+github "boxen",       "3.7.0"
+github "module_data", "0.0.4"
+github "git",         "2.6.0"
 github "osx",         "2.7.1"
-github "osxoptions",  "0.0.7", :repo => "halyard/puppet-osxoptions"
-github "homebrew",    "1.9.4"
-github "brewcask",    "0.0.5", :repo => "halyard/puppet-brewcask"
+github "osxoptions",  "0.0.7"
+github "homebrew",    "1.9.6"
+github "brewcask",    "0.0.5"
 github "repository",  "2.3.0"
-github "ruby",        "8.1.2"
+github "ruby",        "8.1.3"
 github "stdlib",      "4.3.2", :repo => "puppetlabs/puppetlabs-stdlib"
 github "inifile",     "1.1.1", :repo => "puppetlabs/puppetlabs-inifile"
-github "sudo",        "1.0.1", :repo => "halyard/puppet-sudo"
-github "xquartz",     "1.1.1"
-github "packages",    "0.0.2", :repo => "halyard/puppet-packages"
-github "rubyenv",     "0.0.1", :repo => "halyard/puppet-rubyenv"
-github "hostname",    "0.0.2", :repo => "halyard/puppet-hostname"
-github "fdesetup",    "0.0.9", :repo => "halyard/puppet-fdesetup"
-github "dotdotdot",   "0.0.7", :repo => "halyard/puppet-dotdotdot"
-github "zsh",         "0.0.1", :repo => "halyard/puppet-zsh"
+github "sudo",        "1.0.1"
+github "xquartz",     "1.2.1"
+github "packages",    "0.0.2"
+github "rubyenv",     "0.0.1"
+github "hostname",    "0.0.2"
+github "fdesetup",    "0.0.9"
+github "dotdotdot",   "0.0.7"
+github "zsh",         "0.0.1"
