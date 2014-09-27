@@ -22,7 +22,7 @@ def dev(name, *args)
   mod name, :path => "#{ENV['HOME']}/src/boxen/puppet-#{name}"
 end
 
-github "boxen",       "3.7.0.4"
+github "boxen",       "3.7.0.5"
 github "module-data", "0.0.4"
 github "git",         "2.6.0"
 github "osx",         "2.7.1"
