@@ -23,7 +23,7 @@ def dev(name, *args)
 end
 
 github "boxen",       "3.7.0.1"
-github "module_data", "0.0.4"
+github "module-data", "0.0.4"
 github "git",         "2.6.0"
 github "osx",         "2.7.1"
 github "osxoptions",  "0.0.7"
