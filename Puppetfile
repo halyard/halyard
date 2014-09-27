@@ -4,7 +4,7 @@
 # default. This ensures at least the ability to construct a basic
 # environment.
 
-# Shortcut for a module from GitHub's boxen organization
+# Shortcut for a module from halyard organization
 def github(name, *args)
   options ||= args.last.is_a?(Hash) ? args.last : {}
 
