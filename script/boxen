@@ -75,10 +75,6 @@ abort "Can't bootstrap, dependencies are outdated." unless system *strap
 load "config/basic.rb"
 require "boxen/cli"
 
-class Boxen::Preflight::OS < Boxen::Preflight
-  SUPPORTED_RELEASES << '10.10'
-end
-
 # Okay, let's run this thing.
 
 exit Boxen::CLI.run ARGV
