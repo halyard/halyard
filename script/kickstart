@@ -10,7 +10,10 @@ xcode-select -p &>/dev/null
 if [ "$?" != "0" ] ; then
     echo 'Please follow the prompt to install Xcode command line tools, then re-run this command'
     xcode-select --install &>/dev/null
-    exit 0
+    while true ; do
+        sleep 5
+        xcode-select -p &>/dev/null && break
+    done
 fi
 
 set -e
