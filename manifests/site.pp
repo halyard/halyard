@@ -49,11 +49,11 @@ Package {
 node default {
   include git
   include packages
-  include osxoptions
-  include rubyenv
-  include hostname
-  include fdesetup
+  #include osxoptions
+  #include rubyenv
+  #include hostname
+  #include fdesetup
   include dotdotdot
   include zsh
-  include loginitems
+  #include loginitems
 }
