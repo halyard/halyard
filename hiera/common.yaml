@@ -3,7 +3,7 @@ ruby::provider: rbenv
 ruby::version::env:
   1.8.7-p358:
     CC: /opt/boxen/homebrew/bin/GCC-4.2
-ruby::build::ensure: v20141113
+ruby::build::ensure: v20150116
 ruby::rbenv::ensure: v0.4.0
 boxen::environment::relative_bin_on_path: false
 dotdotdot::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
