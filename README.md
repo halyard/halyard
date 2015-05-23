@@ -6,8 +6,8 @@ My configuration for [Boxen](https://boxen.github.io)
 ## Installation
 
 ```
-curl -so /tmp/kickstart https://halyard.github.io/kickstart
-bash /tmp/kickstart
+curl -sLo kickstart https://git.io/halyard
+bash kickstart
 ```
 
 ### Updates
