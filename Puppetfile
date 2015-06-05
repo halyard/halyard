@@ -24,7 +24,7 @@ end
 
 github "boxen",       "3.7.0.5"
 github "module-data", "0.0.4"
-github "git",         "2.7.8"
+github "git",         "2.7.9"
 github "osx",         "2.7.1"
 github "osxoptions",  "0.0.13"
 github "homebrew",    "1.9.6"
