@@ -13,7 +13,7 @@ def github(name, *args)
   end
 end
 
-github 'boxen', '3.11.0.akerl3'
+github 'boxen', '3.11.0.akerl4'
 github 'module-data', '0.0.4'
 github 'stdlib', '4.3.2', :repo => 'puppetlabs/puppetlabs-stdlib'
 github 'inifile', '1.1.1', :repo => 'puppetlabs/puppetlabs-inifile'
