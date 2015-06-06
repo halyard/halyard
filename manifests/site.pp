@@ -1,4 +1,5 @@
 require boxen::environment
+require homebrew
 
 Exec {
   group       => 'staff',
