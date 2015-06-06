@@ -15,4 +15,5 @@ end
 
 github 'stdlib', '4.3.2', :repo => 'puppetlabs/puppetlabs-stdlib'
 github 'boxen', '3.11.0.akerl13'
+github 'homebrew', '1.13.0'
 github 'sudoers', '0.1.1'
