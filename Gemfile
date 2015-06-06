@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'boxen', '~> 2.7.2'
+gem 'boxen', :git => 'https://github.com/halyard/boxen.git', :tag => '2.7.2-akerl1'
 gem 'hiera', '~> 2.0.0'
 gem 'librarian-puppet', '~> 2.2.0'
 gem 'puppet', '~> 4.1.0'
