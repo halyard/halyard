@@ -23,6 +23,5 @@ sudo chown ${USER}:staff /opt/boxen
 git clone git://github.com/halyard/halyard /opt/boxen/repo
 cd /opt/boxen/repo
 
-caffeinate -t 3600 &
-exec ./script/boxen
+caffeinate -di ./script/boxen
 
