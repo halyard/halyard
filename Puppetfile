@@ -17,6 +17,5 @@ github 'stdlib', '4.3.2', :repo => 'puppetlabs/puppetlabs-stdlib'
 github 'boxen', '3.11.0.akerl27'
 github 'homebrew', '1.13.0'
 github 'sudoers', '0.1.1.akerl8'
-#github 'hostname', '0.0.3'
-mod 'hostname', :path => '/Users/akerl/boxen-tmp/puppet-hostname'
+github 'hostname', '0.0.4'
 
