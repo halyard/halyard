@@ -48,4 +48,5 @@ Package {
 }
 
 node default {
+  include hostname
 }
