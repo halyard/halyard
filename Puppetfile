@@ -16,4 +16,6 @@ end
 github 'stdlib', '4.3.2', :repo => 'puppetlabs/puppetlabs-stdlib'
 github 'boxen', '3.11.0.akerl24'
 github 'homebrew', '1.13.0'
-github 'sudoers', '0.1.1.akerl2'
+#github 'sudoers', '0.1.1.akerl2'
+mod sudoers, :path => '/Users/akerl/boxen-tmp/puppet-sudoers'
+
