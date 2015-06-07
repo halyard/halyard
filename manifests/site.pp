@@ -49,4 +49,5 @@ Package {
 
 node default {
   include hostname
+  include dotfiles
 }
