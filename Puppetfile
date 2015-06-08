@@ -22,5 +22,6 @@ github 'git', '2.7.9.akerl2'
 github 'sudoers', '0.1.1.akerl8'
 github 'hostname', '0.0.4'
 github 'dotfiles', '0.0.14'
+github 'osx', '2.8.0'
 github 'zsh', '0.0.2'
 
