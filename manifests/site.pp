@@ -47,8 +47,6 @@ Package {
   require  => Class['homebrew']
 }
 
-Homebrew::Formula <| |> -> Package <| |>
-
 node default {
   include git
   include hostname
