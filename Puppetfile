@@ -21,5 +21,6 @@ github 'repository', '2.4.1.akerl1'
 github 'git', '2.7.9.akerl2'
 github 'sudoers', '0.1.1.akerl8'
 github 'hostname', '0.0.4'
-#github 'dotfiles', '0.0.13'
-mod 'puppet-dotfiles', :path => '/Users/akerl/boxen-tmp/puppet-dotfiles'
+github 'dotfiles', '0.0.14'
+github 'zsh', '0.0.1'
+
