@@ -51,4 +51,5 @@ node default {
   include git
   include hostname
   include dotfiles
+  include zsh
 }
