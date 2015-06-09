@@ -52,4 +52,5 @@ node default {
   include hostname
   include dotfiles
   include zsh
+  include ssh
 }
