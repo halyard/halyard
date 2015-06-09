@@ -2,4 +2,5 @@
 boxen::environment::relative_bin_on_path: false
 dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
 ssh::tap: halyard/formulae
+ssh::package: halyard-openssh
 
