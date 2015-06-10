@@ -53,4 +53,5 @@ node default {
   include dotfiles
   include zsh
   include ssh
+  include rubyenv
 }
