@@ -3,6 +3,7 @@
 
 :backends:
   - yaml
+  - module_data
 :yaml:
   :datadir: "%{::boxen_home}/repo/hiera"
 :hierarchy:
