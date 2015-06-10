@@ -26,3 +26,6 @@ github 'dotfiles', '0.0.15'
 github 'osx', '2.8.0'
 github 'zsh', '0.0.5'
 github 'ssh', '0.0.3'
+github 'ruby', :path => '/Users/akerl/boxen-tmp/puppet-ruby'
+github 'rubyenv', :path => '/Users/akerl/boxen-tmp/puppet-rubyenv'
+
