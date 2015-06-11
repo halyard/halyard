@@ -26,5 +26,5 @@ github 'osx', '2.8.0'
 github 'zsh', '0.0.5'
 github 'ssh', '0.0.5'
 github 'ruby', '8.5.2.akerl1'
-github 'rubyenv', '0.0.6'
+github 'rubyenv', '0.0.7'
 
