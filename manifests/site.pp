@@ -60,4 +60,5 @@ node default {
   include dropbox
   include iterm
   include chrome
+  include alfred
 }
