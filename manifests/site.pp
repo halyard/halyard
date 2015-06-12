@@ -57,5 +57,6 @@ node default {
   include rubyenv
   include spaarti
   include packages
+  include dropbox
   include iterm
 }
