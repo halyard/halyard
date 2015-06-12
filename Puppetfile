@@ -31,5 +31,5 @@ github 'ruby', '8.5.2.akerl5'
 github 'rubyenv', '0.0.8'
 github 'spaarti', '0.0.6'
 github 'iterm', '0.0.6', :path => '/Users/akerl/src/halyard/puppet-iterm'
-github 'dropbox', '0.0.2'
+github 'dropbox', '0.0.3'
 
