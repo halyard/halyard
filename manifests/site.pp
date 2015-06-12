@@ -54,5 +54,6 @@ node default {
   include zsh
   include ssh
   include rubyenv
+  include octoauth
   include spaarti
 }
