@@ -59,4 +59,5 @@ node default {
   include packages
   include dropbox
   include iterm
+  include chrome
 }
