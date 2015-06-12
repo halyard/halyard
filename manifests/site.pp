@@ -61,4 +61,5 @@ node default {
   include iterm
   include chrome
   include alfred
+  include osxui
 }
