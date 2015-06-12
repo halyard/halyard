@@ -62,4 +62,5 @@ node default {
   include chrome
   include alfred
   include osxui
+  include mtr
 }
