@@ -27,4 +27,4 @@ github 'zsh', '0.0.5'
 github 'ssh', '0.0.5'
 github 'ruby', '8.5.2.akerl2'
 github 'rubyenv', '0.0.8'
-
+github 'spaarti', '0.0.1'
