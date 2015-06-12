@@ -56,5 +56,6 @@ node default {
   include ssh
   include rubyenv
   include spaarti
+  include packages
   include iterm
 }
