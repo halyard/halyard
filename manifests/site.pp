@@ -63,4 +63,5 @@ node default {
   include alfred
   include osxui
   include mtr
+  include coreutils
 }
