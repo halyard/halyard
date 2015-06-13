@@ -65,4 +65,5 @@ node default {
   include mtr
   include coreutils
   include python
+  include golang
 }

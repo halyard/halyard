@@ -38,4 +38,4 @@ github 'osxui', '0.0.3'
 github 'mtr', '0.0.1'
 github 'coreutils', '0.0.1'
 github 'python', '0.0.1'
-
+github 'golang', '0.0.1'
