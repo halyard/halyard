@@ -66,4 +66,5 @@ node default {
   include coreutils
   include python
   include golang
+  include vagrant
 }
