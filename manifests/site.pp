@@ -67,4 +67,5 @@ node default {
   include python
   include golang
   include vagrant
+  include onepassword
 }
