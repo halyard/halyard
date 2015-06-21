@@ -68,4 +68,5 @@ node default {
   include golang
   include vagrant
   include onepassword
+  include totalspaces
 }
