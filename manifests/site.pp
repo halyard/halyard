@@ -71,4 +71,5 @@ node default {
   include onepassword
   include totalspaces
   include icloud
+  include grandperspective
 }
