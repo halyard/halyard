@@ -72,4 +72,5 @@ node default {
   include totalspaces
   include icloud
   include grandperspective
+  include gpg
 }
