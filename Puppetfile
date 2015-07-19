@@ -15,7 +15,7 @@ end
 
 github 'stdlib', '4.6.0', :repo => 'puppetlabs/puppetlabs-stdlib'
 github 'inifile', '1.2.0', :repo => 'puppetlabs/puppetlabs-inifile'
-github 'boxen', '3.11.0.akerl30'
+github 'boxen', '3.11.0.akerl31'
 github 'homebrew', '1.13.0.akerl4'
 github 'brewcask', '0.0.6'
 github 'packages', '0.0.15'
