@@ -73,4 +73,5 @@ node default {
   include icloud
   include grandperspective
   include gpg
+  include heroku
 }
