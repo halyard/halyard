@@ -74,5 +74,5 @@ node default {
   include grandperspective
   include gpg
   include heroku
-  include nodejs
+  include keybase
 }
