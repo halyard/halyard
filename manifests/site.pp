@@ -75,4 +75,5 @@ node default {
   include gpg
   include heroku
   include keybase
+  include security
 }
