@@ -3,10 +3,10 @@
 # Shortcut for a module from halyard organization
 def mod(name, *args)
   params ||= args.last.is_a?(Hash) ? args.last : {}
-  repo = options[:repo] || "halyard/puppet-#{name}"
+  repo = params[:repo] || "halyard/puppet-#{name}"
 
-  options[:path] ||= File.expand_path("~/src/halyard/#{repo}") if options[:dev]
-  return mod(name, path: options[:path]) if options[:path]
+  params[:path] ||= File.expand_path("~/src/halyard/#{repo}") if params[:dev]
+  return mod(name, path: params[:path]) if params[:path]
 
   mod name, args.first, github_tarball: repo
 end
