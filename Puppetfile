@@ -29,9 +29,9 @@ halyard 'ruby', '8.5.2.akerl7'
 halyard 'rubyenv', '0.0.10'
 halyard 'spaarti', '0.0.10'
 halyard 'iterm', '0.0.7'
-halyard 'dropbox', '0.0.3', dev: true
+halyard 'dropbox', '0.0.3'
 halyard 'chrome', '0.0.2'
-halyard 'alfred', '0.0.5', dev: true
+halyard 'alfred', '0.0.5'
 halyard 'osxui', '0.0.7'
 halyard 'mtr', '0.0.1'
 halyard 'coreutils', '0.0.2'
