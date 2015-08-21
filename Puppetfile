@@ -3,14 +3,13 @@
 # Shortcut for a module from halyard organization
 def github(name, *args)
   options ||= args.last.is_a?(Hash) ? args.last : {}
+  options[:repo] ||= "halyard/puppet-#{name}"
 
-  if path = options.delete(:path)
-    mod name, :path => path
-  else
-    version = args.first
-    options[:repo] ||= "halyard/puppet-#{name}"
-    mod name, version, :github_tarball => options[:repo]
-  end
+  options[:path] ||= File.expand_path("~/src/halyard/#{repo}") if options[:dev]
+  return mod(name, path: options[:path] if options[:path]
+
+  version = args.first
+  mod name, version, :github_tarball => options[:repo]
 end
 
 github 'stdlib', '4.6.0', :repo => 'puppetlabs/puppetlabs-stdlib'
@@ -31,9 +30,9 @@ github 'ruby', '8.5.2.akerl7'
 github 'rubyenv', '0.0.10'
 github 'spaarti', '0.0.10'
 github 'iterm', '0.0.7'
-github 'dropbox', '0.0.3'
+github 'dropbox', '0.0.3', dev: true
 github 'chrome', '0.0.2'
-github 'alfred', '0.0.5'
+github 'alfred', '0.0.5', dev: true
 github 'osxui', '0.0.7'
 github 'mtr', '0.0.1'
 github 'coreutils', '0.0.2'
