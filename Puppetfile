@@ -1,7 +1,7 @@
 # This file manages Puppet module dependencies.
 
 # Shortcut for a module from halyard organization
-def mod(name, *args)
+def halyard(name, *args)
   params ||= args.last.is_a?(Hash) ? args.last : {}
   repo = params[:repo] || "halyard/puppet-#{name}"
 
@@ -11,39 +11,39 @@ def mod(name, *args)
   mod name, args.first, github_tarball: repo
 end
 
-mod 'stdlib', '4.6.0', repo: 'puppetlabs/puppetlabs-stdlib'
-mod 'inifile', '1.2.0', repo: 'puppetlabs/puppetlabs-inifile'
-mod 'boxen', '3.11.0.akerl32'
-mod 'homebrew', '1.13.0.akerl4'
-mod 'brewcask', '0.0.6'
-mod 'packages', '0.0.18'
-mod 'repository', '2.4.1.akerl1'
-mod 'git', '2.7.9.akerl2'
-mod 'sudoers', '0.1.1.akerl10'
-mod 'hostname', '0.0.4'
-mod 'dotfiles', '0.0.21'
-mod 'osx', '2.8.0.akerl3'
-mod 'zsh', '0.0.5'
-mod 'ssh', '0.0.8'
-mod 'ruby', '8.5.2.akerl7'
-mod 'rubyenv', '0.0.10'
-mod 'spaarti', '0.0.10'
-mod 'iterm', '0.0.7'
-mod 'dropbox', '0.0.3', dev: true
-mod 'chrome', '0.0.2'
-mod 'alfred', '0.0.5', dev: true
-mod 'osxui', '0.0.7'
-mod 'mtr', '0.0.1'
-mod 'coreutils', '0.0.2'
-mod 'python', '0.0.1'
-mod 'golang', '0.0.1'
-mod 'vagrant', '0.0.4'
-mod 'onepassword', '0.0.3'
-mod 'totalspaces', '0.0.3'
-mod 'icloud', '0.0.1'
-mod 'grandperspective', '0.0.2'
-mod 'gpg', '0.0.2'
-mod 'heroku', '0.0.1'
-mod 'nodejs', '5.0.0.akerl1'
-mod 'keybase', '0.0.2'
-mod 'security', '0.0.2'
+halyard 'stdlib', '4.6.0', repo: 'puppetlabs/puppetlabs-stdlib'
+halyard 'inifile', '1.2.0', repo: 'puppetlabs/puppetlabs-inifile'
+halyard 'boxen', '3.11.0.akerl32'
+halyard 'homebrew', '1.13.0.akerl4'
+halyard 'brewcask', '0.0.6'
+halyard 'packages', '0.0.18'
+halyard 'repository', '2.4.1.akerl1'
+halyard 'git', '2.7.9.akerl2'
+halyard 'sudoers', '0.1.1.akerl10'
+halyard 'hostname', '0.0.4'
+halyard 'dotfiles', '0.0.21'
+halyard 'osx', '2.8.0.akerl3'
+halyard 'zsh', '0.0.5'
+halyard 'ssh', '0.0.8'
+halyard 'ruby', '8.5.2.akerl7'
+halyard 'rubyenv', '0.0.10'
+halyard 'spaarti', '0.0.10'
+halyard 'iterm', '0.0.7'
+halyard 'dropbox', '0.0.3', dev: true
+halyard 'chrome', '0.0.2'
+halyard 'alfred', '0.0.5', dev: true
+halyard 'osxui', '0.0.7'
+halyard 'mtr', '0.0.1'
+halyard 'coreutils', '0.0.2'
+halyard 'python', '0.0.1'
+halyard 'golang', '0.0.1'
+halyard 'vagrant', '0.0.4'
+halyard 'onepassword', '0.0.3'
+halyard 'totalspaces', '0.0.3'
+halyard 'icloud', '0.0.1'
+halyard 'grandperspective', '0.0.2'
+halyard 'gpg', '0.0.2'
+halyard 'heroku', '0.0.1'
+halyard 'nodejs', '5.0.0.akerl1'
+halyard 'keybase', '0.0.2'
+halyard 'security', '0.0.2'
