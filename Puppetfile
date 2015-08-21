@@ -6,10 +6,9 @@ def github(name, *args)
   options[:repo] ||= "halyard/puppet-#{name}"
 
   options[:path] ||= File.expand_path("~/src/halyard/#{repo}") if options[:dev]
-  return mod(name, path: options[:path] if options[:path]
+  return mod(name, path: options[:path]) if options[:path]
 
-  version = args.first
-  mod name, version, :github_tarball => options[:repo]
+  mod name, args.first, :github_tarball => options[:repo]
 end
 
 github 'stdlib', '4.6.0', :repo => 'puppetlabs/puppetlabs-stdlib'
