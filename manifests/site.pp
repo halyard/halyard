@@ -61,14 +61,12 @@ node default {
   include dropbox
   include iterm
   include chrome
-  include alfred
   include osxui
   include mtr
   include coreutils
   include python
   include golang
   include vagrant
-  include onepassword
   include totalspaces
   include icloud
   include grandperspective
