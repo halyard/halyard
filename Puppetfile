@@ -24,7 +24,7 @@ halyard 'hostname', '0.0.4'
 halyard 'dotfiles', '0.0.24'
 halyard 'osx', '2.8.0.akerl4'
 halyard 'zsh', '0.0.5'
-halyard 'ssh', '0.0.11', dev: true
+#halyard 'ssh', '0.0.11'
 halyard 'ruby', '8.5.2.akerl7'
 halyard 'rubyenv', '0.0.10'
 halyard 'spaarti', '0.0.10'
@@ -47,4 +47,3 @@ halyard 'heroku', '0.0.1'
 halyard 'nodejs', '5.0.0.akerl1'
 halyard 'keybase', '0.0.2'
 halyard 'security', '0.0.2'
-halyard 'input', '0.0.6', dev: true
