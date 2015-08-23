@@ -22,7 +22,7 @@ halyard 'git', '2.7.9.akerl2'
 halyard 'sudoers', '0.1.1.akerl10'
 halyard 'hostname', '0.0.4'
 halyard 'dotfiles', '0.0.24'
-halyard 'osx', '2.8.0.akerl4'
+halyard 'osx', '2.8.0.akerl5', dev: true
 halyard 'zsh', '0.0.5'
 #halyard 'ssh', '0.0.11'
 halyard 'ruby', '8.5.2.akerl7'
