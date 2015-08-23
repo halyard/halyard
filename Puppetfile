@@ -4,15 +4,14 @@
 def halyard(name, params = {})
   params[:repo] ||= "halyard/puppet-#{name}"
   params[:url] ||= "git://github.com/#{params[:repo]}"
-  params[:version] ||= 'master'
 
   return dev_halyard(name, params) if params[:dev]
-  mod name, params[:version], git: params[:url], ref: params[:version]
+  mod name, git: params[:url], ref: params[:version]
 end
 
 def dev_halyard(name, params)
   params[:path] ||= File.expand_path("~/src/#{params[:repo]}")
-  mod name, 'dev', path: params[:path]
+  mod name, path: params[:path]
 end
 
 halyard 'stdlib', repo: 'puppetlabs/puppetlabs-stdlib', version: '4.6.0'
