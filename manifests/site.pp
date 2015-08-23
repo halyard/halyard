@@ -73,4 +73,5 @@ node default {
   include heroku
   include keybase
   include security
+  include ssh
 }
