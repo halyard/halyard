@@ -2,7 +2,7 @@
 boxen::environment::relative_bin_on_path: false
 dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
 ssh::package: halyard/formulae/openssh-halyard
-ruby::build::ensure: v20150506
+ruby::build::ensure: v20150818
 ruby::rbenv::ensure: v0.4.0
 ruby::rbenv::plugins:
   rbenv-gem-rehash:
