@@ -21,7 +21,7 @@ fi
 set -e
 
 [[ -e $BOXEN_DIR ]] || sudo mkdir -p $BOXEN_DIR
-[[ "$(stat --format="%U:%G" $BOXEN_DIR)" == "${USER}:staff" ]] ||  sudo chown ${USER}:staff $BOXEN_DIR
+[[ "$(/usr/bin/stat -f"%Su:%Sg" $BOXEN_DIR)" == "${USER}:staff" ]] ||  sudo chown ${USER}:staff $BOXEN_DIR
 [[ -e $BOXEN_DIR/repo/README.md ]] || git clone git://github.com/halyard/halyard $BOXEN_DIR/repo
 
 caffeinate -di $BOXEN_DIR/repo/script/boxen
