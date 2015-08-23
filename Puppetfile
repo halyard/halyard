@@ -1,19 +1,18 @@
 # This file manages Puppet module dependencies.
 
 # Shortcut for a module from halyard organization
-def halyard(name, *args)
-  params ||= args.last.is_a?(Hash) ? args.pop : {}
-  repo = params[:repo] || "halyard/puppet-#{name}"
-  version = args.first || :latest
+def halyard(name, params = {})
+  params[:repo] ||= "halyard/puppet-#{name}"
+  params[:url] ||= "git://github.com/#{params[:repo]}"
+  params[:version] ||= 'master'
+  params[:path] ||= File.expand_path("~/src/#{params[:repo]}")
 
-  params[:path] ||= File.expand_path("~/src/#{repo}") if params[:dev]
   return mod(name, path: params[:path]) if params[:path]
-
-  mod name, version, github_tarball: repo
+  mod name, git: params[:url], ref: params[:version]
 end
 
-halyard 'stdlib', '4.6.0', repo: 'puppetlabs/puppetlabs-stdlib'
-halyard 'inifile', '1.2.0', repo: 'puppetlabs/puppetlabs-inifile'
+halyard 'stdlib', repo: 'puppetlabs/puppetlabs-stdlib', version: '4.6.0'
+halyard 'inifile', repo: 'puppetlabs/puppetlabs-inifile', version: '1.2.0'
 halyard 'boxen'
 halyard 'homebrew'
 halyard 'brewcask'
