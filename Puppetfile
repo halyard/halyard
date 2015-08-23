@@ -4,11 +4,12 @@
 def halyard(name, *args)
   params ||= args.last.is_a?(Hash) ? args.pop : {}
   repo = params[:repo] || "halyard/puppet-#{name}"
+  version = args.first || :latest
 
   params[:path] ||= File.expand_path("~/src/#{repo}") if params[:dev]
   return mod(name, path: params[:path]) if params[:path]
 
-  mod name, args.first, github_tarball: repo
+  mod name, version, github_tarball: repo
 end
 
 halyard 'stdlib', '4.6.0', repo: 'puppetlabs/puppetlabs-stdlib'
