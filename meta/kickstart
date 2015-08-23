@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-echo "[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh" > ~/.profile
+BOXEN_DIR=/opt/boxen
+
+echo "[ -f $BOXEN_DIR/env.sh ] && source $BOXEN_DIR/env.sh" > ~/.profile
 
 echo 'Checking for pending software updates'
 softwareupdate -i -a
@@ -18,10 +20,9 @@ fi
 
 set -e
 
-sudo mkdir -p /opt/boxen
-sudo chown ${USER}:staff /opt/boxen
-git clone git://github.com/halyard/halyard /opt/boxen/repo
-cd /opt/boxen/repo
+[[ -e $BOXEN_DIR ]] || sudo mkdir -p $BOXEN_DIR
+[[ "$(stat --format="%U:%G" $BOXEN_DIR)" == "${USER}:staff" ]] ||  sudo chown ${USER}:staff $BOXEN_DIR
+[[ -e $BOXEN_DIR/repo/README.md ]] || git clone git://github.com/halyard/halyard $BOXEN_DIR/repo
 
-caffeinate -di ./script/boxen
+caffeinate -di $BOXEN_DIR/repo/script/boxen
 
