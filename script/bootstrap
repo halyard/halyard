@@ -28,9 +28,9 @@ CLT_VERSION=`pkgutil --pkg-info=com.apple.pkg.CLTools_Executables | grep version
 # Bundle install unless we're already up to date.
 if [[ $CLT_VERSION =~ ^5\.1\.0\.0\.1\.1396320587 ]]; then
   # Fix for LLVM that ships with Xcode 5.1
-  ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future /usr/bin/bundle install --binstubs bin --path .bundle --quiet "$@"
+  ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future bundle install --binstubs bin --path .bundle --quiet "$@"
 else
-  /usr/bin/bundle install --binstubs bin --path .bundle --quiet "$@"
+  bundle install --binstubs bin --path .bundle --quiet "$@"
 fi
 
 
