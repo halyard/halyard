@@ -1,4 +1,5 @@
 ---
+homebrew_root: /opt/boxen/homebrew
 boxen::environment::relative_bin_on_path: false
 dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
 ssh::package: halyard/formulae/openssh-halyard
