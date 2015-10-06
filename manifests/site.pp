@@ -66,7 +66,6 @@ node default {
   include python
   include golang
   include vagrant
-  include totalspaces
   include icloud
   include grandperspective
   include gpg
