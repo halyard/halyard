@@ -8,7 +8,7 @@ REGEX = /^halyard '(?<name>\w+)', '(?<version>[\w.]+)'$/
 URL = 'https://forgeapi.puppetlabs.com/v3/modules/halyard-%s'
 
 def latest_release(name)
-  JSON.load(open(URL % name)).fetch('current_release', {})['version']
+  'v' + JSON.load(open(URL % name)).fetch('current_release', {})['version']
 rescue OpenURI::HTTPError
   puts "No release found for #{name}"
 end
