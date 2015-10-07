@@ -4,7 +4,7 @@ def hmod(name, version = nil, params = {})
   repo = params[:repo] || "halyard-#{name}"
   params[:path] ||= File.expand_path("~/src/#{repo}") if params[:dev]
   return mod(repo, path: params[:path]) if params[:path]
-  mod repo, verson
+  mod repo, version
 end
 
 hmod 'osx'
