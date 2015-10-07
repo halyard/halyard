@@ -7,7 +7,7 @@ def hmod(name, version = nil, params = {})
   mod repo, version
 end
 
-hmod 'osx'
+hmod 'osx', '2.8.4'
 hmod 'osxui'
 
 def old_helper(name, *args)
