@@ -1,4 +1,4 @@
-forge 'https://forge.puppetlabs.com'
+forge 'https://forgeapi.puppetlabs.com'
 
 def hmod(name, version = nil, params = {})
   repo = params[:repo] || "halyard-#{name}"
