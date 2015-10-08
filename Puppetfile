@@ -7,7 +7,7 @@ def hmod(name, version = nil, params = {})
   mod repo, version
 end
 
-hmod 'boxen', '3.11.2'
+hmod 'boxen', '3.11.2', dev: true
 
 hmod 'osx', '2.8.5'
 hmod 'osxui', '0.0.10'
