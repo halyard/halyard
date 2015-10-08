@@ -17,7 +17,7 @@ hmod 'osx', '2.8.5'
 hmod 'osxui', '0.0.10'
 hmod 'icloud', '0.0.2'
 hmod 'security', '0.0.4'
-hmod 'sudoers', '0.1.2'
+hmod 'sudoers', '0.1.3'
 
 hmod 'hostname', '0.0.5'
 hmod 'dotfiles', '0.1.0'
