@@ -39,7 +39,7 @@ hmod 'dropbox', '0.1.0'
 hmod 'grandperspective', '0.1.0'
 
 hmod 'ssh', '0.0.18'
-hmod 'gpg', '0.1.0'
+hmod 'gpg', '0.1.1'
 hmod 'zsh', '0.0.8'
 hmod 'git', '2.8.2'
 hmod 'spaarti', '0.1.0'
