@@ -11,7 +11,7 @@ def hmod(name, version = nil, params = {})
   mod repo, version
 end
 
-hmod 'boxen', '3.11.2', dev: true
+hmod 'boxen', '3.11.3'
 
 hmod 'osx', '2.8.5'
 hmod 'osxui', '0.0.10'
@@ -41,7 +41,7 @@ hmod 'grandperspective', '0.1.0'
 hmod 'ssh', '0.0.18'
 hmod 'gpg', '0.1.0'
 hmod 'zsh', '0.0.8'
-hmod 'git', '2.8.0'
+hmod 'git', '2.8.1'
 hmod 'spaarti', '0.1.0'
 hmod 'keybase', '0.1.0'
 hmod 'heroku', '0.1.0'
