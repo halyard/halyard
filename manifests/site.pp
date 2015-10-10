@@ -78,4 +78,5 @@ node default {
   include mtr
   include coreutils
   include vagrant
+  include aws
 }
