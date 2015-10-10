@@ -50,27 +50,32 @@ Package {
 }
 
 node default {
-  include git
+  include osxui
+  include icloud
+  include security
+
   include hostname
   include dotfiles
-  include zsh
+
   include rubyenv
-  include spaarti
-  include packages
-  include dropbox
-  include iterm
-  include chrome
-  include osxui
-  include mtr
-  include coreutils
   include pythonenv
   include golang
-  include vagrant
-  include icloud
+
+  include packages
+
+  include chrome
+  include iterm
+  include dropbox
   include grandperspective
-  include gpg
-  include heroku
-  include keybase
-  include security
+
   include ssh
+  include gpg
+  include zsh
+  include git
+  include spaarti
+  include keybase
+  include heroku
+  include mtr
+  include coreutils
+  include vagrant
 }
