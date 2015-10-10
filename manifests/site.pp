@@ -63,7 +63,7 @@ node default {
   include osxui
   include mtr
   include coreutils
-  include python
+  include pythonenv
   include golang
   include vagrant
   include icloud
