@@ -4,3 +4,8 @@ gem 'boxen', :git => 'https://github.com/halyard/boxen.git', :tag => '2.8.0.aker
 gem 'open4', '~> 1.3.4'
 gem 'deep_merge', '~> 1.0.1'
 
+group :development do
+  gem 'puppet', '~> 4.2.0'
+  gem 'puppet-lint', :git => 'https://github.com/rodjek/puppet-lint'
+  gem 'puppetlabs_spec_helper', '~> 0.10.3'
+end
