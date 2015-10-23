@@ -72,6 +72,7 @@ node default {
   include gpg
   include zsh
   include git
+  include vim
   include spaarti
   include keybase
   include heroku
