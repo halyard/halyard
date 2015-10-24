@@ -67,6 +67,7 @@ node default {
   include iterm
   include dropbox
   include grandperspective
+  include spotify
 
   include ssh
   include gpg
