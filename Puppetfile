@@ -39,6 +39,7 @@ hmod 'iterm', '0.1.0'
 hmod 'dropbox', '0.1.0'
 hmod 'grandperspective', '0.1.0'
 hmod 'spotify', '0.1.1'
+hmod 'dash', '0.1.0'
 
 hmod 'ssh', '0.0.18'
 hmod 'gpg', '0.1.2'
