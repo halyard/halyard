@@ -20,7 +20,7 @@ hmod 'security', '0.0.4'
 hmod 'sudoers', '0.1.3'
 
 hmod 'hostname', '0.0.5'
-hmod 'dotfiles', '0.1.1'
+hmod 'dotfiles', '0.1.2'
 
 hmod 'ruby', '8.5.5'
 hmod 'rubyenv', '0.0.12'
