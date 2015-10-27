@@ -69,6 +69,7 @@ node default {
   include grandperspective
   include spotify
   include dash
+  include steam
 
   include ssh
   include gpg
