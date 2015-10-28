@@ -13,7 +13,7 @@ end
 
 hmod 'boxen', '3.11.3'
 
-hmod 'osx', '2.8.5'
+hmod 'osx', '2.8.6'
 hmod 'osxui', '0.0.10'
 hmod 'icloud', '0.0.2'
 hmod 'security', '0.0.4'
