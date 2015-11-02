@@ -11,3 +11,4 @@
 !/shared/README.md
 /vendor/
 /Puppetfile.lock
+/Gemfile.lock
