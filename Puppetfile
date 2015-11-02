@@ -31,7 +31,7 @@ hmod 'pythonenv', '0.0.1'
 hmod 'golang', '0.0.2'
 hmod 'nodejs', '5.0.1'
 
-hmod 'homebrew', '1.13.1'
+hmod 'homebrew', '1.13.2'
 hmod 'brewcask', '0.1.0'
 hmod 'packages', '0.1.0'
 hmod 'repository', '2.4.2'
