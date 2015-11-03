@@ -17,7 +17,7 @@ hmod 'osx', '2.8.7'
 hmod 'osxui', '0.0.11'
 hmod 'icloud', '0.0.2'
 hmod 'security', '0.0.4'
-hmod 'sudoers', '0.1.3'
+hmod 'sudoers', '0.1.4'
 hmod 'network', '0.1.3'
 hmod 'sysctl', '1.0.6'
 
