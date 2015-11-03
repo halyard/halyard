@@ -72,6 +72,7 @@ node default {
   include dash
   include steam
 
+  include openssl
   include ssh
   include gpg
   include zsh
