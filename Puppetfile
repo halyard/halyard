@@ -46,7 +46,7 @@ hmod 'steam', '0.1.0'
 
 hmod 'openssl', '0.1.0'
 hmod 'ssh', '0.0.20'
-hmod 'gpg', '0.1.3'
+hmod 'gpg', '0.1.4'
 hmod 'zsh', '0.0.8'
 hmod 'git', '2.8.3'
 hmod 'vim', '0.1.1'
