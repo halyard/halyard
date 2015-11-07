@@ -25,7 +25,7 @@ hmod 'hostname', '0.0.5'
 hmod 'dotfiles', '0.1.2'
 
 hmod 'ruby', '8.5.5'
-hmod 'rubyenv', '0.0.12'
+hmod 'rubyenv', '0.0.13'
 hmod 'python', '3.0.5'
 hmod 'pythonenv', '0.0.2'
 hmod 'golang', '0.0.2'
