@@ -7,7 +7,7 @@ set -e
 GID="$(id -g)"
 USERNAME="$(id -u -nr)"
 if !(grep "$GID" /etc/group >/dev/null) ; then
-  log "Adding GID ($GID) for $USERNAME into /etc/group"
+  echo "Adding GID ($GID) for $USERNAME into /etc/group"
   sudo sh -c "echo $USERNAME:*:$GID:$USERNAME >> /etc/group"
 fi
 
