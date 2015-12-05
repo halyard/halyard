@@ -22,7 +22,6 @@ node default {
   include grandperspective
   include spotify
   include dash
-  include steam
 
   include openssl
   include ssh
