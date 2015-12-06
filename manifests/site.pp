@@ -1,6 +1,3 @@
-require boxen::environment
-require homebrew
-
 node default {
   include osxui
   include icloud

@@ -1,3 +1,6 @@
+require boxen::environment
+require homebrew
+
 Exec {
   group       => 'staff',
   logoutput   => on_failure,

@@ -1,3 +1,5 @@
+require boxen::environment
+
 Repository {
   provider => git,
   extra    => [
