@@ -13,7 +13,7 @@ end
 
 hmod 'boxen', '3.11.4'
 
-hmod 'osx', '2.8.9'
+hmod 'osx', '2.8.10'
 hmod 'osxui', '0.0.12'
 hmod 'icloud', '0.0.2'
 hmod 'security', '0.0.4'
@@ -22,7 +22,7 @@ hmod 'network', '0.1.3'
 hmod 'sysctl', '1.0.6'
 
 hmod 'hostname', '0.0.5'
-hmod 'dotfiles', '0.1.2'
+hmod 'dotfiles', '0.1.3'
 
 hmod 'ruby', '8.5.5'
 hmod 'rubyenv', '0.0.13'
@@ -33,7 +33,7 @@ hmod 'nodejs', '5.0.1'
 
 hmod 'homebrew', '1.13.3'
 hmod 'brewcask', '0.1.0'
-hmod 'packages', '0.1.0'
+hmod 'packages', '0.1.1'
 hmod 'repository', '2.4.2'
 
 hmod 'chrome', '0.1.0'
