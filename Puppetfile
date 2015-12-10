@@ -22,7 +22,7 @@ hmod 'network', '0.1.3'
 hmod 'sysctl', '1.0.6'
 
 hmod 'hostname', '0.0.5'
-hmod 'dotfiles', '0.1.4'
+hmod 'dotfiles', '0.1.6'
 
 hmod 'ruby', '8.5.5'
 hmod 'rubyenv', '0.0.13'
