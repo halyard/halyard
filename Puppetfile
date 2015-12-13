@@ -24,10 +24,10 @@ hmod 'sysctl', '1.0.6'
 hmod 'hostname', '0.0.5'
 hmod 'dotfiles', '0.1.6'
 
-hmod 'ruby', '8.5.5'
+hmod 'ruby', '8.5.6'
 hmod 'rubyenv', '0.0.13'
-hmod 'python', '3.0.11'
-hmod 'pythonenv', '0.0.4'
+hmod 'python', '3.0.12'
+hmod 'pythonenv', '0.0.5'
 hmod 'golang', '0.0.2'
 hmod 'nodejs', '5.0.1'
 
