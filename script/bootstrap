@@ -11,12 +11,9 @@ if !(grep "$GID" /etc/group >/dev/null) ; then
   sudo sh -c "echo $USERNAME:*:$GID:$USERNAME >> /etc/group"
 fi
 
-# FIX: only sudo if gem home isn't writable
-
-(/usr/bin/gem list -i bundler > /dev/null) || {
-  /usr/bin/sudo -E -p "Need to install Bundler for system ruby, password for sudo: " \
-  /usr/bin/gem install bundler --no-rdoc --no-ri
-}
+if [[ ! -e /opt/boxen/repo/.rubybin/bin/bundle ]]; then
+  gem install --no-document --install-dir /opt/boxen/repo/.rubybin bundler
+fi
 
 # We don't want old config hanging around.
 
@@ -33,14 +30,5 @@ set -e
 
 CLT_VERSION=`pkgutil --pkg-info=com.apple.pkg.CLTools_Executables | grep version | cut -f 2 -d ' ' | awk ' { print $1; } '`
 
-# Bundle install unless we're already up to date.
-if [[ $CLT_VERSION =~ ^5\.1\.0\.0\.1\.1396320587 ]]; then
-  # Fix for LLVM that ships with Xcode 5.1
-  ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future bundle install --binstubs bin --path .bundle --quiet "$@"
-else
-  bundle install --binstubs bin --path .bundle --quiet "$@"
-fi
+/opt/boxen/repo/.rubybin/bin/bundle install --binstubs bin --path .bundle --quiet "$@"
 
-
-# Fix the binstubs to use system ruby
-find bin -not -path 'bin/\.*' -type f -print0 | xargs -0 /usr/bin/sed -i '' 's|/usr/bin/env ruby|/usr/bin/ruby|g'
