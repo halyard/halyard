@@ -1,3 +1,4 @@
 ---
 hostname::hostname: mazer
-
+user: laker
+codedir: /Users/laker/src
