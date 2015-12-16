@@ -1,2 +1,2 @@
-$::user = hiera('user')
-$::rootdir = hiera('rootdir')
+$user = hiera('user')
+$rootdir = hiera('rootdir')
