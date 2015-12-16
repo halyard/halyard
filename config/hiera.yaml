@@ -6,7 +6,7 @@
 :yaml:
   :datadir: "%{::boxen_home}/repo/hiera"
 :hierarchy:
-  - "host/%{macaddress}"
+  - "host/%{macaddress_en0}"
   - "users/%{github_login}"
   - common
 :merge_behavior: deeper
