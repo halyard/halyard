@@ -1,11 +1,12 @@
 ---
-user: akerl
-codedir: /Users/akerl/src
-rootdir: /opt/boxen
+::user: akerl
+::codedir: /Users/akerl/src
+::rootdir: /opt/boxen
 homebrew::config::homebrew_root: /opt/boxen/homebrew
 boxen::environment::relative_bin_on_path: false
 dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
-ssh::package: halyard/formulae/openssh-halyard
+ssh::tap: halyard/formulae
+ssh::pacakge: openssh-halyard
 python::pyenv::ensure: v20151103
 ruby::build::ensure: v20150818
 ruby::rbenv::ensure: v0.4.0
