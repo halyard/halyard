@@ -43,6 +43,7 @@ hmod 'grandperspective', '0.1.0'
 hmod 'spotify', '0.1.2'
 hmod 'dash', '0.1.0'
 hmod 'steam', '0.1.1'
+hmod 'firefox', '0.0.1'
 
 hmod 'openssl', '0.1.0'
 hmod 'ssh', '0.0.22'
