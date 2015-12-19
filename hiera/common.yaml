@@ -14,4 +14,36 @@ ruby::rbenv::plugins:
   rbenv-gem-rehash:
     ensure: v1.0.0
     source: sstephenson/rbenv-gem-rehash
-
+system:
+- osxui
+- icloud
+- security
+- network
+- hostname
+- dotfiles
+- packages
+apps:
+- chrome
+- iterm
+- dropbox
+- grandperspective
+- spotify
+- dash
+languages:
+- rubyenv
+- pythonenv
+- golang
+packages:
+- openssl
+- ssh
+- gpg
+- zsh
+- git
+- vim
+- spaarti
+- keybase
+- heroku
+- mtr
+- coreutils
+- vagrant
+- aws
