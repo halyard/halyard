@@ -4,3 +4,4 @@ user: laker
 codedir: /Users/laker/src
 classes:
 - firefox
+- hipchat
