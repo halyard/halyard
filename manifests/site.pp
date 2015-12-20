@@ -1,5 +1,5 @@
 $categories = [
-  'system'
+  'system',
   'apps',
   'languages',
   'packages'
