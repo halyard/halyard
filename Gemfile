@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'boxen-halyard', '~> 2.8.0.akerl9'
+gem 'boxen-halyard', '~> 2.8.0.10'
 gem 'open4', '~> 1.3.4'
 gem 'deep_merge', '~> 1.0.1'
 
