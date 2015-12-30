@@ -8,6 +8,12 @@ dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdo
 ssh::tap: halyard/formulae
 ssh::package: openssh-halyard
 python::pyenv::ensure: v20151210
+pythonenv::versions:
+- 2.7.10
+- 3.5.0
+pythonenv::default:
+- 2.7.10
+- 3.5.0
 ruby::build::ensure: v20151225
 ruby::rbenv::ensure: v1.0.0
 rubyenv::versions:
