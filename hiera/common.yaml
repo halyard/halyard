@@ -10,6 +10,12 @@ ssh::package: openssh-halyard
 python::pyenv::ensure: v20151210
 ruby::build::ensure: v20151225
 ruby::rbenv::ensure: v1.0.0
+rubyenv::versions:
+- 2.3.0
+- 2.2.4
+- 2.0.0-p648
+- 1.9.3-p551
+rubyenv::default: 2.3.0
 system:
 - osxui
 - icloud
