@@ -41,6 +41,7 @@ languages:
 - rubyenv
 - pythonenv
 - golang
+- nodejs
 packages:
 - openssl
 - ssh
