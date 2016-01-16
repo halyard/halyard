@@ -7,14 +7,14 @@ boxen::environment::relative_bin_on_path: false
 dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
 ssh::tap: halyard/formulae
 ssh::package: openssh-halyard
-python::pyenv::ensure: v20151210
+python::pyenv::ensure: v20151222
 pythonenv::versions:
-- 2.7.10
-- 3.5.0
+- 2.7.11
+- 3.5.1
 pythonenv::default:
-- 2.7.10
-- 3.5.0
-ruby::build::ensure: v20151225
+- 2.7.11
+- 3.5.1
+ruby::build::ensure: v20160111
 ruby::rbenv::ensure: v1.0.0
 rubyenv::versions:
 - 2.3.0
