@@ -29,7 +29,7 @@ hmod 'rubyenv', '0.0.16'
 hmod 'python', '3.0.12'
 hmod 'pythonenv', '0.0.6'
 hmod 'golang', '0.0.2'
-hmod 'nodejs', '5.0.2'
+hmod 'nodejs', '5.0.3'
 
 hmod 'homebrew', '1.13.3'
 hmod 'brewcask', '0.1.0'
