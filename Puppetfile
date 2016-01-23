@@ -27,7 +27,7 @@ hmod 'dotfiles', '0.1.6'
 hmod 'ruby', '8.5.7'
 hmod 'rubyenv', '0.0.19'
 hmod 'python', '3.0.12'
-hmod 'pythonenv', '0.0.9'
+hmod 'pythonenv', '0.0.10'
 hmod 'golang', '0.0.2'
 hmod 'nodejs', '5.0.4'
 
