@@ -2,6 +2,8 @@
 hostname::hostname: mazer
 user: laker
 codedir: /Users/laker/src
+rubyenv::gems:
+- atlassian-stash
 classes:
 - firefox
 - hipchat
