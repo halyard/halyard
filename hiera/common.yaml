@@ -22,6 +22,8 @@ rubyenv::versions:
 - 2.0.0-p648
 - 1.9.3-p551
 rubyenv::default: 2.3.0
+rubyenv::gems:
+- pry
 system:
 - osxui
 - icloud
