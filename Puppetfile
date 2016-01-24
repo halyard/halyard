@@ -30,7 +30,7 @@ hmod 'python', '3.0.12'
 hmod 'pythonenv', '0.0.10'
 hmod 'golang', '0.0.2'
 hmod 'nodejs', '5.0.4'
-hmod 'nodejsenv', '0.0.20'
+hmod 'nodejsenv', '0.0.21'
 
 hmod 'homebrew', '1.13.3'
 hmod 'brewcask', '0.1.0'
