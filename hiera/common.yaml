@@ -24,6 +24,11 @@ rubyenv::versions:
 rubyenv::default: 2.3.0
 rubyenv::gems:
 - pry
+nodejs::build::ensure: v2.1.3
+nodejs::nodenv::ensure: v1.0.0
+nodejsenv::versions:
+- 5.5.0
+nodejsenv::default: 5.5.0
 system:
 - osxui
 - icloud
@@ -42,6 +47,7 @@ apps:
 languages:
 - rubyenv
 - pythonenv
+- nodejsenv
 - golang
 - nodejs
 packages:
