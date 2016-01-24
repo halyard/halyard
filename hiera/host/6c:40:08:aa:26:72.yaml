@@ -4,6 +4,6 @@ user: laker
 codedir: /Users/laker/src
 rubyenv::gems:
 - atlassian-stash
-classes:
+apps:
 - firefox
 - hipchat

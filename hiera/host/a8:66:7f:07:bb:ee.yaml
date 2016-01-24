@@ -1,4 +1,4 @@
 ---
 hostname::hostname: bean
-classes:
+apps:
 - steam
