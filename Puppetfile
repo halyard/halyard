@@ -13,7 +13,7 @@ end
 
 hmod 'boxen', '3.11.4'
 
-hmod 'osx', '2.8.10'
+hmod 'osx', '2.8.11'
 hmod 'osxui', '0.0.12'
 hmod 'icloud', '0.0.2'
 hmod 'security', '0.0.5'
@@ -45,7 +45,7 @@ hmod 'dash', '0.1.0'
 hmod 'steam', '0.1.1'
 hmod 'firefox', '0.0.1'
 hmod 'hipchat', '0.1.0'
-hmod 'crashplan', '0.0.1'
+hmod 'crashplan', '0.0.2'
 hmod 'box', '0.0.1'
 
 hmod 'openssl', '0.1.0'
