@@ -46,6 +46,7 @@ hmod 'steam', '0.1.1'
 hmod 'firefox', '0.0.1'
 hmod 'hipchat', '0.1.0'
 hmod 'crashplan', '0.0.1'
+hmod 'box', '0.0.1'
 
 hmod 'openssl', '0.1.0'
 hmod 'ssh', '0.0.22'

@@ -7,3 +7,4 @@ rubyenv::gems:
 apps:
 - firefox
 - hipchat
+- box
