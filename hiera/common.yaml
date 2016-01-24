@@ -49,7 +49,6 @@ languages:
 - pythonenv
 - nodejsenv
 - golang
-- nodejs
 packages:
 - openssl
 - ssh
