@@ -47,6 +47,11 @@ apps:
 - alfred
 - onepassword
 - flux
+- bartender
+- bettertouchtool
+- littlesnitch
+- textexpander
+- controlplane
 languages:
 - rubyenv
 - pythonenv
