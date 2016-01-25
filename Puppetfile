@@ -55,7 +55,7 @@ hmod 'controlplane', '0.0.1'
 hmod 'textexpander', '0.0.1'
 hmod 'littlesnitch', '0.0.1'
 hmod 'bartender', '0.0.2'
-hmod 'bettertouchtool', '0.0.1'
+hmod 'bettertouchtool', '0.0.2'
 
 hmod 'openssl', '0.1.0'
 hmod 'ssh', '0.0.22'
