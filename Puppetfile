@@ -54,7 +54,7 @@ hmod 'flux', '0.0.1'
 hmod 'controlplane', '0.0.1'
 hmod 'textexpander', '0.0.1'
 hmod 'littlesnitch', '0.0.1'
-hmod 'bartender', '0.0.1'
+hmod 'bartender', '0.0.2'
 hmod 'bettertouchtool', '0.0.1'
 
 hmod 'openssl', '0.1.0'
