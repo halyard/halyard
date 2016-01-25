@@ -45,6 +45,7 @@ apps:
 - spotify
 - dash
 - alfred
+- onepassword
 languages:
 - rubyenv
 - pythonenv
