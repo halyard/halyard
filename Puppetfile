@@ -14,7 +14,7 @@ end
 hmod 'boxen', '3.11.4'
 
 hmod 'osx', '2.8.11'
-hmod 'osxui', '0.0.12'
+hmod 'osxui', '0.0.13'
 hmod 'icloud', '0.0.2'
 hmod 'security', '0.0.5'
 hmod 'sudoers', '0.1.4'
