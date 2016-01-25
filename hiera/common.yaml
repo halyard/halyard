@@ -46,6 +46,7 @@ apps:
 - dash
 - alfred
 - onepassword
+- flux
 languages:
 - rubyenv
 - pythonenv
