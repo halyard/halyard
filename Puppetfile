@@ -48,6 +48,7 @@ hmod 'firefox', '0.0.1'
 hmod 'hipchat', '0.1.0'
 hmod 'crashplan', '0.0.2'
 hmod 'box', '0.0.1'
+hmod 'alfred', '0.0.5'
 
 hmod 'openssl', '0.1.0'
 hmod 'ssh', '0.0.22'
