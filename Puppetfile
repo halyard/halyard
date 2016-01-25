@@ -19,7 +19,7 @@ hmod 'icloud', '0.0.2'
 hmod 'security', '0.0.5'
 hmod 'sudoers', '0.1.4'
 hmod 'network', '0.1.4'
-hmod 'sysctl', '2.0.0'
+hmod 'sysctl', '2.0.1'
 
 hmod 'hostname', '0.0.5'
 hmod 'dotfiles', '0.1.6'
