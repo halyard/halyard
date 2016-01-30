@@ -14,7 +14,7 @@ pythonenv::versions:
 pythonenv::default:
 - 2.7.11
 - 3.5.1
-ruby::build::ensure: v20160111
+ruby::build::ensure: v20160130
 ruby::rbenv::ensure: v1.0.0
 rubyenv::versions:
 - 2.3.0
