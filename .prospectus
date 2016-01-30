@@ -44,7 +44,7 @@ repos = {
 
 repos.each do |item_name, (yaml_key, repo_name)|
   item do
-    name item_name
+    name "halyard::#{item_name}"
 
     expected do
       github_tag
