@@ -38,7 +38,7 @@ hmod 'packages', '0.1.2'
 hmod 'repository', '2.4.2'
 
 hmod 'chrome', '0.1.0'
-hmod 'iterm', '0.1.0'
+hmod 'iterm', '0.1.1'
 hmod 'dropbox', '0.1.0'
 hmod 'grandperspective', '0.1.0'
 hmod 'spotify', '0.1.2'
