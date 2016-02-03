@@ -14,7 +14,7 @@ fi
 INSTALL_DIR=.rubybin
 
 if [[ ! -e .rubybin/bin/bundler ]]; then
-  /usr/bin/gem install bundler --no-document --install-dir=$INSTALL_DIR
+  /usr/bin/gem install bundler --no-document --bin-dir=$INSTALL_DIR
 fi
 
 # We don't want old config hanging around.
@@ -22,7 +22,7 @@ fi
 rm -rf .bundle/config
 rm -rf .librarian/puppet/config
 
-$INSTALL_DIR/bin/bundle install --binstubs bin --path .bundle --quiet "$@"
+$INSTALL_DIR/bundle install --binstubs bin --path .bundle --quiet "$@"
 
 
 # Fix the binstubs to use system ruby
