@@ -13,7 +13,7 @@ fi
 
 INSTALL_DIR=.rubybin
 
-if [[ ! -e .rubybin/bin/bundler ]]; then
+if [[ ! -e .rubybin/bundle ]]; then
   sudo /usr/bin/gem install bundler --no-document --bindir=$INSTALL_DIR
 fi
 
