@@ -14,7 +14,7 @@ fi
 INSTALL_DIR=.rubybin
 
 if [[ ! -e .rubybin/bin/bundler ]]; then
-  /usr/bin/gem install bundler --no-document --bindir=$INSTALL_DIR
+  sudo /usr/bin/gem install bundler --no-document --bindir=$INSTALL_DIR
 fi
 
 # We don't want old config hanging around.
