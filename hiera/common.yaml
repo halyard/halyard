@@ -40,7 +40,6 @@ system:
 apps:
 - chrome
 - iterm
-- dropbox
 - grandperspective
 - spotify
 - dash

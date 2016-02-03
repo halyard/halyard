@@ -2,3 +2,4 @@
 hostname::hostname: bean
 apps:
 - steam
+- dropbox
