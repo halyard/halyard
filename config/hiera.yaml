@@ -1,12 +1,9 @@
 ---
-# them in hiera/{github_login}.yaml
-
-:backends:
-  - yaml
-:yaml:
-  :datadir: "%{::boxen_home}/repo/hiera"
-:hierarchy:
-  - "host/%{macaddress_en0}"
-  - "users/%{github_login}"
+version: 4
+datadir: data
+hierarchy:
+- name: Local YAML
+  backend: yaml
+  paths:
+  - host/%{macaddress_en0}
   - common
-:merge_behavior: deeper
