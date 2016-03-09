@@ -1,6 +1,0 @@
-#!/usr/bin/env ruby
-# Make sure a project's deps are up-to-date.
-
-if File.executable? "script/bootstrap"
-  exec "script/bootstrap", *ARGV
-end

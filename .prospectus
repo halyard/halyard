@@ -53,7 +53,7 @@ repos.each do |item_name, (yaml_key, repo_name)|
 
     actual do
       grep
-      file 'hiera/common.yaml'
+      file 'data/common.yaml'
       regex /^#{yaml_key}: ([\w.]+)$/
     end
   end

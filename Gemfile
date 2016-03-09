@@ -1,11 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'boxen-halyard', '~> 2.8.0.10'
-gem 'open4', '~> 1.3.4'
-gem 'deep_merge', '~> 1.0.1'
+gem 'puppet', '~> 4.3.0'
 
 group :development do
-  gem 'puppet', '~> 4.3.0'
   gem 'puppet-lint', '~> 1.1.0'
   gem 'puppetlabs_spec_helper', '~> 1.1.0'
 end
