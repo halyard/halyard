@@ -59,7 +59,7 @@ repos.each do |item_name, (yaml_key, repo_name)|
   end
 end
 
-YAML.load(open('hiera/common.yaml'))['pythonenv::versions'].each do |pyversion|
+YAML.load(open('data/common.yaml'))['pythonenv::versions'].each do |pyversion|
   major = pyversion.split('.').first
   xpath_index = major == '3' ? 1 : 2
 
@@ -92,7 +92,7 @@ item do
 
   actual do
     grep
-    file 'hiera/common.yaml'
+    file 'data/common.yaml'
     regex /^rubyenv::default: ([\d.]+)$/
   end
 end
