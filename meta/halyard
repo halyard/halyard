@@ -1,4 +1,13 @@
 #!/usr/bin/env bash
 
-echo "Puppet would run here"
+set -e
+
+ROOT_PATH=/opt/halyard
+export GEM_PATH=$ROOT_PATH/vendor
+BIN_PATH=$GEM_PATH/bin
+
+gem list --installed bundler >/dev/null || gem install --no-document --install-dir $GEM_PATH bundler
+
+$BIN_PATH/bundle install --path=$GEM_PATH --binstubs=$BIN_PATH --gemfile=$ROOT_PATH/repo/Gemfile --without=development
+
 
