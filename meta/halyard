@@ -8,7 +8,7 @@ BIN_PATH=$GEM_PATH/bin
 REPO_PATH=$ROOT_PATH/repo
 ENV_PATH=$ROOT_PATH/environments
 
-gem list --installed bundler >/dev/null || gem install --no-document --install-dir $GEM_PATH bundler
+[[ -e $BIN_PATH/bundle ]] || gem install --no-document --install-dir $GEM_PATH bundler
 
 $BIN_PATH/bundle install --path=$GEM_PATH --binstubs=$BIN_PATH --gemfile=$REPO_PATH/Gemfile --without=development
 
