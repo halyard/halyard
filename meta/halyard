@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "Puppet would run here"
+
