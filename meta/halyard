@@ -16,4 +16,4 @@ $BIN_PATH/bundle install --path=$GEM_PATH --binstubs=$BIN_PATH --gemfile=$REPO_P
 
 (cd $REPO_PATH && $BIN_PATH/librarian-puppet install --path=modules)
 
-sudo $BIN_PATH/puppet apply --environment=$ENVIRONMENT --environmentpath=$ENV_PATH $ENV_PATH/$ENVIRONMENT/manifests --debug
+sudo $BIN_PATH/puppet apply --environment_data_provider=hiera --environment=$ENVIRONMENT --environmentpath=$ENV_PATH $ENV_PATH/$ENVIRONMENT/manifests --debug
