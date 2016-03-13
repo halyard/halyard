@@ -1,9 +1,7 @@
 ---
 user: akerl
-rootdir: /opt/boxen
 
-homebrew::config::homebrew_root: /opt/boxen/homebrew
-boxen::environment::relative_bin_on_path: false
+homebrew::config::homebrew_root: /opt/halyard/homebrew
 dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
 ssh::tap: halyard/formulae
 ssh::package: openssh-halyard

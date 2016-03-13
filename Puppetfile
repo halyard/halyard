@@ -11,8 +11,6 @@ def hmod(name, version = nil, params = {})
   mod repo, version
 end
 
-hmod 'boxen', '3.11.4'
-
 hmod 'osx', '2.8.12'
 hmod 'osxui', '0.0.13'
 hmod 'icloud', '0.0.2'

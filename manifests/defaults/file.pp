@@ -1,4 +1,4 @@
 File {
   group => 'staff',
-  owner => $boxen_user
+  owner => $user
 }
