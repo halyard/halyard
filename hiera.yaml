@@ -4,7 +4,7 @@
 :backends:
   - yaml
 :yaml:
-  :datadir: "%{::boxen_home}/repo/hiera"
+  :datadir: "data"
 :hierarchy:
   - "host/%{macaddress_en0}"
   - "users/%{github_login}"
