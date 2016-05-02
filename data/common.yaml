@@ -47,7 +47,6 @@ apps:
 - bartender
 - bettertouchtool
 - littlesnitch
-- textexpander
 - controlplane
 languages:
 - rubyenv
