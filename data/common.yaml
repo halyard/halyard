@@ -5,7 +5,7 @@ homebrew::config::homebrew_root: /opt/halyard/homebrew
 dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
 ssh::tap: halyard/formulae
 ssh::package: openssh-halyard
-python::pyenv::ensure: v20160422
+python::pyenv::ensure: v20160509
 pythonenv::versions:
 - 2.7.11
 - 3.5.1
