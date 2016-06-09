@@ -8,7 +8,12 @@ BIN_PATH=$GEM_PATH/bin
 REPO_PATH=$ROOT_PATH/repo
 ENV_PATH=$ROOT_PATH/environments
 
-ENVIRONMENT=production
+: ${PUPPET_ENV:=PRODUCTION}
+
+FLAGS=''
+if [ -z "$DEBUG" ] ; then
+    FLAGS='--debug'
+fi
 
 (
     cd $REPO_PATH
@@ -27,4 +32,4 @@ $BUNDLE_CMD &>/dev/null || echo "Failed to run: $BUNDLE_CMD"
 
 (cd $REPO_PATH && $BIN_PATH/librarian-puppet install --path=modules)
 
-sudo $BIN_PATH/puppet apply --environment=$ENVIRONMENT --environmentpath=$ENV_PATH $ENV_PATH/$ENVIRONMENT/manifests --debug
+sudo $BIN_PATH/puppet apply --confdir=$REPO_PATH --environment=$PUPPET_ENV --environmentpath=$ENV_PATH $ENV_PATH/$PUPPET_ENV/manifests $FLAGS

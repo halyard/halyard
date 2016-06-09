@@ -4,9 +4,8 @@
 :backends:
   - yaml
 :yaml:
-  :datadir: "data"
+  :datadir: "%{settings::environmentpath}/%{::environment}/data"
 :hierarchy:
   - "host/%{macaddress_en0}"
-  - "users/%{github_login}"
   - common
 :merge_behavior: deeper
