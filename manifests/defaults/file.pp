@@ -1,4 +1,4 @@
 File {
   group => 'staff',
-  owner => $user
+  owner => lookup('user', String[1])
 }
