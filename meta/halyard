@@ -15,7 +15,7 @@ ENVIRONMENT=production
     if [ -n "$(git status -s)" ] ; then
         echo "Repo is unclean: $REPO_PATH"
     else
-        git pull || echo "Failed to update repo: $REPO_PATH"
+        git pull &>/dev/null || echo "Failed to update repo: $REPO_PATH"
     fi
 )
 
