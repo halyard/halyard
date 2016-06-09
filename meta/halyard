@@ -11,8 +11,8 @@ ENV_PATH=$ROOT_PATH/environments
 : ${PUPPET_ENV:=PRODUCTION}
 
 FLAGS=''
-if [ -z "$DEBUG" ] ; then
-    FLAGS='--debug'
+if [ -n "$DEBUG" ] ; then
+    FLAGS="$FLAGS --debug"
 fi
 
 (
