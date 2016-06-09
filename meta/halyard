@@ -10,11 +10,20 @@ ENV_PATH=$ROOT_PATH/environments
 
 ENVIRONMENT=production
 
+(
+    cd $REPO_PATH
+    if [ -n "$(git status -s)" ] ; then
+        echo "Repo is unclean: $REPO_PATH"
+    else
+        git pull || echo "Failed to update repo: $REPO_PATH"
+    fi
+)
+
 [[ -e $BIN_PATH/bundle ]] || gem install --no-document --install-dir $GEM_PATH bundler
 
 BUNDLE_CMD="$BIN_PATH/bundle install --path=$GEM_PATH --binstubs=$BIN_PATH --gemfile=$REPO_PATH/Gemfile --without=development"
 
-$BUNDLE_CMD || echo "Failed to run: $BUNDLE_CMD"
+$BUNDLE_CMD &>/dev/null || echo "Failed to run: $BUNDLE_CMD"
 
 (cd $REPO_PATH && $BIN_PATH/librarian-puppet install --path=modules)
 
