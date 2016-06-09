@@ -6,5 +6,12 @@ $categories = [
 ]
 
 $categories.each |$category| {
-  hiera_include($category, [])
+  $classification = lookup({
+    "name" => $category,
+    "merge" => {
+      "strategy" => "deep",
+      "sort_merge_arrays" => true
+    }
+  })
+  $items.notice
 }
