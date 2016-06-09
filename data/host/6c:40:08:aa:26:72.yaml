@@ -1,6 +1,7 @@
 ---
-hostname::hostname: mazer
 user: laker
+
+hostname::hostname: mazer
 codedir: /Users/laker/src
 rubyenv::gems:
 - atlassian-stash
