@@ -8,7 +8,7 @@ BIN_PATH=$GEM_PATH/bin
 REPO_PATH=$ROOT_PATH/repo
 ENV_PATH=$ROOT_PATH/environments
 
-: ${PUPPET_ENV:=PRODUCTION}
+: ${PUPPET_ENV:=production}
 
 FLAGS=''
 if [ -n "$DEBUG" ] ; then
