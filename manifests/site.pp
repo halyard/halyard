@@ -6,5 +6,5 @@ $categories = [
 ]
 
 $categories.each |$category| {
-  hiera_include("includes::$category", [])
+  hiera_include("includes::${category}", [])
 }

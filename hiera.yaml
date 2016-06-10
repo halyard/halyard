@@ -1,11 +1,10 @@
 ---
-# them in hiera/{github_login}.yaml
+:hierarchy:
+- host/%{macaddress_en0}
+- common
 
 :backends:
   - yaml
+
 :yaml:
   :datadir: "%{settings::environmentpath}/%{::environment}/data"
-:hierarchy:
-  - "host/%{macaddress_en0}"
-  - common
-:merge_behavior: deeper
