@@ -1,1 +1,3 @@
 require homebrew
+
+include zsh
