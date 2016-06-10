@@ -1,4 +1,5 @@
 /.bundle/config
 /.librarian/
+/modules
 /.tmp/
 /Puppetfile.lock
