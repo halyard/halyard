@@ -1,8 +1,8 @@
 Exec {
-  group       => 'staff',
-  logoutput   => on_failure,
-  user        => lookup('user', String[1]),
-  path        => [
+  group     => 'staff',
+  user      => $::id,
+  logoutput => on_failure,
+  path      => [
     '/usr/local/bin',
     '/usr/local/sbin',
     '/usr/bin',

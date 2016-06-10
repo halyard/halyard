@@ -1,4 +1,4 @@
 File {
   group => 'staff',
-  owner => lookup('user', String[1])
+  owner => $::id
 }
