@@ -6,14 +6,13 @@ ROOT_PATH=/opt/halyard
 REPO_PATH=$ROOT_PATH/repo
 export GEM_PATH=$ROOT_PATH/vendor
 BIN_PATH=$GEM_PATH/bin
+ENV_PATH=$ROOT_PATH/environments
+
+: ${PUPPET_ENV:=production}
 
 FLAGS=''
 if [ -n "$DEBUG" ] ; then
     FLAGS="$FLAGS --debug"
-fi
-
-if [ -n "$PUPPET_ENV" ] ; then
-    FLAGS="$FLAGS --environment='$PUPPET_ENV'"
 fi
 
 (
@@ -33,4 +32,4 @@ $BUNDLE_CMD &>/dev/null || echo "Failed to run: $BUNDLE_CMD"
 
 (cd $REPO_PATH && $BIN_PATH/librarian-puppet install --path=modules)
 
-sudo $BIN_PATH/puppet apply --confdir=$REPO_PATH $FLAGS
+sudo $BIN_PATH/puppet apply --confdir=$REPO_PATH "--environment=$PUPPET_ENV" "$ENV_PATH/$PUPPET_ENV/manifests" $FLAGS
