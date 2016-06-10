@@ -3,9 +3,9 @@
 set -e
 
 ROOT_PATH=/opt/halyard
+REPO_PATH=$ROOT_PATH/repo
 export GEM_PATH=$ROOT_PATH/vendor
 BIN_PATH=$GEM_PATH/bin
-REPO_PATH=$ROOT_PATH/repo
 
 FLAGS=''
 if [ -n "$DEBUG" ] ; then
