@@ -10,3 +10,5 @@ def hmod(name, version = nil, params = {})
   return mod(repo, path: params[:path]) if params[:path]
   mod repo, version
 end
+
+hmod 'halyard', '0.0.4'
