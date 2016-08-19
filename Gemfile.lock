@@ -35,7 +35,7 @@ GEM
       facter (> 2.0, < 4)
       hiera (>= 2.0, < 4)
       json_pure (~> 1.8)
-    puppet-lint (2.0.1)
+    puppet-lint (2.0.2)
     puppet-syntax (2.1.0)
       rake
     puppet_forge (2.2.2)
