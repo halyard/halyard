@@ -9,6 +9,7 @@ BIN_PATH=$GEM_PATH/bin
 ENV_PATH=$ROOT_PATH/environments
 
 : ${PUPPET_ENV:=production}
+: ${DEBUG:}
 
 FLAGS=''
 if [ -n "$DEBUG" ] ; then
