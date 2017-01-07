@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -euo pipefail
 
 ROOT_PATH=/opt/halyard
 REPO_PATH=$ROOT_PATH/repo

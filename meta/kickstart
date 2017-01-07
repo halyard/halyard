@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 ROOTDIR=/opt/halyard
 
 echo 'Checking for pending software updates'
 softwareupdate -i -a
 
 echo 'Checking for Xcode command line tools'
+set +e
 xcode-select -p &>/dev/null
 if [ "$?" != "0" ] ; then
     echo 'Please follow the prompt to install Xcode command line tools'
@@ -15,7 +18,6 @@ if [ "$?" != "0" ] ; then
         xcode-select -p &>/dev/null && break
     done
 fi
-
 set -e
 
 [[ -e $ROOTDIR ]] || sudo mkdir -p $ROOTDIR
