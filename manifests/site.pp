@@ -1,3 +1,0 @@
-require homebrew
-
-include zsh
