@@ -11,5 +11,5 @@ def hmod(name, version = nil, params = {})
   mod repo, version
 end
 
-hmod 'halyard', '0.0.4'
+hmod 'halyard', '0.0.6'
 hmod 'repository', '2.4.3'
