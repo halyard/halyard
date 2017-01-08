@@ -27,10 +27,12 @@ fi
 
 [[ -e $BIN_PATH/bundle ]] || gem install --no-document --install-dir $GEM_PATH bundler
 
-BUNDLE_CMD="$BIN_PATH/bundle install --path=$GEM_PATH --binstubs=$BIN_PATH --gemfile=$REPO_PATH/Gemfile --without=development"
+BUNDLE_CHECK="$BIN_PATH/bundle check --path=$GEM_PATH --gemfile=$REPO_PATH/Gemfi
+le"
+BUNDLE_CMD="$BIN_PATH/bundle install --path=$GEM_PATH --gemfile=$REPO_PATH/Gemfile --binstubs=$BIN_PATH"
 
-$BUNDLE_CMD &>/dev/null || echo "Failed to run: $BUNDLE_CMD"
+$BUNDLE_CHECK &>/dev/null || $BUNDLE_CMD &>/dev/null || echo "Failed to run: $BUNDLE_CMD"
 
 (cd $REPO_PATH && $BIN_PATH/librarian-puppet install --clean)
 
-sudo $BIN_PATH/puppet apply --confdir=$REPO_PATH "--environment=$PUPPET_ENV" "$ENV_PATH/$PUPPET_ENV/manifests" $FLAGS
+sudo GEM_PATH=$GEM_PATH $BIN_PATH/puppet apply --confdir=$REPO_PATH "--environment=$PUPPET_ENV" "$ENV_PATH/$PUPPET_ENV/manifests" $FLAGS
