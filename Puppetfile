@@ -11,6 +11,8 @@ def hmod(name, version = nil, params = {})
   mod repo, version
 end
 
+mod 'puppetlabs-stdlib', '4.14.0'
+mod 'puppetlabs-vcsrepo', '1.5.0'
+
 hmod 'halyard', '0.0.8'
-hmod 'repository', '2.4.3'
-hmod 'sudoers', '0.1.4'
+hmod 'sudoers', '0.1.5'
