@@ -33,6 +33,8 @@ BUNDLE_CMD="$BIN_PATH/bundle install --path=$GEM_PATH --gemfile=$REPO_PATH/Gemfi
 
 $BUNDLE_CHECK &>/dev/null || $BUNDLE_CMD &>/dev/null || echo "Failed to run: $BUNDLE_CMD"
 
+[[ -e ~/.octoauth.d/halyard.yml ]] || $REPO_PATH/meta/load_github_token.rb
+
 (cd $REPO_PATH && $BIN_PATH/librarian-puppet install --clean)
 
 sudo GEM_PATH=$GEM_PATH $BIN_PATH/puppet apply --confdir=$REPO_PATH "--environment=$PUPPET_ENV" "$ENV_PATH/$PUPPET_ENV/manifests" $FLAGS
