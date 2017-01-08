@@ -4,12 +4,17 @@ set -euo pipefail
 
 ROOT_PATH=/opt/halyard
 REPO_PATH=$ROOT_PATH/repo
-export GEM_PATH=$ROOT_PATH/vendor
 BIN_PATH=$GEM_PATH/bin
 ENV_PATH=$ROOT_PATH/environments
+BUNDLE=$BIN_PATH/bundle
+GEM_OPTS="--path=$GEM_PATH --gemfile=$REPO_PATH/Gemfile"
+BUNDLE_CHECK="$BUNDLE check $GEM_OPTS"
+BUNDLE_CMD="$BUNDLE install $GEM_OPTS --binstubs=$BIN_PATH"
 
 : ${PUPPET_ENV:=production}
 : ${DEBUG:=}
+
+export GEM_PATH
 
 FLAGS=''
 if [ -n "$DEBUG" ] ; then
@@ -18,22 +23,24 @@ fi
 
 (
     cd $REPO_PATH
+
     if [ -n "$(git status -s)" ] ; then
         echo "Repo is unclean: $REPO_PATH"
     else
         git pull &>/dev/null || echo "Failed to update repo: $REPO_PATH"
     fi
+
+    [[ -e $BUNDLE ]] || gem install --no-document --install-dir $GEM_PATH bundler
+
+    $BUNDLE_CHECK &>/dev/null || $BUNDLE_CMD &>/dev/null || echo "Failed to run: $BUNDLE_CMD"
+
+    [[ -e ~/.octoauth.d/halyard.yml ]] || ruby meta/load_github_token.rb
+
+    $BIN_PATH/librarian-puppet install --clean
+
+    sudo GEM_PATH=$GEM_PATH $BIN_PATH/puppet apply \
+        "--confdir=$REPO_PATH" \
+        "--environment=$PUPPET_ENV" \
+        "$ENV_PATH/$PUPPET_ENV/manifests" \
+        $FLAGS
 )
-
-[[ -e $BIN_PATH/bundle ]] || gem install --no-document --install-dir $GEM_PATH bundler
-
-BUNDLE_CHECK="$BIN_PATH/bundle check --path=$GEM_PATH --gemfile=$REPO_PATH/Gemfile"
-BUNDLE_CMD="$BIN_PATH/bundle install --path=$GEM_PATH --gemfile=$REPO_PATH/Gemfile --binstubs=$BIN_PATH"
-
-$BUNDLE_CHECK &>/dev/null || $BUNDLE_CMD &>/dev/null || echo "Failed to run: $BUNDLE_CMD"
-
-[[ -e ~/.octoauth.d/halyard.yml ]] || $REPO_PATH/meta/load_github_token.rb
-
-(cd $REPO_PATH && $BIN_PATH/librarian-puppet install --clean)
-
-sudo GEM_PATH=$GEM_PATH $BIN_PATH/puppet apply --confdir=$REPO_PATH "--environment=$PUPPET_ENV" "$ENV_PATH/$PUPPET_ENV/manifests" $FLAGS
