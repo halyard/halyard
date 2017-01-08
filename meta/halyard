@@ -4,8 +4,9 @@ set -euo pipefail
 
 ROOT_PATH=/opt/halyard
 REPO_PATH=$ROOT_PATH/repo
-BIN_PATH=$GEM_PATH/bin
 ENV_PATH=$ROOT_PATH/environments
+GEM_PATH=$ROOT_PATH/vendor
+BIN_PATH=$GEM_PATH/bin
 BUNDLE=$BIN_PATH/bundle
 GEM_OPTS="--path=$GEM_PATH --gemfile=$REPO_PATH/Gemfile"
 BUNDLE_CHECK="$BUNDLE check $GEM_OPTS"
