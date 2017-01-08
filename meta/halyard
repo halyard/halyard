@@ -27,8 +27,7 @@ fi
 
 [[ -e $BIN_PATH/bundle ]] || gem install --no-document --install-dir $GEM_PATH bundler
 
-BUNDLE_CHECK="$BIN_PATH/bundle check --path=$GEM_PATH --gemfile=$REPO_PATH/Gemfi
-le"
+BUNDLE_CHECK="$BIN_PATH/bundle check --path=$GEM_PATH --gemfile=$REPO_PATH/Gemfile"
 BUNDLE_CMD="$BIN_PATH/bundle install --path=$GEM_PATH --gemfile=$REPO_PATH/Gemfile --binstubs=$BIN_PATH"
 
 $BUNDLE_CHECK &>/dev/null || $BUNDLE_CMD &>/dev/null || echo "Failed to run: $BUNDLE_CMD"
