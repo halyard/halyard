@@ -1,2 +1,4 @@
 include 'halyard'
-include 'homebrew'
+class { 'homebrew':
+  path => '/opt/homebrew',
+}
