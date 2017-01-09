@@ -12,4 +12,3 @@ def hmod(name, version = nil, params = {})
 end
 
 hmod 'halyard', '0.0.12'
-hmod 'sudoers', '0.1.5'
