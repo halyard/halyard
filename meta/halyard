@@ -39,7 +39,7 @@ fi
 
     $BIN_PATH/librarian-puppet install --clean
 
-    sudo GEM_PATH=$GEM_PATH $BIN_PATH/puppet apply \
+    $BIN_PATH/puppet apply \
         "--confdir=$REPO_PATH" \
         "--environment=$PUPPET_ENV" \
         "$ENV_PATH/$PUPPET_ENV/manifests" \

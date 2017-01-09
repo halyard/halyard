@@ -21,16 +21,15 @@ fi
 set -e
 
 [[ -e $ROOTDIR ]] || sudo mkdir -p $ROOTDIR
-[[ "$(/usr/bin/stat -f"%Su:%Sg" $ROOTDIR)" == "${USER}:staff" ]] ||  sudo chown ${USER}:staff $ROOTDIR
 
 if [[ -e $ROOTDIR/repo/README.md ]] ; then
     (cd $ROOTDIR/repo && git pull)
 else
-    git clone git://github.com/halyard/halyard $ROOTDIR/repo
+    sudo git clone git://github.com/halyard/halyard $ROOTDIR/repo
 fi
 
-[[ -e $ROOTDIR/environments ]] || mkdir -p $ROOTDIR/environments
-[[ -e $ROOTDIR/environments/production ]] || ln -s $ROOTDIR/repo $ROOTDIR/environments/production
+[[ -e $ROOTDIR/environments ]] || sudo mkdir -p $ROOTDIR/environments
+[[ -e $ROOTDIR/environments/production ]] || sudo ln -s $ROOTDIR/repo $ROOTDIR/environments/production
 
-caffeinate -di $ROOTDIR/repo/meta/halyard
+caffeinate -di sudo $ROOTDIR/repo/meta/halyard
 
