@@ -12,7 +12,8 @@ modules.each do |name, version|
     expected do
       github_tag
       repo repo_name
-      regex /^v([\d.]+)$/
+      regex /^([\d.]+)$/
+      filter /^([\d.]+)$/
     end
 
     actual do
