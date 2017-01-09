@@ -1,4 +1,4 @@
 include 'halyard'
 class { 'homebrew':
-  path => '/opt/homebrew',
+  path => '/opt/brew'
 }
