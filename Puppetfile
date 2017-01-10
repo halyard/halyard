@@ -13,4 +13,4 @@ end
 
 hmod 'halyard', '0.0.13'
 hmod 'homebrew', '3.0.2'
-hmod 'asdf', '0.0.4'
+hmod 'asdf', '0.0.5'
