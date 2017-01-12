@@ -12,5 +12,5 @@ def hmod(name, version = nil, params = {})
 end
 
 hmod 'halyard', '0.0.13'
-hmod 'homebrew', '3.0.2'
-hmod 'asdf', '0.0.7'
+hmod 'homebrew', '3.0.2', dev: true
+hmod 'asdf', '0.0.8'
