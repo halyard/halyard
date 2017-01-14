@@ -1,19 +1,21 @@
 ---
 homebrew::path: /opt/brew
 asdf::plugins:
-  https://github.com/asdf-vm/asdf-ruby: {}
-  https://github.com/tuvistavie/asdf-python: {}
-  https://github.com/kennyp/asdf-golang: {}
-  https://github.com/asdf-vm/asdf-erlang: {}
-  https://github.com/neerfri/asdf-terraform: {}
-asdf::versions:
   ruby:
+    repo: https://github.com/asdf-vm/asdf-ruby
     versions:
     - 2.4.0
     - 2.3.3
     - 2.2.6
     - 2.1.10
   python:
+    repo: https://github.com/tuvistavie/asdf-python
     versions:
     - 3.6.0
     - 2.7.13
+  golang:
+    repo: https://github.com/kennyp/asdf-golang
+  erlang:
+    repo: https://github.com/asdf-vm/asdf-erlang
+  terraform:
+    repo: https://github.com/neerfri/asdf-terraform
