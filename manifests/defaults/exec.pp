@@ -1,3 +1,5 @@
+include homebrew
+
 Exec {
   group     => 'staff',
   user      => $::id,
