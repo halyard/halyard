@@ -1,5 +1,39 @@
 ---
 homebrew::path: /opt/brew
+homebrew::taps:
+- halyard/formulae
+- halyard/casks
+homebrew::formulae:
+- mtr
+- git
+- bash
+- bash-completion
+- awscli
+- screen
+- wget
+- grep
+- watch
+- tmux
+- socat
+- coreutils
+- findutils
+- gnu-tar
+- gnu-sed
+- htop-osx
+- netcat
+- pwgen
+- nmap
+- the_silver_searcher
+- cmake
+- tree
+- zsh
+- zsh-completions
+- vim
+- openssh-halyard
+- gnupg-halyard
+- keybase-halyard
+- pick-halyard
+- rclone-halyard
 asdf::plugins:
   ruby:
     repo: https://github.com/asdf-vm/asdf-ruby
