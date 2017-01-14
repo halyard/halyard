@@ -5,7 +5,6 @@ homebrew::taps:
   halyard/casks: {}
 homebrew::formulae:
 - mtr
-- git
 - bash
 - bash-completion
 - awscli
