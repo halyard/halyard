@@ -1,8 +1,8 @@
 ---
 homebrew::path: /opt/brew
 homebrew::taps:
-- halyard/formulae
-- halyard/casks
+  halyard/formulae: {}
+  halyard/casks: {}
 homebrew::formulae:
 - mtr
 - git
