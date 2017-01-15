@@ -3,8 +3,11 @@ homebrew::path: /opt/brew
 homebrew::taps:
   halyard/formulae: {}
   halyard/casks: {}
+  homebrew/dupes: {}
 homebrew::formulae:
 - mtr
+- screen
+- grep
 - bash
 - bash-completion
 - awscli
