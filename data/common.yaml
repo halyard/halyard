@@ -29,11 +29,11 @@ homebrew::formulae:
 - zsh
 - zsh-completions
 - vim
-- openssh-halyard
-- gnupg-halyard
-- keybase-halyard
-- pick-halyard
-- rclone-halyard
+- halyard/formulae/openssh-halyard
+- halyard/formulae/gnupg-halyard
+- halyard/formulae/keybase-halyard
+- halyard/formulae/pick-halyard
+- halyard/formulae/rclone-halyard
 asdf::plugins:
   ruby:
     repo: https://github.com/asdf-vm/asdf-ruby
