@@ -6,12 +6,12 @@ homebrew::taps:
   homebrew/dupes: {}
 homebrew::formulae:
 - mtr
-- screen
+- homebrew/dupes/screen
 - bash
 - bash-completion
 - awscli
 - wget
-- grep
+- homebrew/dupes/grep
 - watch
 - tmux
 - socat
