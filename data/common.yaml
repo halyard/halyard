@@ -8,7 +8,6 @@ homebrew::formulae:
 - bash
 - bash-completion
 - awscli
-- screen
 - wget
 - grep
 - watch
