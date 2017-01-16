@@ -26,8 +26,6 @@ homebrew::formulae:
 - the_silver_searcher
 - cmake
 - tree
-- zsh
-- zsh-completions
 - vim
 - halyard/formulae/openssh-halyard
 - halyard/formulae/gnupg-halyard
