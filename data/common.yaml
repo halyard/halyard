@@ -34,6 +34,18 @@ homebrew::formulae:
 - halyard/formulae/keybase-halyard
 - halyard/formulae/pick-halyard
 - halyard/formulae/rclone-halyard
+homebrew::casks:
+- 1password-halyard
+- dropbox-halyard
+- google-chrome-halyard
+- iterm2-halyard
+- alfred-halyard
+- flux-halyard
+- gpgtools-halyard
+- little-snitch-halyard
+- bettertouchtool-halyard
+- font-meslo-lg-for-powerline-halyard
+- hyperspace-halyard
 asdf::plugins:
   ruby:
     repo: https://github.com/asdf-vm/asdf-ruby
