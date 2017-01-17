@@ -44,6 +44,8 @@ homebrew::casks:
 - bettertouchtool-halyard
 - font-meslo-lg-for-powerline-halyard
 - hyperspace-halyard
+dotdotdot::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
+dotdotdot::repo: https://github.com/akerl/...
 asdf::plugins:
   ruby:
     repo: https://github.com/asdf-vm/asdf-ruby
