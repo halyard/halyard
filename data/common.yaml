@@ -20,7 +20,7 @@ homebrew::formulae:
 - findutils
 - gnu-tar
 - gnu-sed
-- htop-osx
+- htop
 - netcat
 - pwgen
 - nmap
