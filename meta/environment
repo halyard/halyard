@@ -1,0 +1,14 @@
+# Environment Variables for Halyard
+
+export ROOT_PATH=/opt/halyard
+export REPO_PATH=$ROOT_PATH/repo
+export ENV_PATH=$ROOT_PATH/environments
+export GEM_PATH=$ROOT_PATH/vendor
+export BIN_PATH=$GEM_PATH/bin
+export BUNDLE=$BIN_PATH/bundle
+export GEM_OPTS="--path=$GEM_PATH --gemfile=$REPO_PATH/Gemfile"
+export BUNDLE_CHECK="$BUNDLE check $GEM_OPTS"
+export BUNDLE_CMD="$BUNDLE install $GEM_OPTS --binstubs=$BIN_PATH"
+
+export ${PUPPET_ENV:=production}
+export ${DEBUG:=}
