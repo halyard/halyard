@@ -1,10 +1,10 @@
 ---
-:hierarchy:
-- host/%{macaddress_en0}
-- common
+version: 5
 
-:backends:
-  - yaml
+defaults:
+  datadir: "data"
+  data_hash: yaml_data
 
-:yaml:
-  :datadir: "%{settings::environmentpath}/%{::environment}/data"
+hierarchy:
+- name: "Common Settings"
+  path: "common.yaml"
