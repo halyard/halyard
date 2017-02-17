@@ -3,3 +3,4 @@
 /modules
 /.tmp/
 /Puppetfile.lock
+*.swp
