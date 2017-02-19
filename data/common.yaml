@@ -28,6 +28,7 @@ homebrew::formulae:
 - cmake
 - tree
 - vim
+- mobile-shell
 - halyard/formulae/openssh-halyard
 - halyard/formulae/gnupg-halyard
 - halyard/formulae/keybase-halyard
