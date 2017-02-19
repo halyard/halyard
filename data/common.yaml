@@ -34,12 +34,9 @@ homebrew::formulae:
 - halyard/formulae/pick-halyard
 - halyard/formulae/rclone-halyard
 homebrew::casks:
-- 1password-halyard
-- dropbox-halyard
 - google-chrome-halyard
 - iterm2-halyard
 - alfred-halyard
-- flux-halyard
 - gpgtools-halyard
 - little-snitch-halyard
 - bettertouchtool-halyard
@@ -49,6 +46,7 @@ homebrew::casks:
 - textual
 - forklift
 - minecraft
+- 1password
 dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
 dotfiles::repo: https://github.com/akerl/...
 asdf::plugins:
