@@ -46,7 +46,7 @@ GEM
       hiera (>= 2.0, < 4)
       json_pure (~> 1.8)
       locale (~> 2.1)
-    puppet-lint (2.1.0)
+    puppet-lint (2.1.1)
     puppet-syntax (2.3.0)
       rake
     puppet_forge (2.2.3)
