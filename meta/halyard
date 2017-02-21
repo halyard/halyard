@@ -7,7 +7,11 @@ set -euo pipefail
 FLAGS=''
 if [ -n "$DEBUG" ] ; then
     FLAGS="$FLAGS --debug"
+    if [ -n "$PROFILE" ]; then
+        FLAGS="$FLAGS --profile"
+    fi
 fi
+
 
 (
     cd $REPO_PATH

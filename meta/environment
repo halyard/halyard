@@ -12,5 +12,6 @@ BUNDLE_CMD="$BUNDLE install $GEM_OPTS --binstubs=$BIN_PATH"
 
 : ${PUPPET_ENV:=production}
 : ${DEBUG:=}
+: ${PROFILE:=}
 
 export GEM_PATH
