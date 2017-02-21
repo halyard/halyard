@@ -12,10 +12,6 @@ if [ -n "$DEBUG" ] ; then
     fi
 fi
 
-if [ -n "$PROFILE" ]; then
-    FLAGS="$FLAGS --profile"
-fi
-
 (
     cd $REPO_PATH
 
