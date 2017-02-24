@@ -13,5 +13,5 @@ end
 
 hmod 'halyard', '0.0.14', dev: true
 hmod 'homebrew', '3.0.2', dev: true
-hmod 'zsh', '0.1.0', dev: true
+hmod 'zsh', '0.1.1'
 hmod 'dotfiles', '0.2.0', dev: true
