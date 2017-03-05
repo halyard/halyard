@@ -30,6 +30,7 @@ homebrew::formulae:
 - vim
 - mobile-shell
 - kubernetes-cli
+- python3
 - halyard/formulae/openssh-halyard
 - halyard/formulae/gnupg-halyard
 - halyard/formulae/keybase-halyard
