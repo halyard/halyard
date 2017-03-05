@@ -29,6 +29,7 @@ homebrew::formulae:
 - tree
 - vim
 - mobile-shell
+- kubernetes-cli
 - halyard/formulae/openssh-halyard
 - halyard/formulae/gnupg-halyard
 - halyard/formulae/keybase-halyard
