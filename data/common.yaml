@@ -51,6 +51,7 @@ homebrew::casks:
 - docker
 - discord
 - hab
+- minikube
 dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
 dotfiles::repo: https://github.com/akerl/...
 asdf::plugins:
