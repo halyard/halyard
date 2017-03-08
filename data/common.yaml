@@ -55,6 +55,7 @@ homebrew::casks:
 - hab
 - minikube
 - virtualbox
+- vagrant
 dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
 dotfiles::repo: https://github.com/akerl/...
 asdf::plugins:
