@@ -37,6 +37,7 @@ homebrew::formulae:
 - halyard/formulae/pick-halyard
 - halyard/formulae/rclone-halyard
 - git-crypt
+- terraform
 homebrew::casks:
 - google-chrome-halyard
 - iterm2-halyard
