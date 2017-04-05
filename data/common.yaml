@@ -39,6 +39,10 @@ homebrew::formulae:
 - git-crypt
 - terraform
 - packer
+- swig 
+- ykpers 
+- libu2f-host 
+- libusb
 homebrew::casks:
 - google-chrome-halyard
 - iterm2-halyard
