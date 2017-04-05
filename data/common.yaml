@@ -11,7 +11,6 @@ homebrew::formulae:
 - bash-completion
 - awscli
 - wget
-- homebrew/dupes/grep
 - watch
 - tmux
 - socat
