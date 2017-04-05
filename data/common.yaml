@@ -6,7 +6,6 @@ homebrew::taps:
   homebrew/dupes: {}
 homebrew::formulae:
 - mtr
-- homebrew/dupes/screen
 - diff-so-fancy
 - bash
 - bash-completion
