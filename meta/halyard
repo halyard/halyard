@@ -12,6 +12,7 @@ if [ -n "$DEBUG" ] ; then
     fi
 fi
 
+
 (
     cd $REPO_PATH
 
