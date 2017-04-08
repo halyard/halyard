@@ -61,6 +61,7 @@ homebrew::casks:
 - minikube
 - virtualbox
 - vagrant
+- openemu
 dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
 dotfiles::repo: https://github.com/akerl/...
 asdf::plugins:
