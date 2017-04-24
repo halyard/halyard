@@ -41,6 +41,7 @@ homebrew::formulae:
 - ykpers 
 - libu2f-host 
 - libusb
+- fzf
 homebrew::casks:
 - google-chrome-halyard
 - iterm2-halyard
