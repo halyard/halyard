@@ -36,7 +36,6 @@ homebrew::formulae:
 homebrew::casks:
 - 1password-halyard
 - dropbox-halyard
-- google-chrome-halyard
 - iterm2-halyard
 - alfred-halyard
 - flux-halyard
