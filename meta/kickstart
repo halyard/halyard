@@ -31,5 +31,5 @@ fi
 [[ -e $ROOTDIR/environments ]] || sudo mkdir -p $ROOTDIR/environments
 [[ -e $ROOTDIR/environments/production ]] || sudo ln -s $ROOTDIR/repo $ROOTDIR/environments/production
 
-caffeinate -di sudo $ROOTDIR/repo/meta/halyard
+caffeinate -di sudo -i $ROOTDIR/repo/meta/halyard
 
