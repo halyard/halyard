@@ -31,5 +31,12 @@ fi
 [[ -e $ROOTDIR/environments ]] || sudo mkdir -p $ROOTDIR/environments
 [[ -e $ROOTDIR/environments/production ]] || sudo ln -s $ROOTDIR/repo $ROOTDIR/environments/production
 
+# TODO: Fix this to be in the correct path post-kickstart
+HOMEBREW_DIR=/opt/halyard/tmp_brew
+sudo mkdir -p $HOMEBREW_DIR
+sudo chown $(id -u):$(id -g) $HOMEBREW_DIR
+git clone https://github.com/Homebrew/brew $HOMEBREW_DIR
+$HOMEBREW_DIR/bin/brew install ruby
+
 caffeinate -di sudo -i $ROOTDIR/repo/meta/halyard
 
