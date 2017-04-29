@@ -12,6 +12,12 @@ if [ -n "$DEBUG" ] ; then
     fi
 fi
 
+if [ "$HOME" != "/var/root" ] ; then
+    echo "Halyard not running from root's environment"
+    echo "If using sudo, ensure -i flag is used"
+    exit 1
+fi
+
 (
     cd $REPO_PATH
 
