@@ -20,4 +20,6 @@ export GEM_PATH
 HOMEBREW_DIR=/opt/halyard/tmp_brew
 GIT=$HOMEBREW_DIR/bin/git
 GEM=$HOMEBREW_DIR/bin/gem
+PATH="$HOMEBREW_DIR/bin:$PATH"
+export PATH
 
