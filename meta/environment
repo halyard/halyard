@@ -15,3 +15,9 @@ BUNDLE_CMD="$BUNDLE install $GEM_OPTS --binstubs=$BIN_PATH"
 : ${PROFILE:=}
 
 export GEM_PATH
+
+# TODO: Fix this to be in the correct path post-kickstart
+HOMEBREW_DIR=/opt/halyard/tmp_brew
+GIT=$HOMEBREW_DIR/bin/git
+GEM=$HOMEBREW_DIR/bin/gem
+

@@ -19,14 +19,14 @@ fi
     if [ -n "$(git status -s)" ] ; then
         echo "Repo is unclean: $REPO_PATH"
     else
-        git pull &>/dev/null || echo "Failed to update repo: $REPO_PATH"
+        $GIT pull &>/dev/null || echo "Failed to update repo: $REPO_PATH"
     fi
 
-    [[ -e $BUNDLE ]] || gem install --no-document --install-dir $GEM_PATH bundler
+    [[ -e $BUNDLE ]] || $GEM install --no-document --install-dir $GEM_PATH bundler
 
     $BUNDLE_CHECK &>/dev/null || $BUNDLE_CMD &>/dev/null || echo "Failed to run: $BUNDLE_CMD"
 
-    [[ -e ~/.octoauth.d/halyard.yml ]] || $BUNDLE exec  meta/load_github_token.rb
+    [[ -e ~/.octoauth.d/halyard.yml ]] || $BUNDLE exec meta/load_github_token.rb
 
     $BUNDLE exec $BIN_PATH/librarian-puppet install --clean
 
