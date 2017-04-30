@@ -1,7 +1,7 @@
 forge 'https://forgeapi.puppetlabs.com'
 
 ORG = 'halyard'
-DEV_PATH = "~/src/#{ORG}/puppet-%s"
+DEV_PATH = "~#{ENV['SUDO_USER']}/src/#{ORG}/puppet-%s"
 
 def hmod(name, version = nil, params = {})
   org = params[:org] || ORG
