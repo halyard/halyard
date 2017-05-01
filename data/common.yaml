@@ -3,16 +3,15 @@ homebrew::path: /opt/brew
 homebrew::taps:
   halyard/formulae: {}
   halyard/casks: {}
-  homebrew/dupes: {}
 homebrew::formulae:
 - mtr
-- homebrew/dupes/screen
+- screen
 - diff-so-fancy
 - bash
 - bash-completion
 - awscli
 - wget
-- homebrew/dupes/grep
+- grep
 - watch
 - tmux
 - socat
