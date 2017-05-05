@@ -36,11 +36,13 @@ homebrew::casks:
 - 1password-halyard
 - dropbox-halyard
 - iterm2-halyard
+- google-chrome-halyard
 - alfred-halyard
 - flux-halyard
 - gpgtools-halyard
 - little-snitch-halyard
 - bettertouchtool-halyard
+- blockblock-halyard
 - font-meslo-lg-for-powerline-halyard
 - hyperspace-halyard
 dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
