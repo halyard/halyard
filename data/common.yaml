@@ -32,6 +32,8 @@ homebrew::formulae:
 - halyard/formulae/keybase-halyard
 - halyard/formulae/pick-halyard
 - halyard/formulae/rclone-halyard
+- halyard/formulae/terraform-halyard
+- halyard/formulae/speculate-halyard
 homebrew::casks:
 - 1password-halyard
 - dropbox-halyard
