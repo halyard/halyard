@@ -27,7 +27,7 @@ fi
         git pull &>/dev/null || echo "Failed to update repo: $REPO_PATH"
     fi
 
-    [[ -n "${PUPPET_BIN}/bundle" ]] || gem install bundle
+    [[ -e "${PUPPET_BIN}/bundle" ]] || gem install bundle
     bundle check &>/dev/null || bundle install &>/dev/null || echo "Failed to update bundle" && exit 1
 
     [[ -e ~/.octoauth.d/halyard.yml ]] || bundle exec meta/load_github_token.rb
