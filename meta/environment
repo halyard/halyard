@@ -1,25 +1,13 @@
 # Environment Variables for Halyard
 
+PUPPET_BIN=/opt/puppetlabs/puppet/bin
 ROOT_PATH=/opt/halyard
 REPO_PATH=$ROOT_PATH/repo
 ENV_PATH=$ROOT_PATH/environments
-GEM_PATH=$ROOT_PATH/vendor
-BIN_PATH=$GEM_PATH/bin
-BUNDLE=$BIN_PATH/bundle
-GEM_OPTS="--path=$GEM_PATH --gemfile=$REPO_PATH/Gemfile"
-BUNDLE_CHECK="$BUNDLE check $GEM_OPTS"
-BUNDLE_CMD="$BUNDLE install $GEM_OPTS --binstubs=$BIN_PATH"
 
 : ${PUPPET_ENV:=production}
 : ${DEBUG:=}
 : ${PROFILE:=}
 
-export GEM_PATH
-
-# TODO: Fix this to be in the correct path post-kickstart
-HOMEBREW_DIR=/opt/halyard/tmp_brew
-GIT=$HOMEBREW_DIR/bin/git
-GEM=$HOMEBREW_DIR/bin/gem
-PATH="$HOMEBREW_DIR/bin:$PATH"
-export PATH
+export PATH="${PUPPET_BIN}:$PATH"
 

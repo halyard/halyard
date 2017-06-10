@@ -2,6 +2,7 @@
 
 set -euo pipefail
 
+PUPPET_VERSION=1.10.1-1
 ROOTDIR=/opt/halyard
 
 echo 'Checking for pending software updates'
@@ -31,14 +32,17 @@ fi
 [[ -e $ROOTDIR/environments ]] || sudo mkdir -p $ROOTDIR/environments
 [[ -e $ROOTDIR/environments/production ]] || sudo ln -s $ROOTDIR/repo $ROOTDIR/environments/production
 
-# TODO: Fix this to be in the correct path post-kickstart
-HOMEBREW_DIR=/opt/halyard/tmp_brew
-HOMEBREW_REPO=https://github.com/Homebrew/brew
-sudo mkdir -p $HOMEBREW_DIR
-sudo chown $(id -u):$(id -g) $HOMEBREW_DIR
-[[ -e $HOMEBREW_DIR/bin/brew ]] || git clone $HOMEBREW_REPO $HOMEBREW_DIR
-[[ -e $HOMEBREW_DIR/bin/git ]] || $HOMEBREW_DIR/bin/brew install git
-[[ -e $HOMEBREW_DIR/bin/gem ]] || $HOMEBREW_DIR/bin/brew install ruby
+if [[ ! -e /opt/puppetlabs/bin/puppet ]] ; then
+    puppet_tmpdir="$(mktemp -d)"
+    puppet_url="https://downloads.puppetlabs.com/mac/10.12/PC1/x86_64/puppet-agent-${PUPPET_VERSION}.osx10.12.dmg"
+    puppet_dmg="${puppet_tmpdir}/puppet-agent.dmg"
+    puppet_mount="${puppet_tmpdir}/puppet-agent.volume"
+    puppet_installer="${puppet_mount}/puppet-agent-${PUPPET_VERSION}-installer.pkg"
+    curl -sLo "$puppet_dmg" "$puppet_url"
+    hdiutil attach -puppetstrings -nobrowse -readonly -noidme -mountpoint "$puppet_mount" "${puppet_dmg}"
+    sudo installer -pkg "${puppet_installer}" -target /
+    hdiutil unmount "$puppet_mount"
+fi
 
 caffeinate -di sudo -i $ROOTDIR/repo/meta/halyard
 
