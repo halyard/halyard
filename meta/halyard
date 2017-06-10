@@ -24,7 +24,7 @@ fi
     if [ -n "$(git status -s)" ] ; then
         echo "Repo is unclean: $REPO_PATH"
     else
-        $GIT pull &>/dev/null || echo "Failed to update repo: $REPO_PATH"
+        git pull &>/dev/null || echo "Failed to update repo: $REPO_PATH"
     fi
 
     [[ -n "${PUPPET_BIN}/bundle" ]] || gem install bundle
