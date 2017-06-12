@@ -32,7 +32,7 @@ fi
 
     [[ -e ~/.octoauth.d/halyard.yml ]] || bundle exec meta/load_github_token.rb
 
-    librarian-puppet update --clean
+    librarian-puppet update
 
     puppet apply \
         "--confdir=$REPO_PATH" \
