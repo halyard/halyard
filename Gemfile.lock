@@ -37,7 +37,7 @@ GEM
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     public_suffix (2.0.5)
-    puppet (4.10.1)
+    puppet (4.10.4)
       facter (> 2.0, < 4)
       gettext-setup (>= 0.10, < 1)
       hiera (>= 2.0, < 4)
