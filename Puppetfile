@@ -1,4 +1,3 @@
-
 forge 'https://forgeapi.puppetlabs.com'
 
 ORG = 'halyard'
@@ -12,4 +11,5 @@ def hmod(name, version = nil, params = {})
   mod repo, version
 end
 
-hmod 'halyard', '0.0.19', dev: true
+hmod 'halyard', '0.0.19'
+hmod 'homebrew', '0.0.1'
