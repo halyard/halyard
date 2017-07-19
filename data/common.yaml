@@ -1,4 +1,5 @@
 ---
+hostname::domain: a-rwx.org
 homebrew::path: /opt/brew
 homebrew::taps:
   halyard/formulae: {}
