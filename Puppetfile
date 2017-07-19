@@ -13,3 +13,4 @@ end
 
 hmod 'halyard', '0.0.20'
 hmod 'homebrew', '3.0.5'
+hmod 'zsh', '0.1.1'

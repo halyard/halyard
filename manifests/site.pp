@@ -1,1 +1,2 @@
 include 'halyard'
+include 'zsh'
