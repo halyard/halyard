@@ -21,6 +21,8 @@ homebrew::formulae:
 - halyard/formulae/rclone-halyard
 - halyard/formulae/speculate-halyard
 - halyard/formulae/terraform-halyard
+- halyard/formulae/voyager-halyard
+- halyard/formulae/ipmitool-halyard
 - htop
 - mtr
 - netcat
