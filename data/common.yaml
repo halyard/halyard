@@ -54,3 +54,15 @@ homebrew::casks:
 - knockknock-halyard
 - little-snitch-halyard
 - oversight-halyard
+asdf::plugins:
+  ruby:
+    repo: https://github.com/asdf-vm/asdf-ruby
+    versions:
+    - 2.4.1
+    - 2.3.4
+    - 2.2.7
+  python:
+    repo: https://github.com/tuvistavie/asdf-python
+    versions:
+    - 3.6.1
+    - 2.7.13
