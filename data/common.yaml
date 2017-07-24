@@ -44,6 +44,7 @@ homebrew::formulae:
 - libusb
 - fzf
 - jq
+- ruby
 homebrew::casks:
 - google-chrome-halyard
 - iterm2-halyard
@@ -66,6 +67,7 @@ homebrew::casks:
 - vagrant
 - openemu
 - spotify
+- nextcloud
 dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
 dotfiles::repo: https://github.com/akerl/...
 asdf::plugins:
