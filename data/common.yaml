@@ -46,6 +46,7 @@ homebrew::formulae:
 - jq
 - ruby
 - terragrunt
+- pre-commit
 homebrew::casks:
 - google-chrome-halyard
 - iterm2-halyard
