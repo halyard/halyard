@@ -45,6 +45,7 @@ homebrew::formulae:
 - fzf
 - jq
 - ruby
+- terragrunt
 homebrew::casks:
 - google-chrome-halyard
 - iterm2-halyard
