@@ -7,14 +7,20 @@ homebrew::taps:
   halyard/formulae: {}
   halyard/casks: {}
 homebrew::formulae:
-- awscli
+- mtr
+- diff-so-fancy
 - bash
 - bash-completion
-- cmake
+- awscli
+- wget
+- watch
+- tmux
+- socat
 - coreutils
 - diff-so-fancy
 - findutils
 - gnu-sed
+- go
 - gnu-tar
 - grep
 - halyard/formulae/gnupg-halyard
@@ -37,8 +43,26 @@ homebrew::formulae:
 - tmux
 - tree
 - vim
-- watch
-- wget
+- mobile-shell
+- kubernetes-cli
+- python3
+- halyard/formulae/openssh-halyard
+- halyard/formulae/gnupg-halyard
+- halyard/formulae/keybase-halyard
+- halyard/formulae/pick-halyard
+- halyard/formulae/rclone-halyard
+- git-crypt
+- terraform
+- packer
+- swig 
+- ykpers 
+- libu2f-host 
+- libusb
+- fzf
+- jq
+- ruby
+- terragrunt
+- pre-commit
 homebrew::casks:
 - 1password-halyard
 - alfred-halyard
@@ -50,19 +74,21 @@ homebrew::casks:
 - google-chrome-halyard
 - gpgtools-halyard
 - hyperspace-halyard
+- slack
+- textual
+- minecraft
+- 1password
+- steam
+- docker
+- discord
+- hab
+- minikube
+- virtualbox
+- vagrant
+- openemu
+- spotify
+- nextcloud
 - iterm2-halyard
 - knockknock-halyard
 - little-snitch-halyard
 - oversight-halyard
-asdf::plugins:
-  ruby:
-    repo: https://github.com/asdf-vm/asdf-ruby
-    versions:
-    - 2.4.1
-    - 2.3.4
-    - 2.2.7
-  python:
-    repo: https://github.com/tuvistavie/asdf-python
-    versions:
-    - 3.6.1
-    - 2.7.13
