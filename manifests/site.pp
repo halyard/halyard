@@ -1,5 +1,6 @@
 include 'halyard'
 include 'homebrew'
+include 'masterless'
 include 'zsh'
+include 'hostname'
 include 'dotfiles'
-include 'osxoptions'

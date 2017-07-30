@@ -1,7 +1,7 @@
 forge 'https://forgeapi.puppetlabs.com'
 
 ORG = 'halyard'
-DEV_PATH = "~/src/#{ORG}/puppet-%s"
+DEV_PATH = "~#{ENV['SUDO_USER']}/src/#{ORG}/puppet-%s"
 
 def hmod(name, version = nil, params = {})
   org = params[:org] || ORG
@@ -11,8 +11,9 @@ def hmod(name, version = nil, params = {})
   mod repo, version
 end
 
-hmod 'halyard', '0.0.16'
-hmod 'homebrew', '3.0.4'
+hmod 'halyard', '0.0.20'
+hmod 'homebrew', '3.0.5'
 hmod 'zsh', '0.1.1'
-hmod 'dotfiles', '0.2.0', dev: true
-hmod 'osxoptions', '0.0.1', dev: true
+hmod 'hostname', '0.0.11'
+hmod 'dotfiles', '0.2.1', dev: true
+hmod 'masterless', '0.1.13'

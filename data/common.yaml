@@ -1,9 +1,11 @@
 ---
+dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
+dotfiles::repo: https://github.com/akerl/...
+hostname::domain: a-rwx.org
 homebrew::path: /opt/brew
 homebrew::taps:
   halyard/formulae: {}
   halyard/casks: {}
-  homebrew/dupes: {}
 homebrew::formulae:
 - mtr
 - diff-so-fancy
@@ -15,16 +17,30 @@ homebrew::formulae:
 - tmux
 - socat
 - coreutils
+- diff-so-fancy
 - findutils
-- gnu-tar
 - gnu-sed
 - go
+- gnu-tar
+- grep
+- halyard/formulae/gnupg-halyard
+- halyard/formulae/keybase-halyard
+- halyard/formulae/openssh-halyard
+- halyard/formulae/pick-halyard
+- halyard/formulae/rclone-halyard
+- halyard/formulae/speculate-halyard
+- halyard/formulae/terraform-halyard
+- halyard/formulae/voyager-halyard
+- halyard/formulae/ipmitool-halyard
 - htop
+- mtr
 - netcat
-- pwgen
 - nmap
+- pwgen
+- screen
+- socat
 - the_silver_searcher
-- cmake
+- tmux
 - tree
 - vim
 - mobile-shell
@@ -48,13 +64,15 @@ homebrew::formulae:
 - terragrunt
 - pre-commit
 homebrew::casks:
-- google-chrome-halyard
-- iterm2-halyard
+- 1password-halyard
 - alfred-halyard
-- gpgtools-halyard
-- little-snitch-halyard
 - bettertouchtool-halyard
+- blockblock-halyard
+- dropbox-halyard
+- flux-halyard
 - font-meslo-lg-for-powerline-halyard
+- google-chrome-halyard
+- gpgtools-halyard
 - hyperspace-halyard
 - slack
 - textual
@@ -70,24 +88,7 @@ homebrew::casks:
 - openemu
 - spotify
 - nextcloud
-dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
-dotfiles::repo: https://github.com/akerl/...
-asdf::plugins:
-  ruby:
-    repo: https://github.com/asdf-vm/asdf-ruby
-    versions:
-    - 2.4.0
-    - 2.3.3
-    - 2.2.6
-    - 2.1.10
-  python:
-    repo: https://github.com/tuvistavie/asdf-python
-    versions:
-    - 3.6.0
-    - 2.7.13
-  golang:
-    repo: https://github.com/kennyp/asdf-golang
-  erlang:
-    repo: https://github.com/asdf-vm/asdf-erlang
-  terraform:
-    repo: https://github.com/neerfri/asdf-terraform
+- iterm2-halyard
+- knockknock-halyard
+- little-snitch-halyard
+- oversight-halyard
