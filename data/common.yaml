@@ -39,6 +39,7 @@ homebrew::formulae:
 - vim
 - watch
 - wget
+- direnv
 homebrew::casks:
 - 1password-halyard
 - alfred-halyard
