@@ -41,7 +41,7 @@ GEM
       gettext-setup (>= 0.10, < 1)
       hiera (>= 3.2.1, < 4)
       locale (~> 2.1)
-    puppet-lint (2.3.2)
+    puppet-lint (2.3.3)
     puppet-syntax (2.4.1)
       rake
     puppet_forge (2.2.7)
