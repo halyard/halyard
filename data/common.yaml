@@ -59,11 +59,11 @@ asdf::plugins:
   ruby:
     repo: https://github.com/asdf-vm/asdf-ruby
     versions:
-    - 2.4.1
-    - 2.3.4
-    - 2.2.7
+    - 2.4.2
+    - 2.3.5
+    - 2.2.8
   python:
     repo: https://github.com/tuvistavie/asdf-python
     versions:
-    - 3.6.1
-    - 2.7.13
+    - 3.6.2
+    - 2.7.14
