@@ -22,7 +22,7 @@ GEM
       librarianp (>= 0.6.3)
       puppet_forge (~> 2.1)
       rsync
-    librarianp (0.6.3)
+    librarianp (0.6.4)
       thor (~> 0.15)
     locale (2.1.2)
     metaclass (0.0.4)
@@ -36,7 +36,7 @@ GEM
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     public_suffix (3.0.0)
-    puppet (5.3.1)
+    puppet (5.3.2)
       facter (> 2.0, < 4)
       gettext-setup (>= 0.10, < 1)
       hiera (>= 3.2.1, < 4)
