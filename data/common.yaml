@@ -18,7 +18,6 @@ homebrew::formulae:
 - encfs-halyard
 - etcher-halyard
 - findutils
-- git
 - gnu-sed
 - gnu-tar
 - gnupg
