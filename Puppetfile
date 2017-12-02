@@ -13,5 +13,5 @@ end
 
 hmod 'halyard', '0.0.25'
 hmod 'hostname', '0.0.11'
-hmod 'dotfiles', '0.2.3'
+hmod 'dotfiles', '0.2.4'
 hmod 'masterless', '0.1.13'
