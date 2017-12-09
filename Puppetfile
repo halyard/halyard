@@ -11,8 +11,8 @@ def hmod(name, version = nil, params = {})
   mod repo, version
 end
 
-hmod 'halyard', '0.0.25'
+hmod 'halyard', '0.0.26'
 hmod 'hostname', '0.0.11'
-hmod 'dotfiles', '0.2.4'
+hmod 'dotfiles', '0.2.5'
 hmod 'masterless', '0.1.13'
-hmod 'homebrew', '3.0.8'
+hmod 'homebrew', '3.0.9'
