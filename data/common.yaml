@@ -36,6 +36,7 @@ homebrew::casks:
 - virtualbox-extension-pack-halyard
 - virtualbox-halyard
 - vlc-halyard
+- whatsyoursign-halyard
 - xee-halyard
 - yubikey-manager-halyard
 - yubikey-personalization-gui-halyard
