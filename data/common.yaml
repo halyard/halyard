@@ -3,9 +3,9 @@ dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdo
 dotfiles::repo: https://github.com/akerl/...
 hostname::domain: a-rwx.org
 homebrew::path: /opt/brew
+homebrew::repo: https://github.com/akerl/brew
 homebrew::taps:
   halyard/homebrew-casks: {}
-  halyard/homebrew-formulae: {}
 homebrew::casks:
 - 1password-halyard
 - alfred-halyard
