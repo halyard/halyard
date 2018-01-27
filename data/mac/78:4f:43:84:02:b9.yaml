@@ -1,1 +1,4 @@
 hostname::hostname: bean
+homebrew::casks:
+- steam-halyard
+- transmission-halyard

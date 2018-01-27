@@ -31,8 +31,6 @@ homebrew::casks:
 - rstudio-halyard
 - santa-halyard
 - spotify-halyard
-- steam-halyard
-- transmission-halyard
 - virtualbox-extension-pack-halyard
 - virtualbox-halyard
 - vlc-halyard
