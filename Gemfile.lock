@@ -27,7 +27,7 @@ GEM
     locale (2.1.2)
     metaclass (0.0.4)
     minitar (0.6.1)
-    mocha (1.4.0)
+    mocha (1.5.0)
       metaclass (~> 0.0.1)
     multi_json (1.13.1)
     multipart-post (2.0.0)
@@ -52,7 +52,7 @@ GEM
       gettext-setup (~> 0.11)
       minitar
       semantic_puppet (~> 1.0)
-    puppetlabs_spec_helper (2.6.2)
+    puppetlabs_spec_helper (2.7.0)
       mocha (~> 1.0)
       puppet-lint (~> 2.0)
       puppet-syntax (~> 2.0)
@@ -90,7 +90,7 @@ DEPENDENCIES
   octoauth (~> 1.5.0)
   puppet (~> 5.5.0)
   puppet-lint (~> 2.3.0)
-  puppetlabs_spec_helper (~> 2.6.1)
+  puppetlabs_spec_helper (~> 2.7.0)
 
 BUNDLED WITH
    1.16.1
