@@ -17,7 +17,7 @@ GEM
       fast_gettext (~> 1.1.0)
       gettext (>= 3.0.2)
       locale
-    hiera (3.4.2)
+    hiera (3.4.3)
     librarian-puppet (3.0.0)
       librarianp (>= 0.6.3)
       puppet_forge (~> 2.1)
@@ -37,7 +37,7 @@ GEM
     octokit (4.8.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     public_suffix (3.0.2)
-    puppet (5.5.0)
+    puppet (5.5.1)
       facter (> 2.0.1, < 4)
       fast_gettext (~> 1.1.2)
       hiera (>= 3.2.1, < 4)
