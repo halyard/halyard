@@ -12,7 +12,7 @@ def hmod(name, version = nil, params = {})
 end
 
 hmod 'halyard', '0.0.31'
-hmod 'hostname', '0.0.11'
-hmod 'dotfiles', '0.2.7'
+#hmod 'hostname', '0.0.11'
+#hmod 'dotfiles', '0.2.7'
 hmod 'masterless', '0.1.13'
 hmod 'homebrew', '3.0.10'
