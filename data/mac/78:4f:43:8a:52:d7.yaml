@@ -1,1 +1,3 @@
 hostname::hostname: laker-mac
+homebrew::casks:
+- luxafor-halyard

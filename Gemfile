@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'puppet', '~> 5.0.0'
-gem 'octoauth', '~> 1.4.7'
-gem 'librarian-puppet', '~> 2.2.0'
+gem 'puppet', '~> 5.5.0'
+gem 'octoauth', '~> 1.5.1'
+gem 'librarian-puppet', '~> 3.0.0'
 
 group :development do
   gem 'puppet-lint', '~> 2.3.0'
-  gem 'puppetlabs_spec_helper', '~> 2.3.0'
+  gem 'puppetlabs_spec_helper', '~> 2.7.0'
 end
