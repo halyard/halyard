@@ -1,41 +1,11 @@
 ---
-dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
-dotfiles::repo: https://github.com/akerl/...
-hostname::domain: a-rwx.org
+#dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
+#dotfiles::repo: https://github.com/akerl/...
 homebrew::path: /opt/brew
-homebrew::repo: https://github.com/akerl/brew
+homebrew::repo: https://github.com/Homebrew/brew
 homebrew::taps:
 homebrew::casks:
 - 1password-halyard
 - alfred-halyard
-- bartender-halyard
-- bettertouchtool-halyard
-- blockblock-halyard
-- disk-inventory-x-halyard
-- docker-halyard
-- dropbox-halyard
-- etcher-halyard
-- flux-halyard
-- font-meslo-lg-for-powerline-halyard
 - google-chrome-halyard
-- gpgtools-halyard
-- hammerspoon-halyard
-- hyperspace-halyard
-- nextcloud
-- insomniax-halyard
 - iterm2-halyard
-- karabiner-elements-halyard
-- knockknock-halyard
-- little-snitch-halyard
-- oversight-halyard
-- rstudio-halyard
-- santa-halyard
-- spotify-halyard
-- virtualbox-extension-pack-halyard
-- virtualbox-halyard
-- vlc-halyard
-- whatsyoursign-halyard
-- xee-halyard
-- yubikey-manager-halyard
-- yubikey-personalization-gui-halyard
-- yubikey-piv-manager-halyard

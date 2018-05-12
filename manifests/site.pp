@@ -1,6 +1,5 @@
 include 'halyard'
 include 'homebrew'
 include 'masterless'
-include 'hostname'
-include 'dotfiles'
-include 'homebrew'
+#include 'hostname'
+#include 'dotfiles'
