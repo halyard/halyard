@@ -1,6 +1,11 @@
 ---
 dotfiles::source: https://raw.githubusercontent.com/jaredledvina/dotfiles/master/.dotdotdot.conf
 dotfiles::repo: https://github.com/akerl/...
+halyard::allowed_env_variables:
+  - DEBUG
+  - PUPPET_ENV
+  - PROFILE
+  - SSH_AUTH_SOCK
 homebrew::path: /opt/brew
 homebrew::repo: https://github.com/Homebrew/brew
 homebrew::taps:
