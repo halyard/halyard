@@ -1,11 +1,23 @@
 ---
-#dotfiles::source: https://raw.githubusercontent.com/akerl/dotfiles/master/.dotdotdot.conf
-#dotfiles::repo: https://github.com/akerl/...
+dotfiles::source: https://raw.githubusercontent.com/jaredledvina/dotfiles/master/.dotdotdot.conf
+dotfiles::repo: https://github.com/akerl/...
 homebrew::path: /opt/brew
 homebrew::repo: https://github.com/Homebrew/brew
 homebrew::taps:
+  halyard/homebrew-casks: {}
 homebrew::casks:
-- 1password-halyard
-- alfred-halyard
-- google-chrome-halyard
-- iterm2-halyard
+  - 1password-halyard
+  - alfred-halyard
+  - google-chrome-halyard
+  - gpgtools-halyard
+  - iterm2-halyard
+  - slack
+  - nextcloud
+  - textual
+homebrew::formulae:
+  - tree
+  - vim
+  - pinentry-mac
+  - mosh
+  - hopenpgp-tools
+  - ykman

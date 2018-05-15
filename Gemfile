@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'puppet', '~> 5.5.0'
+gem 'hiera', '~> 3.4.3'
 gem 'octoauth', '~> 1.5.1'
 gem 'librarian-puppet', '~> 3.0.0'
 
