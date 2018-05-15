@@ -11,7 +11,7 @@ My puppet code for configuring my Macs
 
 ```
 curl -sLo kickstart https://git.io/halyard
-bash kickstart
+sudo bash kickstart
 ```
 
 ## Usage
