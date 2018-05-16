@@ -86,6 +86,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  hiera (~> 3.4.3)
   librarian-puppet (~> 3.0.0)
   octoauth (~> 1.5.1)
   puppet (~> 5.5.0)
