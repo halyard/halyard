@@ -1,4 +1,5 @@
 Prospectus.extra_dep('file', 'prospectus_circleci')
+Prospectus.extra_dep('file', 'prospectus_gems')
 
 item do
   noop
@@ -26,21 +27,8 @@ item do
         end
       end
     end
-
-    item do
-      name 'gems'
-
-      expected do
-        static
-        set 'green'
-      end
-
-      actual do
-        gemnasium
-        slug 'halyard/halyard'
-      end
-    end
   end
 
   extend ProspectusCircleci::Build.new('halyard/halyard')
+  extend ProspectusGems::Gemspec.new
 end
