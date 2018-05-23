@@ -120,5 +120,3 @@ homebrew::formulas:
 - wget
 - xz
 - ykpers
-- zsh-completions
-- zsh
