@@ -64,7 +64,6 @@ homebrew::formulae:
 - etcher
 - findutils
 - gcc
-- git
 - gnu-sed
 - gnu-tar
 - gnupg
