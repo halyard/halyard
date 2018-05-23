@@ -8,5 +8,5 @@ defaults:
 hierarchy:
 - name: "Common Settings"
   path: "common.yaml"
-- name: "MAC Specific Settings"
-  path: "mac/%{macaddress_en0}.yaml"
+- name: "Individual system settings"
+  path: "indiv/%{hashed_sp_platform_uuid}.yaml"
