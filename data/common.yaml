@@ -43,7 +43,7 @@ homebrew::casks:
 - yubikey-manager-halyard
 - yubikey-personalization-gui-halyard
 - yubikey-piv-manager-halyard
-homebrew::formulas:
+homebrew::formulae:
 - annie
 - aria2
 - autoconf
