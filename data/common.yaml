@@ -9,11 +9,13 @@ homebrew::taps:
 homebrew::casks:
 - 1password-halyard
 - alfred-halyard
+- arduino-halyard
 - bartender-halyard
 - bettertouchtool-halyard
 - blockblock-halyard
 - disk-inventory-x-halyard
 - docker-halyard
+- donotdisturb-halyard
 - dropbox-halyard
 - etcher-halyard
 - flux-halyard
@@ -26,7 +28,9 @@ homebrew::casks:
 - iterm2-halyard
 - karabiner-elements-halyard
 - knockknock-halyard
+- linkliar-halyard
 - little-snitch-halyard
+- macs-fan-control-halyard
 - oversight-halyard
 - rstudio-halyard
 - santa-halyard
