@@ -52,7 +52,6 @@ homebrew::formulae:
 - bash
 - bind
 - bzip2
-- choose-gui
 - cmake
 - coreutils
 - curl
