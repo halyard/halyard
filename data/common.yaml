@@ -51,6 +51,7 @@ homebrew::formulae:
 - bash
 - bind
 - bzip2
+- choose-gui
 - cmake
 - coreutils
 - curl
@@ -94,7 +95,7 @@ homebrew::formulae:
 - panicparse
 - perl
 - pick
-- pinentry
+- pinentry-mac
 - pkg-config
 - pwgen
 - python
