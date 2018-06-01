@@ -52,7 +52,7 @@ GEM
       gettext-setup (~> 0.11)
       minitar
       semantic_puppet (~> 1.0)
-    puppetlabs_spec_helper (2.7.0)
+    puppetlabs_spec_helper (2.8.0)
       mocha (~> 1.0)
       puppet-lint (~> 2.0)
       puppet-syntax (~> 2.0)
@@ -90,7 +90,7 @@ DEPENDENCIES
   octoauth (~> 1.5.1)
   puppet (~> 5.5.0)
   puppet-lint (~> 2.3.0)
-  puppetlabs_spec_helper (~> 2.7.0)
+  puppetlabs_spec_helper (~> 2.8.0)
 
 BUNDLED WITH
-   1.16.1
+   1.16.2
