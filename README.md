@@ -1,7 +1,6 @@
 halyard
 =======
 
-[![Dependency Status](https://img.shields.io/gemnasium/halyard/halyard.svg)](https://gemnasium.com/halyard/halyard)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 [![Build Status](https://img.shields.io/circleci/project/halyard/halyard/master.svg)](https://circleci.com/gh/halyard/halyard)
 
