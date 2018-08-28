@@ -1,4 +1,4 @@
-Prospectus.extra_dep('file', 'prospectus_circleci')
+Prospectus.extra_dep('file', 'prospectus_travis')
 Prospectus.extra_dep('file', 'prospectus_gems')
 
 item do
@@ -29,6 +29,6 @@ item do
     end
   end
 
-  extend ProspectusCircleci::Build.new('halyard/halyard')
+  extend ProspectusTravis::Build.new('halyard/halyard')
   extend ProspectusGems::Gemspec.new
 end
