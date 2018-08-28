@@ -2,7 +2,7 @@ halyard
 =======
 
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
-[![Build Status](https://img.shields.io/circleci/project/halyard/halyard/master.svg)](https://circleci.com/gh/halyard/halyard)
+[![Build Status](https://img.shields.io/travis/com/halyard/halyard.svg)](https://travis-ci.com/halyard/halyard)
 
 My puppet code for configuring my Macs
 
