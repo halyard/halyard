@@ -31,10 +31,10 @@ GEM
       metaclass (~> 0.0.1)
     multi_json (1.13.1)
     multipart-post (2.0.0)
-    octoauth (1.5.3)
-      octokit (~> 4.11.0)
+    octoauth (1.5.4)
+      octokit (~> 4.12.0)
       userinput (~> 1.0.0)
-    octokit (4.11.0)
+    octokit (4.12.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     public_suffix (3.0.3)
     puppet (5.5.6)
@@ -87,7 +87,7 @@ PLATFORMS
 
 DEPENDENCIES
   librarian-puppet (~> 3.0.0)
-  octoauth (~> 1.5.3)
+  octoauth (~> 1.5.4)
   puppet (~> 5.5.0)
   puppet-lint (~> 2.3.0)
   puppetlabs_spec_helper (~> 2.10.0)
