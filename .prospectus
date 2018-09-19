@@ -5,6 +5,27 @@ item do
   noop
 
   deps do
+    raw = File.read('.gitmodules').split(/^\[.*\]$/).reject(&:empty?)
+    submodules = raw.map { |x| x.split("\n")[1, 2].map { |y| y.split(' ').last } }
+
+    submodules.each do |path, repo|
+      repo_name = repo.split('.com/').last
+
+      item do
+        name repo_name
+
+        expected do
+          github_hash
+          repo repo_name
+        end
+
+        actual do
+          git_hash
+          dir path
+        end
+      end
+    end
+
     lines = File.readlines('Puppetfile').select { |x| x.match(/^hmod /) }
     modules = lines.map { |x| x.split("'").values_at(1, 3) }
 
