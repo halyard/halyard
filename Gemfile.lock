@@ -28,7 +28,7 @@ GEM
       thor (~> 0.15)
     locale (2.1.2)
     metaclass (0.0.4)
-    minitar (0.7)
+    minitar (0.8)
     mocha (1.7.0)
       metaclass (~> 0.0.1)
     multi_json (1.13.1)
@@ -38,6 +38,7 @@ GEM
       userinput (~> 1.0.0)
     octokit (4.13.0)
       sawyer (~> 0.8.0, >= 0.5.3)
+    pathspec (0.2.1)
     public_suffix (3.0.3)
     puppet (6.1.0)
       facter (> 2.0.1, < 4)
@@ -59,8 +60,9 @@ GEM
       gettext-setup (~> 0.11)
       minitar
       semantic_puppet (~> 1.0)
-    puppetlabs_spec_helper (2.12.0)
+    puppetlabs_spec_helper (2.13.0)
       mocha (~> 1.0)
+      pathspec (~> 0.2.1)
       puppet-lint (~> 2.0)
       puppet-syntax (~> 2.0)
       rspec-puppet (~> 2.0)
@@ -97,7 +99,7 @@ DEPENDENCIES
   octoauth (~> 1.5.5)
   puppet (~> 6.1.0)
   puppet-lint (~> 2.3.0)
-  puppetlabs_spec_helper (~> 2.12.0)
+  puppetlabs_spec_helper (~> 2.13.0)
 
 BUNDLED WITH
-   1.17.2
+   1.17.3
