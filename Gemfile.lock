@@ -29,7 +29,7 @@ GEM
     locale (2.1.2)
     metaclass (0.0.4)
     minitar (0.8)
-    mocha (1.7.0)
+    mocha (1.8.0)
       metaclass (~> 0.0.1)
     multi_json (1.13.1)
     multipart-post (2.0.0)
@@ -40,7 +40,7 @@ GEM
       sawyer (~> 0.8.0, >= 0.5.3)
     pathspec (0.2.1)
     public_suffix (3.0.3)
-    puppet (6.1.0)
+    puppet (6.2.0)
       facter (> 2.0.1, < 4)
       fast_gettext (~> 1.1.2)
       hiera (>= 3.2.1, < 4)
@@ -60,7 +60,7 @@ GEM
       gettext-setup (~> 0.11)
       minitar
       semantic_puppet (~> 1.0)
-    puppetlabs_spec_helper (2.13.0)
+    puppetlabs_spec_helper (2.13.1)
       mocha (~> 1.0)
       pathspec (~> 0.2.1)
       puppet-lint (~> 2.0)
@@ -97,7 +97,7 @@ PLATFORMS
 DEPENDENCIES
   librarian-puppet (~> 3.0.0)
   octoauth (~> 1.5.5)
-  puppet (~> 6.1.0)
+  puppet (~> 6.2.0)
   puppet-lint (~> 2.3.0)
   puppetlabs_spec_helper (~> 2.13.0)
 
