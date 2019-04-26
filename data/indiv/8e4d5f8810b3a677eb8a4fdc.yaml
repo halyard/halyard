@@ -1,5 +1,13 @@
 hostname::hostname: bean
 homebrew::casks:
+- arduino-halyard
+- dropbox-halyard
+- gpgtools-halyard
+- runescape-halyard
+- santa-halyard
+- spotify-halyard
 - steam-halyard
 - transmission-halyard
 - unifi-halyard
+homebrew::formulae:
+- ledger
