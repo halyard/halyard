@@ -48,7 +48,6 @@ homebrew::formulae:
 - direnv
 - fd
 - findutils
-- git
 - gnu-sed
 - gnu-tar
 - gnupg
