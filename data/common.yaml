@@ -99,5 +99,3 @@ homebrew::formulae:
 - wireguard-tools
 - ykpers
 - yubico-piv-tool
-- zsh
-- zsh-completions
