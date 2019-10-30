@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'puppet', '~> 6.7.2'
+gem 'puppet', '~> 6.10.1'
 gem 'octoauth', '~> 1.5.5'
 gem 'librarian-puppet', '~> 3.0.0'
 
