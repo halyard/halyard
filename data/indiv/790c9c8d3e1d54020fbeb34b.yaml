@@ -1,6 +1,0 @@
-hostname::hostname: laker-mac
-homebrew::casks:
-- omniplan-halyard
-- quip-halyard
-- zoomus-halyard
-- zoomus-outlook-plugin-halyard

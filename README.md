@@ -2,9 +2,8 @@ halyard
 =======
 
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
-[![Build Status](https://img.shields.io/travis/com/halyard/halyard.svg)](https://travis-ci.com/halyard/halyard)
 
-My puppet code for configuring my Macs
+My puppet code for configuring my Macs. Includes specific module layouts and configurations for my systems; if you're interested in copying my approach, you'll want to fork this repo or use the underlying modules directly from your own site manifest.
 
 ## Installation
 

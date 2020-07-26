@@ -9,4 +9,4 @@ hierarchy:
 - name: "Common Settings"
   path: "common.yaml"
 - name: "Individual system settings"
-  path: "indiv/%{hashed_sp_platform_uuid}.yaml"
+  path: "indiv/%{hostname}.yaml"
