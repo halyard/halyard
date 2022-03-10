@@ -12,7 +12,7 @@ def hmod(name, version = nil, params = {})
 end
 
 hmod 'serverless', '0.2.5'
-hmod 'hostname', '0.1.1'
+hmod 'hostname', '0.1.2'
 hmod 'openssh', '0.0.11'
 hmod 'pacman', '0.0.2'
 hmod 'fancontrol', '0.0.6'
