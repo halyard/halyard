@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'puppet', '~> 6.17.0'
-gem 'octoauth', '~> 1.7.0'
-gem 'librarian-puppet', '~> 3.0.0'
+gem 'puppet', '~> 7.14.0'
+gem 'librarian-puppet', '~> 3.0.1'
 
 group :development do
-  gem 'puppet-lint', '~> 2.4.2'
+  gem 'puppet-lint', '~> 2.5.2'
 end

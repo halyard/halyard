@@ -8,5 +8,3 @@ defaults:
 hierarchy:
 - name: "Common Settings"
   path: "common.yaml"
-- name: "Individual system settings"
-  path: "indiv/%{hostname}.yaml"

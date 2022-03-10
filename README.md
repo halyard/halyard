@@ -14,7 +14,7 @@ sudo bash kickstart
 
 ## Usage
 
-To run puppet with the right config, just run `halyard`
+To run puppet with the right config, use the included `./meta/puppet-run`
 
 ## License
 
