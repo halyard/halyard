@@ -9,4 +9,4 @@ hierarchy:
 - name: Common Settings
   path: common.yaml
 - name: MAC Address
-  path: mac/%{facts.networking.domain}.yaml
+  path: mac/%{facts.networking.mac}.yaml
