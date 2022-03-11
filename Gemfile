@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'puppet', '~> 7.14.0'
 gem 'librarian-puppet', '~> 3.0.1'
+gem 'sys-filesystem', '~> 1.4.3'
 
 group :development do
   gem 'puppet-lint', '~> 2.5.2'
