@@ -3,7 +3,7 @@ require 'puppet-syntax/tasks/puppet-syntax'
 
 PuppetLint::RakeTask.new(:lint) do |config|
   config.fail_on_warnings = true
-  config.ignore_paths = ['vendor/**/*']
+  config.ignore_paths = ['vendor/**/*', 'pkg/**/*']
 end
 
 desc 'Run syntax and lint checks'
@@ -11,3 +11,5 @@ task test: [
   :syntax,
   :lint
 ]
+
+task default: [:test]

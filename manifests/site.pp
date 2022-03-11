@@ -1,7 +1,4 @@
 include serverless
-#include hostname
-#include openssh
-#include pacman::automaticupgrades
-#include ntp
+include hostname
 
 lookup('classes', Array[String], 'unique', []).include
