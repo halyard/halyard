@@ -13,4 +13,4 @@ end
 
 hmod 'serverless', '0.2.5'
 hmod 'hostname', '0.1.2'
-hmod 'ntp', '0.0.2'
+hmod 'ntp', '0.0.3'
