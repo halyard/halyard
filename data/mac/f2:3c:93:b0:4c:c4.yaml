@@ -1,2 +1,4 @@
 hostname::hostname: staging
 hostname::domain: test.a-rwx.org
+classes:
+- prometheus
