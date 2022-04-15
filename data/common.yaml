@@ -5,3 +5,4 @@ openssh::users:
   akerl:
     - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJEFisCx72lk7UMcbdWdFclyAzlpVYfYsuPyu60+8Ag/ wilson
     - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGJ8nnGTRnVJR6Sz6lnYdRchw2Z4S9DFOKTHuJBnMYBS ela
+configvault::bucket: akerl-puppet
