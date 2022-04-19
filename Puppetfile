@@ -12,7 +12,7 @@ def hmod(name, version = nil, params = {})
 end
 
 hmod 'serverless', '0.2.5'
-hmod 'hostname', '0.1.2'
+hmod 'hostname', '0.1.3'
 hmod 'ntp', '0.0.3'
 hmod 'network', '0.1.10'
 hmod 'disks', '0.0.3'
@@ -20,4 +20,4 @@ hmod 'console', '0.0.2'
 hmod 'openssh', '0.0.15'
 hmod 'updates', '0.0.4'
 hmod 'prometheus', '0.0.1'
-hmod 'configvault', '0.0.8'
+hmod 'configvault', '0.0.10'
