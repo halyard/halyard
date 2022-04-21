@@ -1,6 +1,7 @@
 hostname::hostname: kiosk-rack
 hostname::domain: servers.home.a-rwx.org
 kiosk::url: https://pumidor.a-rwx.org/
-kiosk::resolution: 1600 900
+kiosk::width: 1600
+kiosk::height: 900
 classes:
   - kiosk
