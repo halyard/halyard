@@ -1,0 +1,5 @@
+hostname::hostname: kiosk-rack
+hostname::domain: servers.home.a-rwx.org
+kiosk::url: https://pumidor.a-rwx.org/
+classes:
+  - kiosk
