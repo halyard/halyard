@@ -1,0 +1,6 @@
+hostname::hostname: kiosk-tea
+hostname::domain: servers.home.a-rwx.org
+kiosk::url: https://pumidor.a-rwx.org/d/KZ4Sbl1Gz/kiosk?orgId=1&refresh=5s&kiosk
+kiosk::resolution: 1920 1080
+classes:
+  - kiosk
