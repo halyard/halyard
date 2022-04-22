@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'puppet', '~> 7.14.0'
-gem 'librarian-puppet', '~> 3.0.1'
+gem 'akerl-r10k', '~> 3.14.2.1'
 gem 'sys-filesystem', '~> 1.4.3'
 
 group :development do

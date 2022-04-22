@@ -11,6 +11,10 @@ def hmod(name, version = nil, params = {})
   mod repo, version
 end
 
+def pmod(name, version)
+  hmod(name, version, org: 'puppetlabs')
+end
+
 hmod 'serverless', '0.2.5'
 hmod 'hostname', '0.1.3'
 hmod 'ntp', '0.0.3'
@@ -22,3 +26,6 @@ hmod 'updates', '0.0.5'
 hmod 'configvault', '0.0.24'
 hmod 'kiosk', '0.0.10'
 hmod 'sdr', '0.0.5'
+
+pmod 'mount_providers', '2.0.1'
+pmod 'vcsrepo', '5.0.0'
