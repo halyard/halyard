@@ -12,3 +12,7 @@ hierarchy:
   path: mac/%{facts.networking.mac}.yaml
 - name: configvault private data
   data_hash: configvault_data
+  options:
+    binfile: /usr/local/bin/configvault
+    user: puppet-%{::trusted.hostname}
+    bucket: akerl-puppet
