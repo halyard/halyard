@@ -6,13 +6,13 @@ defaults:
   data_hash: yaml_data
 
 hierarchy:
-- name: Common Settings
-  path: common.yaml
-- name: MAC Address
-  path: mac/%{facts.networking.mac}.yaml
 - name: configvault private data
   data_hash: configvault_data
   options:
     binfile: /usr/local/bin/configvault
     user: puppet-%{::trusted.hostname}
     bucket: akerl-puppet
+- name: MAC Address
+  path: mac/%{facts.networking.mac}.yaml
+- name: Common Settings
+  path: common.yaml
