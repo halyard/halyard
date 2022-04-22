@@ -10,3 +10,5 @@ hierarchy:
   path: common.yaml
 - name: MAC Address
   path: mac/%{facts.networking.mac}.yaml
+- name: configvault private data
+  data_hash: configvault_data
