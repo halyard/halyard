@@ -5,3 +5,4 @@ kiosk::width: 1920
 kiosk::height: 1080
 classes:
   - kiosk
+  - sdr
