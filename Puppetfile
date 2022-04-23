@@ -26,7 +26,7 @@ hmod 'updates', '0.0.5'
 hmod 'configvault', '0.0.24'
 hmod 'kiosk', '0.0.12'
 hmod 'sdr', '0.0.5'
-hmod 'wh31e', '0.0.7'
+hmod 'wh31e', '0.0.9'
 
 pmod 'mount_providers', '2.0.1'
 pmod 'vcsrepo', '5.0.0'
