@@ -1,5 +1,5 @@
 hostname::hostname: kiosk-office
 hostname::domain: servers.home.a-rwx.org
-kiosk::url: https://pumidor.a-rwx.org/
+kiosk::url: 'https://pskreporter.info/pskmap?preset&callsign=KF4LES&txrx=rx&timerange=21600&obscure=0.5&workedtime=7&hideunrec=1&mapCenter=29.954226437634887,-100.65059091951618,2.31548103914851'
 classes:
   - kiosk
