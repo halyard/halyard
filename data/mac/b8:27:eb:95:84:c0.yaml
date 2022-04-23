@@ -6,7 +6,6 @@ kiosk::height: 1080
 wh31e::influx_url: https://influxdb.nuc.servers.home.a-rwx.org
 wh31e::influx_org: pumidor
 wh31e::influx_bucket: pumidor
-wh31e::sample_rate: 100k
 wh31e::sensor_names:
   253: hotbox
   49: ambient
