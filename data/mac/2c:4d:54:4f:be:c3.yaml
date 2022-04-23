@@ -1,12 +1,4 @@
 hostname::hostname: host
 hostname::domain: servers.home.a-rwx.org
-disks::lvs:
-  images:
-    vg: vg1
-    size: 20G
-    mount: /mnt/images
-kvm::image_path: /
-kvm::images:
-  archlinux: https://gitlab.archlinux.org/archlinux/arch-boxes/-/jobs/54026/artifacts/file/output/Arch-Linux-x86_64-basic-20220423.54026.qcow2
 classes:
   - kvm
