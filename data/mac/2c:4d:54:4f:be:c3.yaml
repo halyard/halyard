@@ -1,2 +1,4 @@
 hostname::hostname: host
 hostname::domain: servers.home.a-rwx.org
+classes:
+  - kvm
