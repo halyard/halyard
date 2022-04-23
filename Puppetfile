@@ -24,7 +24,7 @@ hmod 'console', '0.0.2'
 hmod 'openssh', '0.0.15'
 hmod 'updates', '0.0.5'
 hmod 'configvault', '0.0.24'
-hmod 'kiosk', '0.0.11'
+hmod 'kiosk', '0.0.12'
 hmod 'sdr', '0.0.5'
 hmod 'wh31e', '0.0.7'
 
