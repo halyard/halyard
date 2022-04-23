@@ -3,6 +3,22 @@ hostname::domain: servers.home.a-rwx.org
 kiosk::url: https://pumidor.a-rwx.org/d/KZ4Sbl1Gz/kiosk?orgId=1&refresh=5s&kiosk
 kiosk::width: 1920
 kiosk::height: 1080
+wh31e::influx_url: https://influxdb.nuc.servers.home.a-rwx.org
+wh31e::influx_org: pumidor
+wh31e::influx_bucket: pumidor
+wh31e::sensor_names:
+  253: hotbox
+  49: ambient
+  108: raw1
+  254: ripe2
+  144: raw2
+  55: ripe1
+  105: charger
+  185: servers
+  210: ripe3
+  246: ripe4
+  165: raw3
+  169: raw4
 classes:
   - kiosk
-  - sdr
+  - wh31e
