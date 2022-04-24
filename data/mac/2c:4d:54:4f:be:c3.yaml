@@ -17,7 +17,7 @@ kvm::guests:
     image: archlinux
     disks:
       root:
-        size: 20G
+        size: 50G
         vg: vg2
 classes:
   - kvm
