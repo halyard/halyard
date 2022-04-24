@@ -19,5 +19,7 @@ kvm::guests:
       root:
         size: 50G
         vg: vg2
+    ram: 2048
+    cores: 2
 classes:
   - kvm
