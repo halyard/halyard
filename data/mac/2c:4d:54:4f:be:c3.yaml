@@ -4,8 +4,6 @@ disks::lvs:
   images:
     size: 20G
     vg: vg1
-    fstype: ext4
-    fsoptions: rw,relatime
     mount: /mnt/images
 classes:
   - kvm
