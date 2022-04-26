@@ -18,7 +18,7 @@ end
 hmod 'serverless', '0.2.5'
 hmod 'hostname', '0.1.3'
 hmod 'ntp', '0.0.3'
-hmod 'network', '0.1.12'
+hmod 'network', '0.1.13'
 hmod 'disks', '0.0.18'
 hmod 'console', '0.0.2'
 hmod 'openssh', '0.0.15'
