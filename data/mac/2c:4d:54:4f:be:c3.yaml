@@ -23,5 +23,6 @@ kvm::guests:
         vg: vg2
     ram: 2048
     cores: 2
+    bridge: br0
 classes:
   - kvm
