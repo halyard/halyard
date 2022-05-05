@@ -14,8 +14,8 @@ disks::lvs:
 kvm::image_path: /mnt/images
 kvm::images:
   archlinux:
-    url: https://gitlab.archlinux.org/archlinux/arch-boxes/-/jobs/54026/artifacts/raw/output/Arch-Linux-x86_64-basic-20220423.54026.qcow2
-    checksum: 9f6444abd6e2b0a46440a2ac01e66d64821a73f6dafb97d8e802930d3798d97e
+    url: https://github.com/halyard/image-archlinux/releases/download/v0.0.8/image
+    checksum: 3fb95602b4c2313870fa8592a9de5876fcf983abf947d98fbebb2f037d6fc3cb
 kvm::guests:
   grafana:
     image: archlinux
