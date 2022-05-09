@@ -27,7 +27,7 @@ hmod 'configvault', '0.0.31'
 hmod 'kiosk', '0.0.12'
 hmod 'sdr', '0.0.5'
 hmod 'wh31e', '0.0.9'
-hmod 'kvm', '0.0.19'
+hmod 'kvm', '0.0.21'
 hmod 'wireguard', '0.0.5'
 
 pmod 'mount_core', '1.1.0'
