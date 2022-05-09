@@ -14,8 +14,8 @@ disks::lvs:
 kvm::image_path: /mnt/images
 kvm::images:
   archlinux:
-    url: https://github.com/halyard/image-archlinux/releases/download/v0.0.9/image
-    checksum: 841baf3946a4c2cd62c5d03d2966a90a459d72d54d020274f48ee4f6b4b25991
+    url: https://github.com/halyard/image-archlinux/releases/download/v0.0.14/image
+    checksum: 71dcf3bd4094a73e56f429d1a312fe49b8760fffb63e65d614e7edc61433b0f8
 kvm::guests:
   grafana:
     image: archlinux
@@ -41,7 +41,7 @@ kvm::guests:
       root:
         size: 50G
         vg: vg2
-    ram: 512
+    ram: 1024
     cores: 1
     bridge: br0
 classes:
