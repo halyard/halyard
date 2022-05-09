@@ -14,8 +14,8 @@ disks::lvs:
 kvm::image_path: /mnt/images
 kvm::images:
   archlinux:
-    url: https://github.com/halyard/image-archlinux/releases/download/v0.0.15/image
-    checksum: 18334b98da2c8a792eaf3aa525bf456bd40b249680d3bcc527b210ab5d849dfb
+    url: https://github.com/halyard/image-archlinux/releases/download/v0.0.16/image
+    checksum: 7f04d1bad42ae77812aa764d4b0364eaee6c08b14ea2fe51e748b8c140925962
 kvm::guests:
   grafana:
     image: archlinux
