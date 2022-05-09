@@ -26,23 +26,23 @@ kvm::guests:
     ram: 2048
     cores: 2
     bridge: br0
-  bastion:
-    image: archlinux
-    disks:
-      root:
-        size: 50G
-        vg: vg2
-    ram: 1024
-    cores: 2
-    bridge: br0
-  syslog:
-    image: archlinux
-    disks:
-      root:
-        size: 50G
-        vg: vg2
-    ram: 1024
-    cores: 1
-    bridge: br0
+#  bastion:
+#    image: archlinux
+#    disks:
+#      root:
+#        size: 50G
+#        vg: vg2
+#    ram: 1024
+#    cores: 2
+#    bridge: br0
+#  syslog:
+#    image: archlinux
+#    disks:
+#      root:
+#        size: 50G
+#        vg: vg2
+#    ram: 1024
+#    cores: 1
+#    bridge: br0
 classes:
   - kvm
