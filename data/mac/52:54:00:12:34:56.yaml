@@ -1,2 +1,2 @@
-hostname::hostname: grafana
+hostname::hostname: influxdb
 hostname::domain: servers.home.a-rwx.org
