@@ -32,3 +32,4 @@ hmod 'wireguard', '0.0.5'
 
 pmod 'mount_core', '1.1.0'
 pmod 'vcsrepo', '5.0.0'
+pmod 'stdlib', '8.1.0'
