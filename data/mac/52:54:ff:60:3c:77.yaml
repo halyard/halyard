@@ -1,2 +1,7 @@
 hostname::hostname: influxdb
 hostname::domain: servers.home.a-rwx.org
+smb::mounts:
+  /mnt/data:
+    share: //nas.servers.home.a-rwx.org/influxdb
+classes:
+  - smb
