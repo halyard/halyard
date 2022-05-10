@@ -14,8 +14,8 @@ disks::lvs:
 kvm::image_path: /mnt/images
 kvm::images:
   archlinux:
-    url: https://github.com/halyard/image-archlinux/releases/download/v0.0.17/image
-    checksum: 79ab08a3906588bdafc1d7ed44b618e78439d97743e66db92aece8d1eef2f8cb
+    url: https://github.com/halyard/image-archlinux/releases/download/v0.0.18/image
+    checksum: 605b67d1f3f0d8647591441c3350b0dce89557f894232a941ea76bb722ce47e2
 vm_baseline: &vm_baseline
   image: archlinux
   disks:
@@ -26,13 +26,6 @@ vm_baseline: &vm_baseline
   cores: 2
   bridge: br0
 kvm::guests:
-  grafana: *vm_baseline
-  bastion: *vm_baseline
-  syslog: *vm_baseline
-  hass: *vm_baseline
   influxdb: *vm_baseline
-  grafana: *vm_baseline
-  nginx: *vm_baseline
-  prometheus: *vm_baseline
 classes:
   - kvm
