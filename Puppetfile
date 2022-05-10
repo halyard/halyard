@@ -29,7 +29,7 @@ hmod 'sdr', '0.0.5'
 hmod 'wh31e', '0.0.9'
 hmod 'kvm', '0.0.24'
 hmod 'wireguard', '0.0.5'
-hmod 'smb', '0.0.1'
+hmod 'smb', '0.0.2'
 
 pmod 'mount_core', '1.1.0'
 pmod 'vcsrepo', '5.0.0'
