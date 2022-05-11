@@ -15,13 +15,13 @@ def pmod(name, version)
   hmod(name, version, org: 'puppetlabs')
 end
 
-hmod 'acme', '0.0.2'
+hmod 'acme', '0.0.3'
 hmod 'configvault', '0.0.32'
 hmod 'console', '0.0.4'
 hmod 'disks', '0.0.19'
-hmod 'docker', '0.0.2'
+hmod 'docker', '0.0.4'
 hmod 'hostname', '0.1.3'
-hmod 'influxdb', '0.0.1'
+hmod 'influxdb', '0.0.3'
 hmod 'kiosk', '0.0.12'
 hmod 'kvm', '0.0.24'
 hmod 'network', '0.1.16'
