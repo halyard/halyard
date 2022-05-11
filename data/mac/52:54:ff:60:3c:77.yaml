@@ -4,7 +4,7 @@ smb::mounts:
   /mnt/data:
     share: //nas.servers.home.a-rwx.org/influxdb
 influxdb::hostname: influxdb.servers.home.a-rwx.org
-influxdb::challengealias: influxdb.servers.home.certs.a-rwx.org
+influxdb::tls_challengealias: influxdb.servers.home.certs.a-rwx.org
 influxdb::datadir: /mnt/data
 classes:
   - smb
