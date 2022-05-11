@@ -5,3 +5,4 @@ smb::mounts:
     share: //nas.servers.home.a-rwx.org/influxdb
 classes:
   - smb
+  - influxdb
