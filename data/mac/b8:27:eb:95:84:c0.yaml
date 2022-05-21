@@ -3,7 +3,7 @@ hostname::domain: servers.home.a-rwx.org
 kiosk::url: https://pumidor.a-rwx.org/d/KZ4Sbl1Gz/kiosk?orgId=1&refresh=1m&kiosk
 kiosk::width: 1920
 kiosk::height: 1080
-wh31e::influx_url: https://influxdb.servers.home.a-rwx.org:8086
+wh31e::influx_url: https://influxdb.nuc.servers.home.a-rwx.org
 wh31e::influx_org: pumidor
 wh31e::influx_bucket: pumidor
 wh31e::sensor_names:
