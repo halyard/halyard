@@ -27,5 +27,6 @@ vm_baseline: &vm_baseline
   bridge: br0
 kvm::guests:
   influxdb: *vm_baseline
+  grafana: *vm_baseline
 classes:
   - kvm
