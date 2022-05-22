@@ -4,7 +4,7 @@ smb::mounts:
   /mnt/data:
     share: //nas.servers.home.a-rwx.org/pumidor
 grafana::hostname: pumidor.servers.home.a-rwx.org
-influxdb::tls_challengealias: pumidor.servers.home.certs.a-rwx.org
+grafana::tls_challengealias: pumidor.servers.home.certs.a-rwx.org
 grafana::datadir: /mnt/data
 grafana::admin_user: akerl
 classes:
