@@ -2,12 +2,11 @@ hostname::hostname: hub
 hostname::domain: servers.home.a-rwx.org
 wireguard::networks:
   wg0:
-    peers:
-      puppet-dmz:
-        address: 10.255.255.1
-        endpoint: 96.126.107.11:41194
-        keepalive: 15
-      puppet-hub:
-        address: 10.255.255.2
+    puppet-dmz:
+      address: 10.255.255.1
+      endpoint: 96.126.107.11:41194
+      keepalive: 15
+    puppet-hub:
+      address: 10.255.255.2
 classes:
   - wireguard
