@@ -2,6 +2,18 @@ hostname::hostname: dmz
 hostname::domain: linode.a-rwx.org
 wireguard::networks:
   wg0:
-    peers: {}
+    peers:
+      puppet-dmz:
+        address: 10.255.255.1
+      puppet-hub:
+        address: 10.255.255.2
+      client-lift:
+        address: 10.255.255.100
+      client-szeth:
+        address: 10.255.255.101
+      client-wilson:
+        address: 10.255.255.102
+      client-kelly:
+        address: 10.255.255.103
 classes:
   - wireguard
