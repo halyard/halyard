@@ -1,2 +1,4 @@
 hostname::hostname: hub
 hostname::domain: servers.home.a-rwx.org
+classes:
+  - wireguard
