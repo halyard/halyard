@@ -33,7 +33,7 @@ hmod 'serverless', '0.2.5'
 hmod 'smb', '0.0.3'
 hmod 'updates', '0.0.5'
 hmod 'wh31e', '0.0.9'
-hmod 'wireguard', '0.0.8'
+hmod 'wireguard', '0.0.9'
 
 pmod 'mount_core', '1.1.0'
 pmod 'stdlib', '8.1.0'
