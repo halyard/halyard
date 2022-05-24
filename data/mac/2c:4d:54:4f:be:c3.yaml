@@ -28,5 +28,6 @@ vm_baseline: &vm_baseline
 kvm::guests:
   influxdb: *vm_baseline
   pumidor: *vm_baseline
+  hub: *vm_baseline
 classes:
   - kvm
