@@ -1,4 +1,7 @@
 hostname::hostname: dmz
 hostname::domain: linode.a-rwx.org
+wireguard::networks:
+  wg0:
+    peers: {}
 classes:
   - wireguard
