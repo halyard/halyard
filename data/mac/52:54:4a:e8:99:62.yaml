@@ -7,6 +7,7 @@ nginx::sites:
   pumidor.a-rwx.org:
     proxy_target: https://pumidor.servers.home.a-rwx.org
     tls_challengealias: pumidor.certs.a-rwx.org
+    csp: "default-src 'self' http: https: ws: wss: data: blob: 'unsafe-inline' 'unsafe-eval'; frame-ancestors 'self';"
   nvr.a-rwx.org:
     proxy_target: https://10.0.1.150:9901
     tls_challengealias: nvr.certs.a-rwx.org
