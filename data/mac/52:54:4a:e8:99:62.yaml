@@ -11,6 +11,10 @@ nginx::sites:
   nvr.a-rwx.org:
     proxy_target: https://10.0.1.150:9901
     tls_challengealias: nvr.certs.a-rwx.org
+    csp: "default-src 'self' http: https: ws: wss: data: blob: 'unsafe-inline' 'unsafe-eval'; frame-ancestors 'self';"
+    proxy_params:
+      proxy_ssl_protocols: TLSv1.2 TLSv1.3
+      proxy_ssl_ciphers: ECDHE-RSA-AES256-GCM-SHA384
 wireguard::networks:
   wg0:
     puppet-dmz:
