@@ -3,6 +3,11 @@ hostname::domain: servers.home.a-rwx.org
 network::ignore:
   - ^lo$
   - ^wg0$
+nginx::sites:
+  pumidor.a-rwx.org:
+    proxy_target: https://pumidor.servers.home.a-rwx.org
+  nvr.a-rwx.org:
+    proxy_target: https://10.0.1.150:9901
 wireguard::networks:
   wg0:
     puppet-dmz:
