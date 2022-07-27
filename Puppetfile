@@ -18,7 +18,7 @@ end
 hmod 'acme', '0.0.9'
 hmod 'configvault', '0.0.33'
 hmod 'console', '0.0.4'
-hmod 'disks', '0.0.19'
+hmod 'disks', '0.0.20'
 hmod 'docker', '0.0.7'
 hmod 'hostname', '0.1.3'
 hmod 'grafana', '0.0.2'
