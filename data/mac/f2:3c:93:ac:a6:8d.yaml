@@ -18,5 +18,7 @@ wireguard::networks:
       address: 10.255.255.102
     client-kelly:
       address: 10.255.255.103
+wireguard::routers:
+  - 10.255.255.0/24
 classes:
   - wireguard
