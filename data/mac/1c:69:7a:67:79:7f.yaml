@@ -1,5 +1,8 @@
 hostname::hostname: hass
 hostname::domain: servers.home.a-rwx.org
+network::ignore:
+  - ^lo$
+  - ^wg0$
 smb::mounts:
   /mnt/data:
     share: //nas.servers.home.a-rwx.org/hass
