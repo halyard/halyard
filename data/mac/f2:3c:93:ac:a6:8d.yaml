@@ -7,6 +7,53 @@ nginx::sites:
   hass.a-rwx.org:
     proxy_target: https://hass.servers.home.a-rwx.org
     tls_challengealias: hass.certs.a-rwx.org
+    custom_site: |
+      server {
+        server_name hass.a-rwx.org;
+        listen *:443 ssl http2;
+        listen [::]:443 ssl http2;
+
+        ssl_certificate /etc/nginx/ssl/hass.a-rwx.org.crt;
+        ssl_certificate_key /etc/nginx/ssl/hass.a-rwx.org.key;
+
+        add_header X-XSS-Protection          "1; mode=block" always;
+        add_header X-Content-Type-Options    "nosniff" always;
+        add_header Referrer-Policy           "no-referrer-when-downgrade" always;
+        add_header Content-Security-Policy   "default-src 'self' http: https: ws: wss: data: blob: 'unsafe-inline'; frame-ancestors 'self';" always;
+        add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+
+        location /api/alexa/smart_home {
+          limit_except POST {
+            deny all;
+          }
+
+          if ($http_user_agent !~* ".*Alexa.*us-east") {
+            return 403;
+          }
+
+          proxy_pass                         http://10.255.255.3;
+          proxy_http_version                 1.1;
+          proxy_cache_bypass                 $http_upgrade;
+
+          proxy_set_header Upgrade           $http_upgrade;
+          proxy_set_header Connection        $connection_upgrade;
+          proxy_set_header Host              $host;
+          proxy_set_header X-Real-IP         $remote_addr;
+          proxy_set_header Forwarded         $proxy_add_forwarded;
+          proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
+          proxy_set_header X-Forwarded-Proto $scheme;
+          proxy_set_header X-Forwarded-Host  $host;
+          proxy_set_header X-Forwarded-Port  $server_port;
+
+          proxy_connect_timeout              60s;
+          proxy_send_timeout                 60s;
+          proxy_read_timeout                 60s;
+        }
+
+        location / {
+          deny all;
+        }
+      }
 wireguard::networks:
   wg0:
     puppet-dmz:
