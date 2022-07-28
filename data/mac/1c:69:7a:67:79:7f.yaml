@@ -6,6 +6,15 @@ smb::mounts:
 homeassistant::hostname: hass.servers.home.a-rwx.org
 homeassistant::tls_challengealias: hass.servers.home.certs.a-rwx.org
 homeassistant::datadir: /mnt/data
+wireguard::networks:
+  wg0:
+    puppet-dmz:
+      address: 10.255.255.1
+      endpoint: 96.126.107.11:41194
+      keepalive: 15
+    puppet-hass:
+      address: 10.255.255.3
 classes:
+  - wireguard
   - smb
   - homeassistant

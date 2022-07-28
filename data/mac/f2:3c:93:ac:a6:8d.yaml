@@ -3,6 +3,10 @@ hostname::domain: linode.a-rwx.org
 network::ignore:
   - ^lo$
   - ^wg0$
+nginx::sites:
+  hass.a-rwx.org:
+    proxy_target: https://hass.servers.home.a-rwx.org
+    tls_challengealias: hass.certs.a-rwx.org
 wireguard::networks:
   wg0:
     puppet-dmz:
@@ -10,6 +14,8 @@ wireguard::networks:
       listenport: 41194
     puppet-hub:
       address: 10.255.255.2
+    puppet-hass:
+      address: 10.255.255.3
     client-lift:
       address: 10.255.255.100
     client-szeth:
@@ -22,3 +28,4 @@ wireguard::routers:
   - 10.255.255.0/24
 classes:
   - wireguard
+  - nginx
