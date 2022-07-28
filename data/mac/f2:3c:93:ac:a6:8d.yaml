@@ -7,7 +7,7 @@ nginx::sites:
   hass.a-rwx.org:
     proxy_target: https://hass.servers.home.a-rwx.org
     tls_challengealias: hass.certs.a-rwx.org
-    custom_site: |
+    custom_file: |
       server {
         server_name hass.a-rwx.org;
         listen *:443 ssl http2;
