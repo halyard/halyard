@@ -7,5 +7,6 @@ include console
 include openssh
 include updates
 include configvault
+include iptables
 
 lookup('classes', Array[String], 'unique', []).include
