@@ -38,7 +38,7 @@ hmod 'updates', '0.0.5'
 hmod 'wh31e', '0.0.9'
 hmod 'wireguard', '0.0.13'
 
-pmod 'iptables', '3.5.0'
+pmod 'firewall', '3.5.0'
 pmod 'mount_core', '1.1.0'
 pmod 'stdlib', '8.1.0'
 pmod 'vcsrepo', '5.0.0'
