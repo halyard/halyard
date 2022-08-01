@@ -4,6 +4,9 @@ network::ignore:
   - ^lo$
   - ^wg0$
 nginx::sites:
+  hass.a-rwx.org:
+    proxy_target: https://hass.servers.home.a-rwx.org
+    tls_challengealias: hass.certs.a-rwx.org
   pumidor.a-rwx.org:
     proxy_target: https://pumidor.servers.home.a-rwx.org
     tls_challengealias: pumidor.certs.a-rwx.org
