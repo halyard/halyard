@@ -4,7 +4,7 @@ network::ignore:
   - ^lo$
   - ^wg0$
 nginx::sites:
-  hass.a-rwx.org:
+  hass-ext.a-rwx.org:
     proxy_target: https://hass.a-rwx.org
     tls_challengealias: hass-ext.certs.a-rwx.org
     custom_file: |
