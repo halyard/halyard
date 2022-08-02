@@ -54,7 +54,7 @@ nginx::sites:
           deny all;
         }
       }
-wireguard::additional_ports:
+wireguard::alternate_ports:
 - 443
 - 3269
 - 5353
