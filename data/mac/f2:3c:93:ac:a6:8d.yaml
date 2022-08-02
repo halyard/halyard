@@ -54,6 +54,10 @@ nginx::sites:
           deny all;
         }
       }
+wireguard::additional_ports:
+- 443
+- 3269
+- 5353
 wireguard::networks:
   wg0:
     puppet-dmz:
