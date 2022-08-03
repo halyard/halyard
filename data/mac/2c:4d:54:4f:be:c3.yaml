@@ -30,5 +30,6 @@ kvm::guests:
   pumidor: *vm_baseline
   hub: *vm_baseline
   monitoring: *vm_baseline
+  syslog: *vm_baseline
 classes:
   - kvm
