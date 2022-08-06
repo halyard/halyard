@@ -9,6 +9,6 @@ grafana::datadir: /mnt/data
 grafana::admin_user: akerl
 grafana::root_domain: grafana.a-rwx.org
 grafana::root_url: https://grafana.a-rwx.org/
-classes: []
+classes:
   - smb
   - grafana
