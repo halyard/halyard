@@ -29,7 +29,8 @@ kvm::guests:
   influxdb: *vm_baseline
   pumidor: *vm_baseline
   hub: *vm_baseline
-  monitoring: *vm_baseline
+  metrics: *vm_baseline
   syslog: *vm_baseline
+  grafana: *vm_baseline
 classes:
   - kvm
