@@ -1,2 +1,4 @@
 hostname::hostname: metrics
 hostname::domain: servers.home.a-rwx.org
+classes:
+  - prometheus::server
