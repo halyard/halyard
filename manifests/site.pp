@@ -11,3 +11,5 @@ include iptables
 include loki::client
 
 lookup('classes', Array[String], 'unique', []).include
+
+package { lookup('packages', Array[String], 'unique', []): }

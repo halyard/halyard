@@ -7,3 +7,8 @@ openssh::users:
     - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGJ8nnGTRnVJR6Sz6lnYdRchw2Z4S9DFOKTHuJBnMYBS ela
 configvault::bucket: akerl-puppet
 loki::client::server: logs.a-rwx.org
+packages:
+  - vim-minimal
+  - dnsutils
+  - net-tools
+  - htop
