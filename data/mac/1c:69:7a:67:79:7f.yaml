@@ -19,7 +19,11 @@ wireguard::networks:
       keepalive: 15
     puppet-hass:
       address: 10.255.255.3
+kiosk::url: https://hass.a-rwx.org/
+kiosk::width: 1600
+kiosk::height: 900
 classes:
+  - kiosk
   - wireguard
   - smb
   - homeassistant
