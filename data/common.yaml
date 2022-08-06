@@ -8,7 +8,7 @@ openssh::users:
 configvault::bucket: akerl-puppet
 loki::client::server: logs.a-rwx.org
 packages:
-  - vim-minimal
-  - dnsutils
+  - vim
+  - bind
   - net-tools
   - htop
