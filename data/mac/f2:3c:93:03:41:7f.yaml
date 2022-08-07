@@ -1,8 +1,5 @@
 hostname::hostname: codepad
 hostname::domain: linode.a-rwx.org
-network::ignore:
-  - ^lo$
-  - ^wg0$
 wireguard::networks:
   wg0:
     puppet-hub:

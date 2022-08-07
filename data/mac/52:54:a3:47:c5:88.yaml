@@ -1,8 +1,5 @@
 hostname::hostname: hub
 hostname::domain: servers.home.a-rwx.org
-network::ignore:
-  - ^lo$
-  - ^wg0$
 nginx::sites:
   hass.a-rwx.org:
     proxy_target: https://hass.servers.home.a-rwx.org

@@ -2,9 +2,6 @@ hostname::hostname: metrics
 hostname::domain: servers.home.a-rwx.org
 prometheus::server::hostname: metrics.servers.home.a-rwx.org
 prometheus::server::tls_challengealias: metrics.servers.home.certs.a-rwx.org
-network::ignore:
-  - ^lo$
-  - ^wg0$
 wireguard::networks:
   wg0:
     puppet-dmz:

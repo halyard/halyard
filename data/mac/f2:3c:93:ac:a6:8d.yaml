@@ -1,8 +1,5 @@
 hostname::hostname: dmz
 hostname::domain: linode.a-rwx.org
-network::ignore:
-  - ^lo$
-  - ^wg0$
 nginx::sites:
   hass-ext.a-rwx.org:
     proxy_target: https://hass.a-rwx.org
