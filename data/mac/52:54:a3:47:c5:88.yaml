@@ -12,7 +12,7 @@ nginx::sites:
     tls_challengealias: metrics.certs.a-rwx.org
   logs.a-rwx.org:
     proxy_target: https://syslog.servers.home.a-rwx.org
-    tls_challengealias: syslog.certs.a-rwx.org
+    tls_challengealias: logs.certs.a-rwx.org
   pumidor.a-rwx.org:
     proxy_target: https://pumidor.servers.home.a-rwx.org
     tls_challengealias: pumidor.certs.a-rwx.org
