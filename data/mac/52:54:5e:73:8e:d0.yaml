@@ -1,4 +1,6 @@
 hostname::hostname: metrics
 hostname::domain: servers.home.a-rwx.org
+prometheus::server::hostname: metrics.a-rwx.org
+prometheus::server::tls_challengealias: metrics.certs.a-rwx.org
 classes:
   - prometheus::server
