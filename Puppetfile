@@ -37,6 +37,7 @@ hmod 'sdr', '0.0.5'
 hmod 'serverless', '0.2.5'
 hmod 'smb', '0.0.3'
 hmod 'updates', '0.0.5'
+hmod 'ups', '0.0.1'
 hmod 'wh31e', '0.0.9'
 hmod 'wireguard', '0.0.25'
 
