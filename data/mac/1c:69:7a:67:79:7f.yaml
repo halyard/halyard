@@ -10,6 +10,8 @@ zwave::datadir: /mnt/data/zwave
 zwave::dongle: /dev/serial/by-id/usb-Silicon_Labs_HubZ_Smart_Home_Controller_C1300FBE-if00-port0
 zwave::hostname: zwave.a-rwx.org
 zwave::tls_challengealias: zwave.certs.a-rwx.org
+nginx::ports:
+  - 8443
 wireguard::networks:
   wg0:
     puppet-dmz:
