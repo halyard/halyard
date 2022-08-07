@@ -8,7 +8,7 @@ openssh::users:
 configvault::bucket: akerl-puppet
 loki::client::server: logs.a-rwx.org
 prometheus::server_ip: 10.0.1.114
-prometheus::address: "%{lookup('hostname::hostname')}%{lookup('hostname::domain')}"
+prometheus::address: "%{lookup('hostname::hostname')}.%{lookup('hostname::domain')}"
 packages:
   - vim
   - bind
