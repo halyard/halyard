@@ -17,6 +17,8 @@ wireguard::networks:
 kiosk::url: https://hass.a-rwx.org/
 kiosk::width: 1600
 kiosk::height: 900
+ups::vendorid: 0764
+ups::productid: 0601
 classes:
   - kiosk
   - wireguard
