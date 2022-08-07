@@ -9,6 +9,7 @@ include updates
 include configvault
 include iptables
 include loki::client
+include prometheus::client::node
 
 lookup('classes', Array[String], 'unique', []).include
 
