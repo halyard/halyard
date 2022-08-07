@@ -1,6 +1,6 @@
 hostname::hostname: syslog
 hostname::domain: servers.home.a-rwx.org
-loki::server::hostname: logs.a-rwx.org
-loki::server::tls_challengealias: logs.certs.a-rwx.org
+loki::server::hostname: syslog.servers.home.a-rwx.org
+loki::server::tls_challengealias: syslog.servers.home.certs.a-rwx.org
 classes:
   - loki::server
