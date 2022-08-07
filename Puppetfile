@@ -40,7 +40,7 @@ hmod 'updates', '0.0.5'
 hmod 'ups', '0.0.2'
 hmod 'wh31e', '0.0.9'
 hmod 'wireguard', '0.0.25'
-hmod 'zwave', '0.0.2'
+hmod 'zwave', '0.0.3'
 
 pmod 'firewall', '3.5.0'
 pmod 'mount_core', '1.1.0'
