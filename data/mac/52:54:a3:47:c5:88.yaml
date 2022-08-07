@@ -40,6 +40,10 @@ wireguard::networks:
       keepalive: 1
     puppet-hub:
       address: 10.255.255.2
+    puppet-codepad:
+      address: 10.255.255.5
+      endpoint: 172.104.214.163:41194
+      keepalive: 1
 classes:
   - wireguard
   - nginx

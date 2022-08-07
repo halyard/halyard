@@ -68,6 +68,9 @@ wireguard::networks:
       allowedips: 10.255.255.2/32,10.0.1.112/32
     puppet-hass:
       address: 10.255.255.3
+    puppet-metrics:
+      address: 10.255.255.4
+      allowedips: 10.255.255.4/32,10.0.1.114/32
     client-lift:
       address: 10.255.255.100
     client-szeth:
