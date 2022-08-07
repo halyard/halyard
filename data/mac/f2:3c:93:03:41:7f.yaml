@@ -1,5 +1,6 @@
 hostname::hostname: codepad
 hostname::domain: linode.a-rwx.org
+prometheus::address: codepad.wg0.a-rwx.org
 wireguard::networks:
   wg0:
     puppet-hub:

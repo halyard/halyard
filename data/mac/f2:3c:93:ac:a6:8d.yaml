@@ -55,6 +55,7 @@ wireguard::alternate_ports:
 - 443
 - 3269
 - 5353
+prometheus::address: dmz.wg0.a-rwx.org
 wireguard::networks:
   wg0:
     puppet-dmz:
