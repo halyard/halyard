@@ -24,10 +24,6 @@ nginx::sites:
             deny all;
           }
 
-          if ($http_user_agent !~* ".*Alexa.*us-east") {
-            return 403;
-          }
-
           proxy_pass                         http://10.255.255.3;
           proxy_http_version                 1.1;
           proxy_cache_bypass                 $http_upgrade;
