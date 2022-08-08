@@ -24,7 +24,7 @@ nginx::sites:
             deny all;
           }
 
-          proxy_pass                         http://10.255.255.3;
+          proxy_pass                         https://10.255.255.3;
           proxy_http_version                 1.1;
           proxy_cache_bypass                 $http_upgrade;
 
