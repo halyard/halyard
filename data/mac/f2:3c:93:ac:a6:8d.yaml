@@ -13,17 +13,13 @@ nginx::sites:
         ssl_certificate /etc/nginx/ssl/hass-ext.a-rwx.org.crt;
         ssl_certificate_key /etc/nginx/ssl/hass-ext.a-rwx.org.key;
 
-        add_header X-XSS-Protection          "1; mode=block" always;
-        add_header X-Content-Type-Options    "nosniff" always;
-        add_header Referrer-Policy           "no-referrer-when-downgrade" always;
-        add_header Content-Security-Policy   "default-src 'self' http: https: ws: wss: data: blob: 'unsafe-inline'; frame-ancestors 'self';" always;
-        add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+        #add_header X-XSS-Protection          "1; mode=block" always;
+        #add_header X-Content-Type-Options    "nosniff" always;
+        #add_header Referrer-Policy           "no-referrer-when-downgrade" always;
+        #add_header Content-Security-Policy   "default-src 'self' http: https: ws: wss: data: blob: 'unsafe-inline'; frame-ancestors 'self';" always;
+        #add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
 
-        location /api/alexa/smart_home {
-          limit_except POST {
-            deny all;
-          }
-
+        location / {
           proxy_pass                         https://10.255.255.3;
           proxy_http_version                 1.1;
           proxy_cache_bypass                 $http_upgrade;
@@ -41,10 +37,6 @@ nginx::sites:
           proxy_connect_timeout              60s;
           proxy_send_timeout                 60s;
           proxy_read_timeout                 60s;
-        }
-
-        location / {
-          deny all;
         }
       }
 wireguard::alternate_ports:
