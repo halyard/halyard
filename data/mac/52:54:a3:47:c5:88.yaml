@@ -43,7 +43,15 @@ wireguard::networks:
       keepalive: 1
 loki::client::logpaths:
   nginx: /var/log/nginx/*
+prometheus::client::blackbox::http_urls:
+  - https://hass.a-rwx.org
+  - https://metrics.a-rwx.org
+  - https://logs.a-rwx.org
+  - https://pumidor.a-rwx.org
+  - https://grafana.a-rwx.org
+  - https://nvr.a-rwx.org
 classes:
   - wireguard
   - nginx
   - prometheus::client::wireguard
+  - prometheus::client::blackbox

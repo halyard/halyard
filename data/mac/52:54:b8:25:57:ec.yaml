@@ -4,5 +4,8 @@ loki::server::hostname: syslog.servers.home.a-rwx.org
 loki::server::tls_challengealias: syslog.servers.home.certs.a-rwx.org
 loki::client::logpaths:
   nginx: /var/log/nginx/*
+prometheus::client::blackbox::http_urls:
+  - https://syslog.servers.home.a-rwx.org
 classes:
   - loki::server
+  - prometheus::client::blackbox

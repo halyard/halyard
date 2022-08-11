@@ -20,9 +20,13 @@ ups::productid: '0601'
 loki::client::logpaths:
   nginx: /var/log/nginx/*
   homeassistant: /mnt/data/homeassistant/config/home-assistant.log
+prometheus::client::blackbox::http_urls:
+  - https://hass.servers.home.a-rwx.org
+  - https://zwave.a-rwx.org:8443
 classes:
   - kiosk
   - smb
   - homeassistant
   - ups
   - zwave
+  - prometheus::client::blackbox

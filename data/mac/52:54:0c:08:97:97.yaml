@@ -9,6 +9,9 @@ grafana::datadir: /mnt/data
 grafana::admin_user: admin
 grafana::root_domain: pumidor.a-rwx.org
 grafana::root_url: https://pumidor.a-rwx.org/
+prometheus::client::blackbox::http_urls:
+  - https://pumidor.servers.home.a-rwx.org
 classes:
   - smb
   - grafana
+  - prometheus::client::blackbox

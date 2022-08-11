@@ -11,6 +11,9 @@ grafana::root_domain: grafana.a-rwx.org
 grafana::root_url: https://grafana.a-rwx.org/
 grafana::allowed_organizations:
   - scrtybybscrty
+prometheus::client::blackbox::http_urls:
+  - https://grafana.servers.home.a-rwx.org
 classes:
   - smb
   - grafana
+  - prometheus::client::blackbox
