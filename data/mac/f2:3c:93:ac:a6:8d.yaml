@@ -28,3 +28,4 @@ wireguard::routers:
   - 10.255.255.0/24
 classes:
   - wireguard
+  - prometheus::client::wireguard

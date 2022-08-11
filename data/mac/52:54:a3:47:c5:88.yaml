@@ -44,3 +44,4 @@ wireguard::networks:
 classes:
   - wireguard
   - nginx
+  - prometheus::client::wireguard

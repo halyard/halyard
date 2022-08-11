@@ -18,3 +18,4 @@ wireguard::networks:
 classes:
   - prometheus::server
   - wireguard
+  - prometheus::client::wireguard

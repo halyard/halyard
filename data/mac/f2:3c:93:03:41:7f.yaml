@@ -14,3 +14,4 @@ wireguard::networks:
       allowedips: 10.255.255.4/32,10.0.1.114/32
 classes:
   - wireguard
+  - prometheus::client::wireguard
