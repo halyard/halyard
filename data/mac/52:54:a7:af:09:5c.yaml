@@ -6,6 +6,9 @@ smb::mounts:
 influxdb::hostname: influxdb.servers.home.a-rwx.org
 influxdb::tls_challengealias: influxdb.servers.home.certs.a-rwx.org
 influxdb::datadir: /mnt/data
+prometheus::client::blackbox::http_urls:
+  - https://influxdb.servers.home.a-rwx.org
 classes:
   - smb
   - influxdb
+  - prometheus::client::blackbox
