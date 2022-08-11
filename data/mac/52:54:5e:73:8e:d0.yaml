@@ -15,6 +15,8 @@ wireguard::networks:
     puppet-metrics:
       address: 10.255.255.4
       listenport: 41194
+loki::client::logpaths:
+  nginx: /var/log/nginx/*
 classes:
   - prometheus::server
   - wireguard

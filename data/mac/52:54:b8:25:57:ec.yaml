@@ -2,5 +2,7 @@ hostname::hostname: syslog
 hostname::domain: servers.home.a-rwx.org
 loki::server::hostname: syslog.servers.home.a-rwx.org
 loki::server::tls_challengealias: syslog.servers.home.certs.a-rwx.org
+loki::client::logpaths:
+  nginx: /var/log/nginx/*
 classes:
   - loki::server

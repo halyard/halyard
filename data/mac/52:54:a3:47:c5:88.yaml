@@ -41,6 +41,8 @@ wireguard::networks:
       address: 10.255.255.5
       endpoint: 172.104.214.163:41194
       keepalive: 1
+loki::client::logpaths:
+  nginx: /var/log/nginx/*
 classes:
   - wireguard
   - nginx

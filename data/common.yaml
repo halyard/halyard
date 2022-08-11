@@ -1,3 +1,7 @@
+lookup_options:
+  loki::client::logpaths:
+    merge:
+      strategy: hash
 openssh::users:
   root:
     - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJEFisCx72lk7UMcbdWdFclyAzlpVYfYsuPyu60+8Ag/ wilson
@@ -7,6 +11,8 @@ openssh::users:
     - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGJ8nnGTRnVJR6Sz6lnYdRchw2Z4S9DFOKTHuJBnMYBS ela
 configvault::bucket: akerl-puppet
 loki::client::server: logs.a-rwx.org
+loki::client::logpaths:
+  puppet: /opt/halyard/logs/puppet-run.*
 prometheus::server_ip: 10.0.1.114
 prometheus::address: "%{lookup('hostname::hostname')}.%{lookup('hostname::domain')}"
 packages:
