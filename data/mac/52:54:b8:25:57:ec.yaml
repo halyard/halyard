@@ -5,7 +5,8 @@ loki::server::tls_challengealias: syslog.servers.home.certs.a-rwx.org
 loki::client::logpaths:
   nginx: /var/log/nginx/*
 loki::client::syslog_sources:
-  - 10.0.1.1
+  - 10.0.0.0/24
+  - 10.0.1.0/24
 prometheus::client::blackbox::http_urls:
   - https://syslog.servers.home.a-rwx.org
 classes:
