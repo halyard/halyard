@@ -10,6 +10,7 @@ include configvault
 include iptables
 include loki::client
 include prometheus::client::node
+include prometheus::client::systemd
 
 lookup('classes', Array[String], 'unique', []).include
 
