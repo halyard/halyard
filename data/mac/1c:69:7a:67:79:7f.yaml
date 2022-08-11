@@ -19,7 +19,7 @@ ups::vendorid: '0764'
 ups::productid: '0601'
 loki::client::logpaths:
   nginx: /var/log/nginx/*
-  homeassistant: /mnt/data/homeassistant/config/homeassistant.log
+  homeassistant: /mnt/data/homeassistant/config/home-assistant.log
 classes:
   - kiosk
   - smb
