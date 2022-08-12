@@ -11,6 +11,7 @@ include iptables
 include loki::client
 include prometheus::client::node
 include prometheus::client::systemd
+include prometheus::client::pacman
 
 lookup('classes', Array[String], 'unique', []).include
 
