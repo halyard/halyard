@@ -15,6 +15,7 @@ wireguard::networks:
 packages:
   - zsh
   - zsh-completions
+  - cpio
 classes:
   - wireguard
   - prometheus::client::wireguard
