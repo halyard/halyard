@@ -16,6 +16,7 @@ packages:
   - zsh
   - zsh-completions
   - cpio
+  - ledger
 classes:
   - wireguard
   - prometheus::client::wireguard
