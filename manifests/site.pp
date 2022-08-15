@@ -12,6 +12,7 @@ include loki::client
 include prometheus::client::node
 include prometheus::client::systemd
 include prometheus::client::pacman
+include prometheus::client::puppet
 
 lookup('classes', Array[String], 'unique', []).include
 
