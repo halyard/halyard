@@ -21,3 +21,4 @@ packages:
   - net-tools
   - htop
   - tcpdump
+  - tree
