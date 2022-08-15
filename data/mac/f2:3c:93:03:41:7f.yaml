@@ -17,6 +17,7 @@ packages:
   - zsh-completions
   - cpio
   - ledger
+  - neovim
 classes:
   - wireguard
   - prometheus::client::wireguard
