@@ -19,6 +19,7 @@ loki::client::logpaths:
   nginx: /var/log/nginx/*
 prometheus::client::blackbox::http_urls:
   - https://metrics.servers.home.a-rwx.org
+  - https://nas.servers.home.a-rwx.org
 classes:
   - prometheus::server
   - wireguard
