@@ -11,7 +11,7 @@ openssh::users:
     - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGJ8nnGTRnVJR6Sz6lnYdRchw2Z4S9DFOKTHuJBnMYBS ela
 openssh::sudoers:
   - akerl
-updates::frequency: 14400 # 4 hours
+updates::frequency: '14400' # 4 hours
 configvault::bucket: akerl-puppet
 loki::client::server: logs.a-rwx.org
 loki::client::logpaths:
