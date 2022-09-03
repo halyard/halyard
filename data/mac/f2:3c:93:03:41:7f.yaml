@@ -22,5 +22,6 @@ packages:
   - zsh
   - zsh-completions
 classes:
+  - docker
   - wireguard
   - prometheus::client::wireguard
