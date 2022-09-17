@@ -23,6 +23,14 @@ loki::client::logpaths:
 prometheus::client::blackbox::http_urls:
   - https://hass.servers.home.a-rwx.org
   - https://zwave.a-rwx.org:8443
+disks::lvs:
+  docker:
+    size: 50G
+    vg: vg1
+    fstype: ext4
+    fsoptions: rw,relatime
+    mount: /mnt/docker
+docker:data_root: /mnt/docker
 classes:
   - kiosk
   - smb
