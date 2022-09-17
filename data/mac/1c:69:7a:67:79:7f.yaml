@@ -30,7 +30,7 @@ disks::lvs:
     fstype: ext4
     fsoptions: rw,relatime
     mount: /mnt/docker
-docker:data_root: /mnt/docker
+docker::data_root: /mnt/docker
 classes:
   - kiosk
   - smb
