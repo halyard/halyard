@@ -32,5 +32,6 @@ kvm::guests:
   metrics: *vm_baseline
   syslog: *vm_baseline
   grafana: *vm_baseline
+  teslamate: *vm_baseline
 classes:
   - kvm
