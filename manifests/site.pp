@@ -1,17 +1,10 @@
-stage { 'first':
-  before => Stage['main'],
-}
-
-class { 'configvault':
-  stage => first,
-}
-
 include serverless
 include hostname
 include ntp
 include network
 include disks
 include console
+include configvault
 include openssh
 include updates
 include iptables
