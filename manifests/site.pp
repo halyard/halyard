@@ -1,3 +1,11 @@
+stage { 'first':
+  before => Stage['main'],
+}
+
+class { 'configvault':
+  stage => first,
+}
+
 include serverless
 include hostname
 include ntp
@@ -6,7 +14,6 @@ include disks
 include console
 include openssh
 include updates
-include configvault
 include iptables
 include loki::client
 include prometheus::client::node
