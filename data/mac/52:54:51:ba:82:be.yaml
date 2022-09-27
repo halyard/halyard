@@ -15,6 +15,8 @@ grafana::plugins:
   - pr0ps-trackmap-panel
   - natel-plotly-panel
   - https://github.com/panodata/panodata-map-panel/releases/download/0.16.0/panodata-map-panel-0.16.0.zip;grafana-worldmap-panel-ng
+grafana::extra_config:
+  - '-e GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS=grafana-worldmap-panel-ng'
 prometheus::client::blackbox::http_urls:
   - https://grafana.servers.home.a-rwx.org
 classes:
