@@ -11,6 +11,10 @@ grafana::root_domain: grafana.a-rwx.org
 grafana::root_url: https://grafana.a-rwx.org/
 grafana::allowed_organizations:
   - scrtybybscrty
+grafana::plugins:
+  - pr0ps-trackmap-panel
+  - natel-plotly-panel
+  - https://github.com/panodata/panodata-map-panel/releases/download/0.16.0/panodata-map-panel-0.16.0.zip
 prometheus::client::blackbox::http_urls:
   - https://grafana.servers.home.a-rwx.org
 classes:
