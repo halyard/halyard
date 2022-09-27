@@ -1,6 +1,9 @@
 hostname::hostname: teslamate
 hostname::domain: servers.home.a-rwx.org
 teslamate::datadir: /opt/teslamate
+prometheus::client::blackbox::http_urls:
+  - http://teslamate.servers.home.a-rwx.org
 classes:
   - smb
   - teslamate
+  - prometheus::client::blackbox
