@@ -1,0 +1,25 @@
+hostname::hostname: goat
+hostname::domain: linode.a-rwx.org
+prometheus::address: goat.wg0.a-rwx.org
+goat::hostname: goat.akerl.org
+goat::tls_challengealias: goat.certs.akerl.org
+wireguard::networks:
+  wg0:
+    puppet-hub:
+      address: 10.255.255.2
+      allowedips: 10.255.255.2/32,10.0.1.112/32
+    puppet-goat:
+      address: 10.255.255.6
+      listenport: 41194
+    puppet-metrics:
+      address: 10.255.255.4
+      allowedips: 10.255.255.4/32,10.0.1.114/32
+loki::client::logpaths:
+  nginx: /var/log/nginx/*
+prometheus::client::blackbox::http_urls:
+  - https://goat.akerl.org
+classes:
+  - goat
+  - wireguard
+  - prometheus::client::wireguard
+  - prometheus::client::blackbox
