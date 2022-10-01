@@ -18,7 +18,7 @@ loki::client::logpaths:
   nginx: /var/log/nginx/*
 prometheus::client::blackbox::http_urls:
   - https://goat.akerl.org
-classes:
+#classes:
   #- goat
   #- wireguard
   #- prometheus::client::wireguard
