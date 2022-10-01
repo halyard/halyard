@@ -19,7 +19,7 @@ loki::client::logpaths:
 prometheus::client::blackbox::http_urls:
   - https://goat.akerl.org
 classes:
-  #  - goat
-  - wireguard
-  - prometheus::client::wireguard
-  - prometheus::client::blackbox
+  #- goat
+  #- wireguard
+  #- prometheus::client::wireguard
+  #- prometheus::client::blackbox
