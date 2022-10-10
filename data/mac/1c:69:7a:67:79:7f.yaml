@@ -6,6 +6,7 @@ smb::mounts:
 homeassistant::hostname: hass.servers.home.a-rwx.org
 homeassistant::tls_challengealias: hass.servers.home.certs.a-rwx.org
 homeassistant::datadir: /mnt/data/homeassistant
+homeassistant::dbdir: /opt/homeassistant
 zwave::datadir: /mnt/data/zwave
 zwave::dongle: /dev/serial/by-id/usb-Silicon_Labs_HubZ_Smart_Home_Controller_C1300FBE-if00-port0
 zwave::hostname: zwave.a-rwx.org
