@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'puppet', '~> 7.14'
+gem 'puppet', '~> 7.19'
 gem 'r10k', '~> 3.15'
 gem 'sys-filesystem', '~> 1.4'
 
