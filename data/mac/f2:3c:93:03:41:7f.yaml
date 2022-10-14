@@ -12,8 +12,7 @@ wireguard::networks:
     puppet-metrics:
       address: 10.255.255.4
       allowedips: 10.255.255.4/32,10.0.1.114/32
-docker::default_bridge: br0
-docker::bridge_subnet: 172.18.0.0/24
+docker::default_bridge: docker0
 packages:
   - cpio
   - diff-so-fancy
