@@ -19,6 +19,7 @@ packages:
   - go
   - ledger
   - neovim
+  - ripgrep
   - zsh
   - zsh-completions
 classes:
