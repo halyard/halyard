@@ -16,13 +16,14 @@ def pmod(name, version)
 end
 
 hmod 'acme', '0.0.12'
+hmod 'backup', '0.0.1'
 hmod 'configvault', '0.0.35'
 hmod 'console', '0.0.6'
 hmod 'disks', '0.0.22'
 hmod 'docker', '0.0.28'
 hmod 'homeassistant', '0.0.6'
 hmod 'hostname', '0.1.10'
-hmod 'goat', '0.0.6'
+hmod 'goat', '0.0.8'
 hmod 'grafana', '0.0.16'
 hmod 'influxdb', '0.0.12'
 hmod 'iptables', '0.0.9'
