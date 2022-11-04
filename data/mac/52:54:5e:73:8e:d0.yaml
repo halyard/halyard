@@ -2,6 +2,9 @@ hostname::hostname: metrics
 hostname::domain: servers.home.a-rwx.org
 prometheus::server::hostname: metrics.servers.home.a-rwx.org
 prometheus::server::tls_challengealias: metrics.servers.home.certs.a-rwx.org
+prometheus::server::backup_target: rclone:smb:prometheus/backup
+prometheus::server::backup_password: prometheus
+prometheus::server::backup_watchdog: https://watchdog.a-rwx.org/checks/01CE73DC-ECC2-4EC1-BC20-8B13CD44238E
 wireguard::networks:
   wg0:
     puppet-dmz:

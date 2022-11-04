@@ -2,9 +2,9 @@ hostname::hostname: syslog
 hostname::domain: servers.home.a-rwx.org
 loki::server::hostname: syslog.servers.home.a-rwx.org
 loki::server::tls_challengealias: syslog.servers.home.certs.a-rwx.org
-loki::backup_target: rclone:smb:loki
-loki::backup_password: loki
-loki::backup_watchdog: https://watchdog.a-rwx.org/checks/4BB4B57B-E24C-4752-A05B-F4F199EE6806
+loki::server::backup_target: rclone:smb:loki/backup
+loki::server::backup_password: loki
+loki::server::backup_watchdog: https://watchdog.a-rwx.org/checks/4BB4B57B-E24C-4752-A05B-F4F199EE6806
 loki::client::logpaths:
   nginx: /var/log/nginx/*
 loki::client::syslog_sources:
