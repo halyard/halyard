@@ -3,14 +3,14 @@ hostname::domain: servers.home.a-rwx.org
 homeassistant::hostname: hass.servers.home.a-rwx.org
 homeassistant::tls_challengealias: hass.servers.home.certs.a-rwx.org
 homeassistant::datadir: /mnt/hass
-homeassistant::backup_target: rclone:smb:restic/homeasistant
+homeassistant::backup_target: rclone:smb:hass/restic/homeasistant
 homeassistant::backup_password: hass
 homeassistant::backup_watchdog: https://watchdog.a-rwx.org/checks/2E7835BB-D953-4D6E-ADAD-4BD3E96D7777
 zwave::datadir: /mnt/zwave
 zwave::dongle: /dev/serial/by-id/usb-Silicon_Labs_HubZ_Smart_Home_Controller_C1300FBE-if00-port0
 zwave::hostname: zwave.a-rwx.org
 zwave::tls_challengealias: zwave.certs.a-rwx.org
-zwave::backup_target: rclone:smb:restic/zwave
+zwave::backup_target: rclone:smb:hass/restic/zwave
 zwave::backup_password: zwave
 zwave::backup_watchdog: https://watchdog.a-rwx.org/checks/11A8BDF7-44D0-49A5-98B0-899BD780FC11
 nginx::ports:
