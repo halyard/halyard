@@ -1,8 +1,5 @@
 hostname::hostname: grafana
 hostname::domain: servers.home.a-rwx.org
-smb::mounts:
-  /mnt/data:
-    share: //nas.servers.home.a-rwx.org/grafana
 grafana::hostname: grafana.servers.home.a-rwx.org
 grafana::tls_challengealias: grafana.servers.home.certs.a-rwx.org
 grafana::datadir: /mnt/data
@@ -17,9 +14,11 @@ grafana::plugins:
   - https://github.com/panodata/panodata-map-panel/releases/download/0.16.0/panodata-map-panel-0.16.0.zip;grafana-worldmap-panel-ng
 grafana::extra_config:
   - '-e GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS=panodata-map-panel'
+grafana::backup_target: rclone:smb:grafana/restic
+grafana::backup_password: grafana
+grafana::backup_watchdog: https://watchdog.a-rwx.org/checks/77E24A43-46B2-4D14-8328-98E255870A48
 prometheus::client::blackbox::http_urls:
   - https://grafana.servers.home.a-rwx.org
 classes:
-  - smb
   - grafana
   - prometheus::client::blackbox

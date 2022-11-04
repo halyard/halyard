@@ -1,14 +1,13 @@
 hostname::hostname: influxdb
 hostname::domain: servers.home.a-rwx.org
-smb::mounts:
-  /mnt/data:
-    share: //nas.servers.home.a-rwx.org/influxdb
 influxdb::hostname: influxdb.servers.home.a-rwx.org
 influxdb::tls_challengealias: influxdb.servers.home.certs.a-rwx.org
-influxdb::datadir: /mnt/data
+influxdb::datadir: /opt/influxdb
+influxdb::backup_target: rclone:smb:influxdb/restic
+influxdb::backup_password: influxdb
+influxdb::backup_watchdog: https://watchdog.a-rwx.org/checks/5CEA0305-7E3C-48C3-8AFA-2D6EE1C14A21
 prometheus::client::blackbox::http_urls:
   - https://influxdb.servers.home.a-rwx.org
 classes:
-  - smb
   - influxdb
   - prometheus::client::blackbox
