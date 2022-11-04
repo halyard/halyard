@@ -16,7 +16,7 @@ def pmod(name, version)
 end
 
 hmod 'acme', '0.0.13'
-hmod 'backup', '0.0.9'
+hmod 'backup', '0.0.10'
 hmod 'configvault', '0.0.36'
 hmod 'console', '0.0.7'
 hmod 'disks', '0.0.23'
