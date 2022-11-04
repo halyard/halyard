@@ -2,11 +2,11 @@ hostname::hostname: hass
 hostname::domain: servers.home.a-rwx.org
 homeassistant::hostname: hass.servers.home.a-rwx.org
 homeassistant::tls_challengealias: hass.servers.home.certs.a-rwx.org
-homeassistant::datadir: /mnt/hass/hass
+homeassistant::datadir: /mnt/hass
 homeassistant::backup_target: rclone:smb:restic/homeasistant
 homeassistant::backup_password: hass
 homeassistant::backup_watchdog: https://watchdog.a-rwx.org/checks/2E7835BB-D953-4D6E-ADAD-4BD3E96D7777
-zwave::datadir: /mnt/hass/zwave
+zwave::datadir: /mnt/zwave
 zwave::dongle: /dev/serial/by-id/usb-Silicon_Labs_HubZ_Smart_Home_Controller_C1300FBE-if00-port0
 zwave::hostname: zwave.a-rwx.org
 zwave::tls_challengealias: zwave.certs.a-rwx.org
@@ -22,7 +22,7 @@ ups::vendorid: '0764'
 ups::productid: '0601'
 loki::client::logpaths:
   nginx: /var/log/nginx/*
-  homeassistant: /mnt/data/homeassistant/config/home-assistant.log
+  homeassistant: /mnt/hass/config/home-assistant.log
 prometheus::client::blackbox::http_urls:
   - https://hass.servers.home.a-rwx.org
   - https://zwave.a-rwx.org:8443
@@ -39,6 +39,12 @@ disks::lvs:
     fstype: ext4
     fsoptions: rw,relatime
     mount: /mnt/hass
+  zwave:
+    size: 10G
+    vg: vg1
+    fstype: ext4
+    fsoptions: rw,relatime
+    mount: /mnt/zwave
 docker::data_root: /mnt/docker
 classes:
   - kiosk
