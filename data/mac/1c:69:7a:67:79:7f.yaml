@@ -1,16 +1,18 @@
 hostname::hostname: hass
 hostname::domain: servers.home.a-rwx.org
-smb::mounts:
-  /mnt/data:
-    share: //nas.servers.home.a-rwx.org/hass
 homeassistant::hostname: hass.servers.home.a-rwx.org
 homeassistant::tls_challengealias: hass.servers.home.certs.a-rwx.org
-homeassistant::datadir: /mnt/data/homeassistant
-homeassistant::dbdir: /opt/homeassistant
-zwave::datadir: /mnt/data/zwave
+homeassistant::datadir: /mnt/hass/hass
+homeassistant::backup_target: rclone:smb:restic/homeasistant
+homeassistant::backup_password: hass
+homeassistant::backup_watchdog: https://watchdog.a-rwx.org/checks/2E7835BB-D953-4D6E-ADAD-4BD3E96D7777
+zwave::datadir: /mnt/hass/zwave
 zwave::dongle: /dev/serial/by-id/usb-Silicon_Labs_HubZ_Smart_Home_Controller_C1300FBE-if00-port0
 zwave::hostname: zwave.a-rwx.org
 zwave::tls_challengealias: zwave.certs.a-rwx.org
+zwave::backup_target: rclone:smb:restic/zwave
+zwave::backup_password: zwave
+zwave::backup_watchdog: https://watchdog.a-rwx.org/checks/11A8BDF7-44D0-49A5-98B0-899BD780FC11
 nginx::ports:
   - 8443
 kiosk::url: https://hass.a-rwx.org/
@@ -31,10 +33,15 @@ disks::lvs:
     fstype: ext4
     fsoptions: rw,relatime
     mount: /mnt/docker
+  hass:
+    size: 20G
+    vg: vg1
+    fstype: ext4
+    fsoptions: rw,relatime
+    mount: /mnt/hass
 docker::data_root: /mnt/docker
 classes:
   - kiosk
-  - smb
   - homeassistant
   - ups
   - zwave
