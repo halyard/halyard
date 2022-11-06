@@ -26,3 +26,4 @@ packages:
   - htop
   - tcpdump
   - tree
+  - dstat
