@@ -15,8 +15,8 @@ def pmod(name, version)
   hmod(name, version, org: 'puppetlabs')
 end
 
-hmod 'acme', '0.0.13'
-hmod 'backup', '0.0.12'
+hmod 'acme', '0.0.14'
+hmod 'backup', '0.0.13'
 hmod 'configvault', '0.0.36'
 hmod 'console', '0.0.7'
 hmod 'disks', '0.0.23'
@@ -38,7 +38,7 @@ hmod 'prometheus', '0.0.30'
 hmod 'sdr', '0.0.8'
 hmod 'serverless', '0.2.10'
 hmod 'smb', '0.0.6'
-hmod 'teslamate', '0.0.14'
+hmod 'teslamate', '0.0.15'
 hmod 'updates', '0.0.8'
 hmod 'ups', '0.0.5'
 hmod 'wh31e', '0.0.12'
