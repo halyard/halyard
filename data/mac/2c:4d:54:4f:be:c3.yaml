@@ -31,6 +31,7 @@ kvm::guests:
   hub: *vm_baseline
   metrics: *vm_baseline
   syslog: *vm_baseline
+    ram: 4096
   grafana: *vm_baseline
   teslamate: *vm_baseline
 classes:
