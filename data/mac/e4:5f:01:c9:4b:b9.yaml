@@ -2,7 +2,7 @@ hostname::hostname: kiosk-tea
 hostname::domain: iot.home.a-rwx.org
 kiosk::url: https://pumidor.servers.home.a-rwx.org/d/KZ4Sbl1Gz/kiosk?orgId=1&refresh=1m&kiosk
 wh31e::influx_url: https://influxdb.servers.home.a-rwx.org
-wh31e::influx_org: pumidor
+wh31e::influx_org: influx
 wh31e::influx_bucket: pumidor
 wh31e::sensor_names:
   253: hotbox
