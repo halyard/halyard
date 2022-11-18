@@ -1,5 +1,6 @@
 hostname::hostname: syslog
 hostname::domain: servers.home.a-rwx.org
+backup::frequency: '3600'
 loki::server::hostname: syslog.servers.home.a-rwx.org
 loki::server::tls_challengealias: syslog.servers.home.certs.a-rwx.org
 loki::server::backup_target: rclone:smb:loki/backup
