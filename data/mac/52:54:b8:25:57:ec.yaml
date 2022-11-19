@@ -6,6 +6,10 @@ loki::server::tls_challengealias: syslog.servers.home.certs.a-rwx.org
 loki::server::backup_target: rclone:smb:loki/backup
 loki::server::backup_password: loki
 loki::server::backup_watchdog: https://watchdog.a-rwx.org/checks/4BB4B57B-E24C-4752-A05B-F4F199EE6806
+loki::server::backup_environment:
+  GOGC: '1'
+loki::server::backup_args:
+  - "-orclone.args=serve restic --stdio --use-mmap"
 loki::client::logpaths:
   nginx: /var/log/nginx/*
 loki::client::syslog_sources:

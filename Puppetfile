@@ -16,7 +16,7 @@ def pmod(name, version)
 end
 
 hmod 'acme', '0.0.14'
-hmod 'backup', '0.0.14'
+hmod 'backup', '0.0.15'
 hmod 'configvault', '0.0.36'
 hmod 'console', '0.0.7'
 hmod 'disks', '0.0.23'
@@ -29,7 +29,7 @@ hmod 'influxdb', '0.0.15'
 hmod 'iptables', '0.0.10'
 hmod 'kiosk', '0.0.22'
 hmod 'kvm', '0.0.29'
-hmod 'loki', '0.0.25'
+hmod 'loki', '0.0.26'
 hmod 'network', '0.1.25'
 hmod 'nginx', '0.0.23'
 hmod 'ntp', '0.0.6'
