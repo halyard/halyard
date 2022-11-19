@@ -7,4 +7,4 @@ cd $(dirname "${BASH_SOURCE[0]}")
 PATTERN="${1}"
 shift
 
-ansible "$PATTERN" -a $@
+ansible "$PATTERN" -a "$*"
