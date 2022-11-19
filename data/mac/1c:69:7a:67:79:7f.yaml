@@ -26,6 +26,12 @@ loki::client::logpaths:
 prometheus::client::blackbox::http_urls:
   - https://hass.servers.home.a-rwx.org
   - https://zwave.a-rwx.org:8443
+network::ignore:
+  - ^lo$
+  - ^docker\d+$
+  - ^(tap|veth)
+  - ^wg\d+
+  - wlp.+
 disks::lvs:
   docker:
     size: 50G
