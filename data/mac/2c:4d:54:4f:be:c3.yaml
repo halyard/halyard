@@ -29,7 +29,10 @@ kvm::guests:
   influxdb: *vm_baseline
   pumidor: *vm_baseline
   hub: *vm_baseline
-  metrics: *vm_baseline
+  metrics:
+    <<: *vm_baseline
+    ram: 2048
+    cores: 4
   syslog:
     <<: *vm_baseline
     ram: 4096
