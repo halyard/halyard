@@ -37,6 +37,8 @@ kvm::guests:
     <<: *vm_baseline
     ram: 4096
   grafana: *vm_baseline
-  teslamate: *vm_baseline
+  teslamate:
+    <<: *vm_baseline
+    ram: 2048
 classes:
   - kvm
