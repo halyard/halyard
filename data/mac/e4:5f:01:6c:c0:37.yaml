@@ -1,5 +1,11 @@
 hostname::hostname: kiosk-office
 hostname::domain: servers.home.a-rwx.org
 kiosk::url: https://grafana.a-rwx.org/d/ecfx9adVk/system-health-kiosk?orgId=1&from=now-1h&to=now&kiosk
+network::ignore:
+  - ^lo$
+  - ^docker\d+$
+  - ^(tap|veth)
+  - ^wg\d+
+  - wlan\d+
 classes:
   - kiosk

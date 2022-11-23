@@ -17,6 +17,12 @@ wh31e::sensor_names:
   246: ripe4
   165: raw3
   169: raw4
+network::ignore:
+  - ^lo$
+  - ^docker\d+$
+  - ^(tap|veth)
+  - ^wg\d+
+  - end\d+
 classes:
   - kiosk
   - wh31e
