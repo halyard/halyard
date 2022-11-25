@@ -36,6 +36,10 @@ kvm::guests:
   syslog:
     <<: *vm_baseline
     ram: 4096
+    disks:
+      root:
+        size: 200G
+        vg: vg2
   grafana: *vm_baseline
   teslamate:
     <<: *vm_baseline
