@@ -22,8 +22,8 @@ vm_baseline: &vm_baseline
     root:
       size: 50G
       vg: vg2
-  ram: 1024
-  cores: 2
+  ram: 4096
+  cores: 4
   bridge: br0
 kvm::guests:
   influxdb: *vm_baseline
@@ -31,11 +31,12 @@ kvm::guests:
   hub: *vm_baseline
   metrics:
     <<: *vm_baseline
-    ram: 2048
-    cores: 4
+    ram: 8192
+    cores: 8
   syslog:
     <<: *vm_baseline
-    ram: 4096
+    ram: 8192
+    cores: 8
     disks:
       root:
         size: 200G
