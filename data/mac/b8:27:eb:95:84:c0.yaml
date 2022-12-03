@@ -1,0 +1,11 @@
+hostname::hostname: kiosk-bar
+hostname::domain: iot.home.a-rwx.org
+kiosk::url: https://pumidor.servers.home.a-rwx.org/d/KZ4Sbl1Gz/kiosk?orgId=1&refresh=1m&kiosk
+network::ignore:
+  - ^lo$
+  - ^docker\d+$
+  - ^(tap|veth)
+  - ^wg\d+
+  - end\d+
+classes:
+  - kiosk
