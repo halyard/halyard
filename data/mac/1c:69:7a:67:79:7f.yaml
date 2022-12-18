@@ -15,7 +15,7 @@ zwave::backup_password: zwave
 zwave::backup_watchdog: https://watchdog.a-rwx.org/checks/11A8BDF7-44D0-49A5-98B0-899BD780FC11
 nginx::ports:
   - 8443
-kiosk::url: https://hass.a-rwx.org/
+kiosk::url: https://hass.a-rwx.org/energy
 kiosk::width: 1600
 kiosk::height: 900
 ups::vendorid: '0764'
