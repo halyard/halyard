@@ -41,7 +41,7 @@ hmod 'smb', '0.0.7'
 hmod 'teslamate', '0.0.18'
 hmod 'updates', '0.0.10'
 hmod 'ups', '0.0.6'
-hmod 'wh31e', '0.0.13'
+hmod 'wh31e', '0.0.15'
 hmod 'wireguard', '0.0.29'
 hmod 'zwave', '0.0.8'
 
