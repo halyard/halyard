@@ -68,6 +68,7 @@ wh31e::sensor_names:
   246: ripe4
   165: raw3
   169: raw4
+slackmastodon::frequency: 1800
 classes:
   - kiosk
   - homeassistant
