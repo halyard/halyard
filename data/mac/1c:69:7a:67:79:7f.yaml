@@ -75,3 +75,4 @@ classes:
   - zwave
   - prometheus::client::blackbox
   - wh31e
+  - slackmastodon
