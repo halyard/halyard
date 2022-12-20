@@ -1,6 +1,6 @@
 hostname::hostname: kiosk-office
 hostname::domain: servers.home.a-rwx.org
-kiosk::url: https://grafana.a-rwx.org/d/5Su88Yc4k/air-quality?orgId=1&refresh=1m&kiosk
+kiosk::url: https://grafana.a-rwx.org/d/J0YeJwc4z/kiosk-office?orgId=1&refresh=1m&from=now-3h&to=now&kiosk
 network::ignore:
   - ^lo$
   - ^docker\d+$
