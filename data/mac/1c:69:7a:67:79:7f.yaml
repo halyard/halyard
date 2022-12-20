@@ -15,7 +15,7 @@ zwave::backup_password: zwave
 zwave::backup_watchdog: https://watchdog.a-rwx.org/checks/11A8BDF7-44D0-49A5-98B0-899BD780FC11
 nginx::ports:
   - 8443
-kiosk::url: https://grafana.a-rwx.org/d/DMYA0lc4k/kiosk-rack?orgId=1&refresh=1m&from=now-3h&to=now&kiosk
+kiosk::url: https://grafana.a-rwx.org/d/DMYA0lc4k/kiosk-rack?orgId=1&refresh=1m&kiosk
 kiosk::width: 1600
 kiosk::height: 900
 ups::vendorid: '0764'
