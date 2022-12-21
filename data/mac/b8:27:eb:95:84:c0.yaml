@@ -1,11 +1,14 @@
 hostname::hostname: kiosk-bar
 hostname::domain: iot.home.a-rwx.org
-kiosk::url: https://pumidor.servers.home.a-rwx.org/d/KZ4Sbl1Gz/kiosk?orgId=1&refresh=1m&kiosk
+kiosk::url: https://bouncingdvdlogo.com/
+kiosk::width: 1920
+kiosk::height: 1080
 network::ignore:
   - ^lo$
   - ^docker\d+$
   - ^(tap|veth)
   - ^wg\d+
   - end\d+
+  - wlan0
 classes:
   - kiosk
