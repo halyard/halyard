@@ -1,5 +1,0 @@
-hostname::hostname: kiosk-zero
-hostname::domain: iot.home.a-rwx.org
-kiosk::url: https://bouncingdvdlogo.com/
-classes:
-  - kiosk
