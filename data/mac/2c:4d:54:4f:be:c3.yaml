@@ -27,7 +27,6 @@ vm_baseline: &vm_baseline
   bridge: br0
 kvm::guests:
   influxdb: *vm_baseline
-  pumidor: *vm_baseline
   hub: *vm_baseline
   metrics:
     <<: *vm_baseline

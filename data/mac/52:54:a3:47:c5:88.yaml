@@ -14,10 +14,6 @@ nginx::sites:
     tls_challengealias: logs.certs.a-rwx.org
     proxy_params:
       proxy_ssl_protocols: TLSv1.3
-  pumidor.a-rwx.org:
-    proxy_target: https://pumidor.servers.home.a-rwx.org
-    tls_challengealias: pumidor.certs.a-rwx.org
-    csp: "default-src 'self' http: https: ws: wss: data: blob: 'unsafe-inline' 'unsafe-eval'; frame-ancestors 'self';"
   grafana.a-rwx.org:
     proxy_target: https://grafana.servers.home.a-rwx.org
     tls_challengealias: grafana.certs.a-rwx.org
@@ -51,7 +47,6 @@ prometheus::client::blackbox::http_urls:
   - https://hass.a-rwx.org
   - https://metrics.a-rwx.org
   - https://logs.a-rwx.org
-  - https://pumidor.a-rwx.org
   - https://grafana.a-rwx.org
   - https://nvr.a-rwx.org
 classes:
