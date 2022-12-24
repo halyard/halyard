@@ -16,7 +16,6 @@ grafana::extra_config:
   - '-e GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS=panodata-map-panel'
 grafana::backup_target: rclone:smb:grafana/restic
 grafana::backup_password: grafana
-grafana::backup_watchdog: https://watchdog.a-rwx.org/checks/77E24A43-46B2-4D14-8328-98E255870A48
 prometheus::client::blackbox::http_urls:
   - https://grafana.servers.home.a-rwx.org
 classes:
