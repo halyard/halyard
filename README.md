@@ -8,7 +8,7 @@ My puppet code for configuring my endpoints. Includes specific module layouts an
 ## Installation
 
 ```
-curl -sLo kickstart https://git.io/halyard
+curl -sLo kickstart https://git.io/halyard-kickstart
 sudo bash kickstart
 ```
 
