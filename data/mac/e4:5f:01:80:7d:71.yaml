@@ -1,2 +1,4 @@
 hostname::hostname: usb-kvm
 hostname::domain: standard.home.a-rwx.org
+classes:
+- keyboard
