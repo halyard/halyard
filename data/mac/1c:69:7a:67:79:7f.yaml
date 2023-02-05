@@ -55,6 +55,7 @@ disks::lvs:
 docker::data_root: /mnt/docker
 slackmastodon::frequency: '1800'
 classes:
+  - acme
   - kiosk
   - homeassistant
   - ups
