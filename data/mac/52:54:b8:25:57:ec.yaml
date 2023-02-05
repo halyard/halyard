@@ -13,6 +13,7 @@ loki::client::logpaths:
 loki::client::syslog_sources:
   - 10.0.0.0/24
   - 10.0.1.0/24
+  - 192.168.1.2/32
 prometheus::client::blackbox::http_urls:
   - https://syslog.servers.home.a-rwx.org
 classes:
