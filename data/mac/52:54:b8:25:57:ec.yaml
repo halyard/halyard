@@ -3,7 +3,7 @@ hostname::domain: servers.home.a-rwx.org
 backup::frequency: '3600'
 loki::server::hostname: syslog.servers.home.a-rwx.org
 loki::server::retention_enabled: true
-loki::server::retention_period: 90d
+loki::server::retention_period: 91d
 loki::server::tls_challengealias: syslog.servers.home.certs.a-rwx.org
 loki::server::backup_target: rclone:smb:loki/backup
 loki::server::backup_password: loki
