@@ -38,7 +38,7 @@ kvm::guests:
     cores: 8
     disks:
       root:
-        size: 200G
+        size: 500G
         vg: vg2
   grafana: *vm_baseline
   teslamate:
