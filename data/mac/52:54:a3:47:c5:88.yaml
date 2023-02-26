@@ -49,6 +49,7 @@ prometheus::client::blackbox::http_urls:
   - https://logs.a-rwx.org
   - https://grafana.a-rwx.org
   - https://nvr.a-rwx.org
+  - https://gateway.infra.home.a-rwx.org
 classes:
   - wireguard
   - nginx
