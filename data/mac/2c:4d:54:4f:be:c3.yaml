@@ -41,8 +41,6 @@ kvm::guests:
         size: 500G
         vg: vg2
   grafana: *vm_baseline
-  teslamate:
-    <<: *vm_baseline
-    ram: 2048
+  teslamate: *vm_baseline
 classes:
   - kvm
