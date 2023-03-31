@@ -14,5 +14,7 @@ hierarchy:
     bucket: akerl-puppet
 - name: MAC Address
   path: mac/%{facts.networking.mac}.yaml
+- name: OS
+  path: os/%{facts.os.name}.yaml
 - name: Common Settings
   path: common.yaml
