@@ -18,7 +18,7 @@ end
 hmod 'acme', '0.0.17'
 hmod 'backup', '0.0.24'
 hmod 'configvault', '0.0.40'
-hmod 'console', '0.0.10'
+hmod 'console', '0.0.11'
 hmod 'disks', '0.0.27'
 hmod 'docker', '0.0.32'
 hmod 'homeassistant', '0.0.12'
