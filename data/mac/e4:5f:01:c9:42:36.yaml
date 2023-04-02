@@ -1,0 +1,8 @@
+hostname::hostname: kiosk-poker
+hostname::domain: iot.home.a-rwx.org
+kiosk::urls:
+  - https://grafana.a-rwx.org/d/J0YeJwc4z/kiosk-office?orgId=1&refresh=1m&kiosk
+  - https://grafana.a-rwx.org/d/J0YeJwc4z/kiosk-office?orgId=1&refresh=1m&from=now-3h&to=now&kiosk
+  - https://grafana.a-rwx.org/d/J0YeJwc4z/kiosk-office?orgId=1&refresh=1m&from=now-7d&to=now&kiosk
+classes:
+  - kiosk
