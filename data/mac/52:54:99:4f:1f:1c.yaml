@@ -1,10 +1,10 @@
 hostname::hostname: teslamate
 hostname::domain: servers.home.a-rwx.org
 teslamate::datadir: /opt/teslamate
-teslamate::postgres_watchdog: https://watchdog.a-rwx.org/checks/CE4591EE-D06D-4DBB-BD76-E3D08DB8F1CC
+teslamate::postgres_watchdog: https://watchdog.akerl.app/checks/CE4591EE-D06D-4DBB-BD76-E3D08DB8F1CC
 teslamate::backup_target: rclone:smb:teslamate
 teslamate::backup_password: teslamate
-teslamate::backup_watchdog: https://watchdog.a-rwx.org/checks/5DC21655-B960-416E-A97D-871C811B4973
+teslamate::backup_watchdog: https://watchdog.akerl.app/checks/5DC21655-B960-416E-A97D-871C811B4973
 prometheus::client::blackbox::http_urls:
   - http://teslamate.servers.home.a-rwx.org
 classes:

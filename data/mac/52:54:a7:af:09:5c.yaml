@@ -5,7 +5,7 @@ influxdb::tls_challengealias: influxdb.servers.home.certs.a-rwx.org
 influxdb::datadir: /opt/influxdb
 influxdb::backup_target: rclone:smb:influxdb/restic
 influxdb::backup_password: influxdb
-influxdb::backup_watchdog: https://watchdog.a-rwx.org/checks/5CEA0305-7E3C-48C3-8AFA-2D6EE1C14A21
+influxdb::backup_watchdog: https://watchdog.akerl.app/checks/5CEA0305-7E3C-48C3-8AFA-2D6EE1C14A21
 prometheus::client::blackbox::http_urls:
   - https://influxdb.servers.home.a-rwx.org
 classes:
