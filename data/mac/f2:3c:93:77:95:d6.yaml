@@ -1,8 +1,8 @@
 hostname::hostname: goat
 hostname::domain: linode.a-rwx.org
 prometheus::address: goat.wg0.a-rwx.org
-goat::hostname: goat.akerl.org
-goat::tls_challengealias: goat.certs.akerl.org
+goat::hostname: goat.akerl.app
+goat::tls_challengealias: goat.certs.akerl.app
 goat::backup_target: s3:s3.amazonaws.com/akerl-goat-backup
 goat::backup_password: goat
 goat::backup_watchdog: https://watchdog.a-rwx.org/checks/5009A071-2768-41F3-A95C-EC31994F3D63
@@ -20,7 +20,7 @@ wireguard::networks:
 loki::client::logpaths:
   nginx: /var/log/nginx/*
 prometheus::client::blackbox::http_urls:
-  - https://goat.akerl.org
+  - https://goat.akerl.app
 classes:
   - goat
   - wireguard
