@@ -2,6 +2,7 @@ hostname::hostname: kiosk-poker
 hostname::domain: iot.home.a-rwx.org
 kiosk::urls:
   - https://poker.akerl.app
+kiosk::overscan_right: 5
 network::ignore:
   - ^lo$
   - ^docker\d+$
