@@ -2,7 +2,7 @@ hostname::hostname: kiosk-tea
 hostname::domain: iot.home.a-rwx.org
 kiosk::urls:
   - https://grafana.a-rwx.org/d/KZ4Sbl1Gz/kiosk-tea?orgId=1&refresh=1m&kiosk
-  - https://grafana.a-rwx.org/d/KZ4Sbl1Gz/kiosk-tea?orgId=1&refresh=1m&from=now-1h&to=now&kiosk
+  - https://frame.akerl.app
   - https://grafana.a-rwx.org/d/miSaKso4k/kiosk-tea-deviation?orgId=1&refresh=1m&kiosk
 wh31e::influx_url: https://influxdb.servers.home.a-rwx.org
 wh31e::influx_org: influx
