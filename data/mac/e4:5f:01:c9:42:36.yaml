@@ -3,6 +3,7 @@ hostname::domain: iot.home.a-rwx.org
 kiosk::urls:
   - https://poker.akerl.app
 kiosk::overscan_right: 5
+kiosk::timezone: America/New_York
 network::ignore:
   - ^lo$
   - ^docker\d+$
