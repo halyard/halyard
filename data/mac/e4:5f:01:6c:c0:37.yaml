@@ -1,7 +1,7 @@
 hostname::hostname: kiosk-office
 hostname::domain: servers.home.a-rwx.org
 kiosk::urls:
-  - https://frame.akerl.app
+  - "https://kiosk:%{lookup('frame_password')}@frame.akerl.app"
   - https://grafana.a-rwx.org/d/J0YeJwc4z/kiosk-office?orgId=1&refresh=1m&from=now-3h&to=now&kiosk
   - https://grafana.a-rwx.org/d/J0YeJwc4z/kiosk-office?orgId=1&refresh=1m&kiosk
 kiosk::timezone: America/New_York
