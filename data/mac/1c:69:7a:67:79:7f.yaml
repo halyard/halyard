@@ -17,6 +17,8 @@ nginx::ports:
   - 8443
 kiosk::urls:
   - https://grafana.a-rwx.org/d/DMYA0lc4k/kiosk-rack?orgId=1&refresh=1m&kiosk
+  - https://grafana.a-rwx.org/d/DMYA0lc4k/kiosk-rack?orgId=1&refresh=1m&from=now-3h&to=now&kiosk
+  - https://frame.akerl.app/
 kiosk::width: 1600
 kiosk::height: 900
 ups::vendorid: '0764'
