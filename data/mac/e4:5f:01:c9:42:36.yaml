@@ -1,7 +1,7 @@
 hostname::hostname: kiosk-poker
 hostname::domain: iot.home.a-rwx.org
 kiosk::urls:
-  - https://frame.akerl.app
+  - "https://kiosk:%{lookup('frame_password')}@frame.akerl.app"
 kiosk::overscan_right: 5
 kiosk::timezone: America/New_York
 network::ignore:
