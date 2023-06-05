@@ -42,5 +42,6 @@ kvm::guests:
         vg: vg2
   grafana: *vm_baseline
   teslamate: *vm_baseline
+  dns: *vm_baseline
 classes:
   - kvm
