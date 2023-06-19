@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 URL="https://exporter.akerl.app/metric"
 AUTH="Authorization: Bearer $EXPORTER_TOKEN"
 if [[ "$JOB_STATUS" == "success" ]] ; then
@@ -9,4 +11,6 @@ else
 fi
 BODY="{\"name\":\"gh/${GITHUB_REPOSITORY}\",\"metrics\":[{\"name\":\"ghactions\",\"type\":\"gauge\",\"tags\":{\"repo\":\"${GITHUB_REPOSITORY}\"},\"value\":\"${VALUE}\"}"
 
-curl -XPOST -d "$BODY" -H"$AUTH" "$URL"
+echo "$BODY"
+
+curl --fail -XPOST -d "$BODY" -H"$AUTH" "$URL"
