@@ -9,7 +9,7 @@ if [[ "$JOB_STATUS" == "success" ]] ; then
 else
     VALUE=0
 fi
-BODY="{\"name\":\"gh/${GITHUB_REPOSITORY}\",\"metrics\":[{\"name\":\"ghactions\",\"type\":\"gauge\",\"tags\":{\"repo\":\"${GITHUB_REPOSITORY}\"},\"value\":\"${VALUE}\"}"
+BODY="{\"name\":\"gh/${GITHUB_REPOSITORY}\",\"metrics\":[{\"name\":\"ghactions\",\"type\":\"gauge\",\"tags\":{\"repo\":\"${GITHUB_REPOSITORY}\"},\"value\":\"${VALUE}\"}]}"
 
 echo "$BODY"
 
