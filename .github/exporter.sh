@@ -13,4 +13,4 @@ BODY="{\"name\":\"gh/${GITHUB_REPOSITORY}\",\"metrics\":[{\"name\":\"ghactions\"
 
 echo "$BODY"
 
-curl --fail -XPOST -d "$BODY" -H"$AUTH" "$URL"
+curl -i -XPOST -d "$BODY" -H"$AUTH" "$URL"
