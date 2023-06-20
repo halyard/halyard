@@ -6,6 +6,12 @@ prometheus::server::tls_challengealias: metrics.servers.home.certs.a-rwx.org
 prometheus::server::backup_target: rclone:smb:prometheus/backup
 prometheus::server::backup_password: prometheus
 prometheus::server::backup_watchdog: https://watchdog.akerl.app/checks/01CE73DC-ECC2-4EC1-BC20-8B13CD44238E
+prometheus::server::targets:
+- job_name: hook
+  scheme: https
+  static_configs:
+  - targets:
+    - exporter.akerl.app:443
 wireguard::networks:
   wg0:
     puppet-dmz:
