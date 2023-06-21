@@ -20,7 +20,7 @@ jobs:
         ruby-version: '3.1'
         bundler-cache: true
     - name: Build
-      run: bundle exec rake
+      run: bundle exec rake lint
     - name: Post to hook-exporter
       run: ./.github/exporter.sh
       env:
