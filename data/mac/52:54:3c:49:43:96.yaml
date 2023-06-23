@@ -1,6 +1,6 @@
 hostname::hostname: cultivator
 hostname::domain: servers.home.a-rwx.org
 cultivator::integration_id: '343217'
-cultivator::version: v0.0.3
+cultivator::version: v0.0.4
 classes:
   - cultivator
