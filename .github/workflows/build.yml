@@ -1,9 +1,10 @@
+---
 name: Build
-on:
+'on':
   pull_request_target:
   push:
     branches:
-      - master
+    - main
 jobs:
   build:
     name: Build
@@ -14,7 +15,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
       with:
-        ref: ${{ github.ref_name }}
+        ref: "${{ github.ref_name }}"
         fetch-depth: 0
         submodules: recursive
     - uses: ruby/setup-ruby@v1
@@ -24,8 +25,8 @@ jobs:
     - name: Build
       run: bundle exec rake lint
     - name: Post to hook-exporter
-      run: ./.github/exporter.sh
+      run: "./.github/exporter.sh"
       env:
-        EXPORTER_TOKEN: ${{ secrets.EXPORTER_TOKEN }}
-        JOB_STATUS: ${{ job.status }}
-      if: ${{ always() }}
+        EXPORTER_TOKEN: "${{ secrets.EXPORTER_TOKEN }}"
+        JOB_STATUS: "${{ job.status }}"
+      if: "${{ always() }}"
