@@ -1,5 +1,5 @@
 hostname::hostname: kiosk-poker
-hostname::domain: iot.home.a-rwx.org
+hostname::domain: servers.home.a-rwx.org
 kiosk::urls:
   - "https://kiosk:%{lookup('frame_password')}@frame.akerl.app"
 kiosk::overscan_right: 5
