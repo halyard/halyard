@@ -25,8 +25,8 @@ wireguard::networks:
       address: 10.255.255.4
       allowedips: 10.255.255.4/32,10.0.1.114/32
 classes:
-  - wireguard
-  - grafana
-  - prometheus::client::wireguard
-  - prometheus::client::blackbox
+#  - wireguard
+#  - grafana
+#  - prometheus::client::wireguard
+#  - prometheus::client::blackbox
 
