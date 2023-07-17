@@ -1,0 +1,32 @@
+hostname::hostname: charts
+hostname::domain: linode.a-rwx.org
+prometheus::address: charts.wg0.a-rwx.org
+grafana::hostname: charts.akerl.app
+grafana::tls_challengealias: charts.certs.akerl.app
+grafana::datadir: /opt/grafana
+grafana::admin_user: admin
+grafana::root_domain: charts.akerl.app
+grafana::root_url: https://charts.akerl.app/
+grafana::allowed_organizations:
+  - scrtybybscrty
+grafana::backup_target: s3:s3.amazonaws.com/akerl-charts-backup
+grafana::backup_password: grafana
+prometheus::client::blackbox::http_urls:
+  - https://charts.akerl.app
+wireguard::networks:
+  wg0:
+    puppet-hub:
+      address: 10.255.255.2
+      allowedips: 10.255.255.2/32,10.0.1.112/32
+    puppet-charts:
+      address: 10.255.255.7
+      listenport: 41194
+    puppet-metrics:
+      address: 10.255.255.4
+      allowedips: 10.255.255.4/32,10.0.1.114/32
+classes:
+  - wireguard
+  - grafana
+  - prometheus::client::wireguard
+  - prometheus::client::blackbox
+
