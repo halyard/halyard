@@ -8,6 +8,15 @@ influxdb::backup_password: influxdb
 influxdb::backup_watchdog: https://watchdog.akerl.app/checks/5CEA0305-7E3C-48C3-8AFA-2D6EE1C14A21
 prometheus::client::blackbox::http_urls:
   - https://influxdb.servers.home.a-rwx.org
+wireguard::networks:
+  wg0:
+    puppet-influxdb:
+      address: 10.255.255.8
+    puppet-charts:
+      address: 10.255.255.7
+      endpoint: 143.42.119.89:41194
+      keepalive: 1
 classes:
   - influxdb
+  - wireguard
   - prometheus::client::blackbox
