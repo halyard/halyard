@@ -12,6 +12,7 @@ grafana::allowed_organizations:
 grafana::backup_target: s3:s3.amazonaws.com/akerl-charts-backup
 grafana::backup_password: grafana
 grafana::allow_anonymous: true
+grafana::viewers_can_edit: true
 prometheus::client::blackbox::http_urls:
   - https://charts.akerl.app
 wireguard::networks:
