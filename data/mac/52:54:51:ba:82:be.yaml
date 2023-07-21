@@ -1,8 +1,8 @@
 hostname::hostname: grafana
 hostname::domain: servers.home.a-rwx.org
 grafana::hostname: grafana.servers.home.a-rwx.org
-grafana::tls_challengealias: grafana.servers.home.certs.a-rwx.org
 grafana::datadir: /opt/grafana
+grafana::email: admin@lesaker.org
 grafana::admin_user: admin
 grafana::root_domain: grafana.a-rwx.org
 grafana::root_url: https://grafana.a-rwx.org/
