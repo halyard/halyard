@@ -4,7 +4,6 @@ backup::frequency: '3600'
 loki::server::hostname: syslog.servers.home.a-rwx.org
 loki::server::retention_enabled: true
 loki::server::retention_period: 91d
-loki::server::tls_challengealias: syslog.servers.home.certs.a-rwx.org
 loki::server::backup_target: rclone:smb:loki/backup
 loki::server::backup_password: loki
 loki::server::backup_watchdog: https://watchdog.akerl.app/checks/4BB4B57B-E24C-4752-A05B-F4F199EE6806
