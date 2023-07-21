@@ -15,14 +15,14 @@ def pmod(name, version)
   hmod(name, version, org: 'puppetlabs')
 end
 
-hmod 'acme', '0.0.29'
+hmod 'acme', '0.0.30'
 hmod 'backup', '0.0.31'
 hmod 'configvault', '0.0.47'
 hmod 'console', '0.0.18'
 hmod 'cultivator', '0.0.19'
 hmod 'disks', '0.0.33'
 hmod 'docker', '0.0.38'
-hmod 'homeassistant', '0.0.18'
+hmod 'homeassistant', '0.0.24'
 hmod 'hostname', '0.1.21'
 hmod 'goat', '0.0.17'
 hmod 'grafana', '0.0.43'
