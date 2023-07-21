@@ -3,24 +3,19 @@ hostname::domain: servers.home.a-rwx.org
 nginx::sites:
   hass.a-rwx.org:
     proxy_target: https://hass.servers.home.a-rwx.org
-    tls_challengealias: hass.certs.a-rwx.org
   metrics.a-rwx.org:
     proxy_target: https://metrics.servers.home.a-rwx.org
-    tls_challengealias: metrics.certs.a-rwx.org
     proxy_params:
       proxy_ssl_protocols: TLSv1.3
   logs.a-rwx.org:
     proxy_target: https://syslog.servers.home.a-rwx.org
-    tls_challengealias: logs.certs.a-rwx.org
     proxy_params:
       proxy_ssl_protocols: TLSv1.3
   grafana.a-rwx.org:
     proxy_target: https://grafana.servers.home.a-rwx.org
-    tls_challengealias: grafana.certs.a-rwx.org
     csp: "default-src 'self' http: https: ws: wss: data: blob: 'unsafe-inline' 'unsafe-eval'; frame-ancestors 'self';"
   nvr.a-rwx.org:
     proxy_target: https://10.0.1.150:9901
-    tls_challengealias: nvr.certs.a-rwx.org
     csp: "default-src 'self' http: https: ws: wss: data: blob: 'unsafe-inline' 'unsafe-eval'; frame-ancestors 'self';"
     proxy_params:
       proxy_ssl_protocols: TLSv1.2 TLSv1.3
