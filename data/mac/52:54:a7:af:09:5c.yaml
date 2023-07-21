@@ -1,7 +1,6 @@
 hostname::hostname: influxdb
 hostname::domain: servers.home.a-rwx.org
 influxdb::hostname: influxdb.servers.home.a-rwx.org
-influxdb::tls_challengealias: influxdb.servers.home.certs.a-rwx.org
 influxdb::datadir: /opt/influxdb
 influxdb::backup_target: rclone:smb:influxdb/restic
 influxdb::backup_password: influxdb
