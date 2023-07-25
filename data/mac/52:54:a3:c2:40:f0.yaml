@@ -7,5 +7,5 @@ unpoller::loki_url: https://logs.a-rwx.org
 unpoller::loki_user: unifi
 unpoller::unifi_url: https://gateway.infra.home.a-rwx.org
 unpoller::unifi_user: unpoller
-classes:
-  - unpoller
+#classes:
+#- unpoller
