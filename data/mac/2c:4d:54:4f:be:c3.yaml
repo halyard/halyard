@@ -22,20 +22,20 @@ vm_baseline: &vm_baseline
     root:
       size: 50G
       vg: vg2
-  ram: 4096
-  cores: 4
+  ram: 2048
+  cores: 2
   bridge: br0
 kvm::guests:
   influxdb: *vm_baseline
   hub: *vm_baseline
   metrics:
     <<: *vm_baseline
-    ram: 8192
-    cores: 8
+    ram: 4096
+    cores: 4
   syslog:
     <<: *vm_baseline
-    ram: 8192
-    cores: 8
+    ram: 4096
+    cores: 4
     disks:
       root:
         size: 500G
@@ -43,5 +43,6 @@ kvm::guests:
   grafana: *vm_baseline
   teslamate: *vm_baseline
   cultivator: *vm_baseline
+  unpoller: *vm_baseline
 classes:
   - kvm
