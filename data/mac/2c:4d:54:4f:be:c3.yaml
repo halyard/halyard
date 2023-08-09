@@ -16,8 +16,20 @@ kvm::images:
   archlinux:
     url: https://github.com/halyard/image-archlinux/releases/download/v0.0.18/image
     checksum: 605b67d1f3f0d8647591441c3350b0dce89557f894232a941ea76bb722ce47e2
+  ubuntu:
+    url: https://cloud-images.ubuntu.com/daily/server/daily/server/releases/23.04/release-20230729/ubuntu-23.04-server-cloudimg-amd64.img
+    checksum: 300d765c17d047403e686c9513bcc71aecddbf4954750d109fb79634ebd69510
 vm_baseline: &vm_baseline
   image: archlinux
+  disks:
+    root:
+      size: 50G
+      vg: vg2
+  ram: 2048
+  cores: 2
+  bridge: br0
+ubuntu_baseline: &ubuntu_baseline
+  image: ubuntu
   disks:
     root:
       size: 50G
@@ -28,6 +40,9 @@ vm_baseline: &vm_baseline
 kvm::guests:
   influxdb: *vm_baseline
   hub: *vm_baseline
+  cultivator: *ubuntu_baseline
+  unpoller: *vm_baseline
+  grafana: *vm_baseline
   metrics:
     <<: *vm_baseline
     ram: 4096
@@ -40,11 +55,8 @@ kvm::guests:
       root:
         size: 500G
         vg: vg2
-  grafana: *vm_baseline
   teslamate:
     <<: *vm_baseline
     ram: 4096
-  cultivator: *vm_baseline
-  unpoller: *vm_baseline
 classes:
   - kvm
