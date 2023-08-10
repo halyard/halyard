@@ -21,7 +21,6 @@ backup::frequency: '21600'
 prometheus::server_ip: 10.0.1.114
 prometheus::address: "%{lookup('hostname::hostname')}.%{lookup('hostname::domain')}"
 packages:
-  - bind
   - vim
   - net-tools
   - htop
