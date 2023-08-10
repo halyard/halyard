@@ -50,7 +50,7 @@ hmod 'wireguard', '0.0.37'
 hmod 'zwave', '0.0.22'
 
 pmod 'apt', '9.1.0'
-pmod 'firewall', '5.0.0'
+pmod 'firewall', '6.0.0'
 pmod 'mount_core', '1.2.0'
 pmod 'stdlib', '9.2.0'
 pmod 'vcsrepo', '6.1.0'

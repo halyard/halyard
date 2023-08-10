@@ -1,2 +1,3 @@
+apt::key_options: ''
 packages:
   - dnsutils
