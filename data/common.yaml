@@ -18,6 +18,7 @@ loki::client::logpaths:
   puppet: /opt/halyard/logs/puppet-run.*
 loki::client::password: unset
 backup::frequency: '21600'
+kiosk::browser: firefox
 prometheus::server_ip: 10.0.1.114
 prometheus::address: "%{lookup('hostname::hostname')}.%{lookup('hostname::domain')}"
 packages:
