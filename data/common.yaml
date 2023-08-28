@@ -28,3 +28,5 @@ packages:
   - tcpdump
   - tree
   - dstat
+  - tmux
+  - screen
