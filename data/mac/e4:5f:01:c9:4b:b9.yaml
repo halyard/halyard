@@ -8,7 +8,6 @@ kiosk::timezone: America/New_York
 wh31e::influx_url: https://influxdb.servers.home.a-rwx.org
 wh31e::influx_org: influx
 wh31e::influx_bucket: pumidor
-wh31e::sample_rate: 1024k
 wh31e::sensor_names:
   253: hotbox
   49: ambient
