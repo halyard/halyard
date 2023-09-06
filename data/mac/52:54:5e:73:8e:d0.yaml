@@ -15,19 +15,19 @@ wireguard::networks:
   wg0:
     puppet-dmz:
       address: 10.255.255.1
-      endpoint: 96.126.107.11:41194
+      endpoint: 172.234.40.148:41194
       keepalive: 1
     puppet-codepad:
       address: 10.255.255.5
-      endpoint: 172.104.214.163:41194
+      endpoint: 172.234.40.128:41194
       keepalive: 1
     puppet-goat:
       address: 10.255.255.6
-      endpoint: 170.187.160.67:41194
+      endpoint: 172.234.40.124:41194
       keepalive: 1
     puppet-charts:
       address: 10.255.255.7
-      endpoint: 143.42.119.89:41194
+      endpoint: 172.234.40.89:41194
       keepalive: 1
     puppet-metrics:
       address: 10.255.255.4
