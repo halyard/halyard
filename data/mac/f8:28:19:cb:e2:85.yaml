@@ -28,6 +28,6 @@ network::ignore:
   - ^(tap|veth)
   - ^wg\d+
   - end\d+
-#classes:
-#  - kiosk
-#  - wh31e
+classes:
+  - kiosk
+  - wh31e
