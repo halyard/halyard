@@ -28,7 +28,7 @@ network::ignore:
   - ^docker\d+$
   - ^(tap|veth)
   - ^wg\d+
-  - end\d+
+  - eno\d+
 classes:
   - kiosk
   - wh31e
