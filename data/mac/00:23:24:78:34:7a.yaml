@@ -9,6 +9,6 @@ network::ignore:
   - ^docker\d+$
   - ^(tap|veth)
   - ^wg\d+
-  - wlan\d+
+  - wlp2s0
 classes:
   - kiosk
