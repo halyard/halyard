@@ -1,0 +1,14 @@
+hostname::hostname: kiosk-poker
+hostname::domain: servers.home.a-rwx.org
+kiosk::urls:
+  - "https://kiosk:%{lookup('frame_password')}@frame.akerl.app"
+kiosk::overscan_right: 5
+kiosk::timezone: America/New_York
+network::ignore:
+  - ^lo$
+  - ^docker\d+$
+  - ^(tap|veth)
+  - ^wg\d+
+  - wlan\d+
+classes:
+  - kiosk
