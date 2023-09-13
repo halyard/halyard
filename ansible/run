@@ -9,6 +9,6 @@ shift
 
 ARGS=""
 
-[[ -n "$ONELINE" ]] && ARGS="$ARGS -o"
+[[ -v ONELINE ]] && ARGS="$ARGS -o"
 
 ansible $ARGS "$PATTERN" -a "$*"
