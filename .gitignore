@@ -4,4 +4,3 @@
 /modules
 /.tmp/
 /Puppetfile.lock
-/Gemfile.lock
