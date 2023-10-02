@@ -12,6 +12,12 @@ wireguard::networks:
     puppet-metrics:
       address: 10.255.255.4
       allowedips: 10.255.255.4/32,10.0.1.114/32
+    client-lift:
+      address: 10.255.255.100
+    client-szeth:
+      address: 10.255.255.101
+    client-wilson:
+      address: 10.255.255.102
 classes:
   - wireguard
   - prometheus::client::wireguard
