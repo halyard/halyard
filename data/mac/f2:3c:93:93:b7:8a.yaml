@@ -1,0 +1,17 @@
+hostname::hostname: proxy
+hostname::domain: linode.a-rwx.org
+prometheus::address: proxy.wg0.a-rwx.org
+wireguard::networks:
+  wg0:
+    puppet-hub:
+      address: 10.255.255.2
+      allowedips: 10.255.255.2/32,10.0.1.112/32
+    puppet-proxy:
+      address: 10.255.255.9
+      listenport: 41194
+    puppet-metrics:
+      address: 10.255.255.4
+      allowedips: 10.255.255.4/32,10.0.1.114/32
+classes:
+  - wireguard
+  - prometheus::client::wireguard

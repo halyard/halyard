@@ -40,6 +40,10 @@ wireguard::networks:
       address: 10.255.255.7
       endpoint: 172.234.40.89:41194
       keepalive: 1
+    puppet-proxy:
+      address: 10.255.255.9
+      endpoint: 69.164.210.44:41194
+      keepalive: 1
 loki::client::logpaths:
   nginx: /var/log/nginx/*
 prometheus::client::blackbox::http_urls:
