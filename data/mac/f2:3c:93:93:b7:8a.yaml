@@ -18,6 +18,12 @@ wireguard::networks:
       address: 10.255.255.101
     client-wilson:
       address: 10.255.255.102
+wireguard::routers:
+  - 10.255.255.0/24
+wireguard::alternate_ports:
+- 443
+- 3269
+- 5353
 classes:
   - wireguard
   - prometheus::client::wireguard
