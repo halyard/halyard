@@ -57,6 +57,7 @@ network::vlans:
   iot:
     mac: 1c:69:7a:67:79:80
     id: '700'
+    parent: eno1
 disks::lvs:
   docker:
     size: 50G
