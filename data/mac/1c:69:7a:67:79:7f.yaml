@@ -53,6 +53,10 @@ network::ignore:
   - ^(tap|veth)
   - ^wg\d+
   - wlp.+
+network::vlans:
+  iot:
+    mac: 1c:69:7a:67:79:80
+    id: '700'
 disks::lvs:
   docker:
     size: 50G
