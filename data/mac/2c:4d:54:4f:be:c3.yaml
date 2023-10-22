@@ -49,7 +49,7 @@ kvm::guests:
     cores: 4
   syslog:
     <<: *vm_baseline
-    ram: 4096
+    ram: 8192
     cores: 4
     disks:
       root:
