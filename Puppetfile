@@ -47,7 +47,7 @@ hmod 'updates', '0.0.24'
 hmod 'ups', '0.0.19'
 hmod 'wh31e', '0.0.27'
 hmod 'wireguard', '0.0.42'
-hmod 'zwave', '0.0.22'
+hmod 'zwave', '0.0.23'
 
 pmod 'apt', '9.1.0'
 pmod 'firewall', '6.0.0'
