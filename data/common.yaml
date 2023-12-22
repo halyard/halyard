@@ -26,6 +26,5 @@ packages:
   - htop
   - tcpdump
   - tree
-  - dstat
   - tmux
   - screen
