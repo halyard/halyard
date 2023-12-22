@@ -43,5 +43,6 @@ kvm::guests:
       root:
         size: 500G
         vg: vg2
+  mqtt: *vm_baseline
 classes:
   - kvm
