@@ -1,4 +1,5 @@
 hostname::hostname: mqtt
 hostname::domain: servers.home.a-rwx.org
+mqtt::datadir: /var/lib/mqtt
 classes:
   - mqtt
