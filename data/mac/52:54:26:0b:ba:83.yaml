@@ -11,6 +11,10 @@ prometheus::server::targets:
   static_configs:
   - targets:
     - exporter.akerl.app:443
+- job_name: mqtt
+  static_configs:
+  - targets:
+    - mqtt.servers.home.a-rwx.org:9000
 wireguard::networks:
   wg0:
     puppet-dmz:
