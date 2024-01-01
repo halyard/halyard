@@ -1,0 +1,4 @@
+hostname::hostname: mqtt
+hostname::domain: servers.home.a-rwx.org
+classes:
+  - mqtt
