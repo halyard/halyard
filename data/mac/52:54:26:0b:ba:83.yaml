@@ -15,6 +15,11 @@ prometheus::server::targets:
   static_configs:
   - targets:
     - mqtt.servers.home.a-rwx.org:9000
+- job_name: windows
+  static_configs:
+  - targets:
+    - philote.standard.home.a-rwx.org:12345/metrics
+    - hyrum.gaming.home.a-rwx.org:12345/metrics
 wireguard::networks:
   wg0:
     puppet-dmz:
