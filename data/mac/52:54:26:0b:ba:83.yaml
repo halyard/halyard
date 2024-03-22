@@ -18,8 +18,8 @@ prometheus::server::targets:
 - job_name: windows
   static_configs:
   - targets:
-    - philote.standard.home.a-rwx.org:12345/metrics
-    - hyrum.gaming.home.a-rwx.org:12345/metrics
+    - philote.standard.home.a-rwx.org:12345
+    - hyrum.gaming.home.a-rwx.org:12345
 wireguard::networks:
   wg0:
     puppet-dmz:
