@@ -79,6 +79,8 @@ disks::lvs:
     mount: /mnt/zwave
 docker::data_root: /mnt/docker
 slackmastodon::frequency: '1800'
+frameproxy::datadir: /mnt/frameproxy
+frameproxy::hostname: frame.akerl.app
 classes:
   - acme
   - kiosk
@@ -87,3 +89,4 @@ classes:
   - zwave
   - prometheus::client::blackbox
   - slackmastodon
+  - frameproxy
