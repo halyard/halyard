@@ -80,7 +80,8 @@ disks::lvs:
 docker::data_root: /mnt/docker
 slackmastodon::frequency: '1800'
 frameproxy::datadir: /mnt/frameproxy
-frameproxy::hostname: frame.akerl.app
+frameproxy::intercept_hostname: frame.akerl.app
+frameproxy::proxy_hostname: frameproxy.a-rwx.org
 classes:
   - acme
   - kiosk
