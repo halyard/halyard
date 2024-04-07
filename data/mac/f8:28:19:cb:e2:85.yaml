@@ -5,6 +5,8 @@ kiosk::urls:
   - "https://kiosk:%{lookup('frame_password')}@frame.akerl.app"
   - https://grafana.a-rwx.org/d/miSaKso4k/kiosk-tea-deviation?orgId=1&refresh=1m&kiosk
 kiosk::timezone: America/New_York
+kiosk::proxy: http://frameproxy.a-rwx.org:8080
+kiosk::no_proxy: localhost,127.0.0.1,grafana.a-rwx.org
 wh31e::influx_url: https://influxdb.servers.home.a-rwx.org
 wh31e::influx_org: influx
 wh31e::influx_bucket: pumidor

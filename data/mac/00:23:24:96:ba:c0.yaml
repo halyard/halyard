@@ -5,6 +5,8 @@ kiosk::urls:
   - https://grafana.a-rwx.org/d/J0YeJwc4z/kiosk-office?orgId=1&refresh=1m&from=now-3h&to=now&kiosk
   - https://grafana.a-rwx.org/d/J0YeJwc4z/kiosk-office?orgId=1&refresh=1m&kiosk
 kiosk::timezone: America/New_York
+kiosk::proxy: http://frameproxy.a-rwx.org:8080
+kiosk::no_proxy: localhost,127.0.0.1,grafana.a-rwx.org
 network::ignore:
   - ^lo$
   - ^docker\d+$

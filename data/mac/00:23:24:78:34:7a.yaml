@@ -4,6 +4,8 @@ kiosk::urls:
   - "https://kiosk:%{lookup('frame_password')}@frame.akerl.app"
 kiosk::overscan_right: 5
 kiosk::timezone: America/New_York
+kiosk::proxy: http://frameproxy.a-rwx.org:8080
+kiosk::no_proxy: localhost,127.0.0.1,frame.akerl.app
 network::ignore:
   - ^lo$
   - ^docker\d+$
