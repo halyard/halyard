@@ -39,8 +39,8 @@ kiosk::urls:
   - https://grafana.a-rwx.org/d/DMYA0lc4k/kiosk-rack?orgId=1&refresh=1m&kiosk
 kiosk::width: 1600
 kiosk::height: 900
-kiosk::proxy: http://frameproxy.a-rwx.org:8080
-kiosk::no_proxy: localhost,127.0.0.1,grafana.a-rwx.org
+kiosk::proxy_server: frameproxy.a-rwx.org:8080
+kiosk::proxy_bypass_list: localhost,127.0.0.1,grafana.a-rwx.org
 ups::vendorid: '0764'
 ups::productid: '0601'
 loki::client::logpaths:
