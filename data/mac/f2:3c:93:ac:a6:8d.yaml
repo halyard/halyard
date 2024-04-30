@@ -12,7 +12,7 @@ wireguard::networks:
       listenport: 41194
     puppet-hub:
       address: 10.255.255.2
-      allowedips: 10.255.255.2/32,10.0.1.112/32
+      allowedips: 10.255.255.2/32,10.0.1.112/32,10.0.1.150/32
     puppet-metrics:
       address: 10.255.255.4
       allowedips: 10.255.255.4/32,10.0.1.114/32

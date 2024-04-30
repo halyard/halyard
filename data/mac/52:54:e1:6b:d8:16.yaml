@@ -44,6 +44,8 @@ wireguard::networks:
       address: 10.255.255.9
       endpoint: 69.164.210.44:41194
       keepalive: 1
+wireguard::routers:
+  - 10.255.255.0/24
 loki::client::logpaths:
   nginx: /var/log/nginx/*
 prometheus::client::blackbox::http_urls:
