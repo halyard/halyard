@@ -18,6 +18,8 @@ wireguard::networks:
       address: 10.255.255.101
     client-wilson:
       address: 10.255.255.102
+    client-hafte:
+      address: 10.255.255.105
 wireguard::routers:
   - 10.255.255.0/24
 wireguard::alternate_ports:

@@ -26,6 +26,8 @@ wireguard::networks:
       address: 10.255.255.103
     client-guest:
       address: 10.255.255.104
+    client-hafte:
+      address: 10.255.255.105
 wireguard::routers:
   - 10.255.255.0/24
 classes:
