@@ -1,28 +1,42 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    CFPropertyList (2.3.6)
-    base64 (0.1.1)
-    colored2 (3.1.2)
-    concurrent-ruby (1.2.2)
-    cri (2.15.11)
-    deep_merge (1.2.2)
-    erubi (1.12.0)
-    facter (4.4.3)
-      hocon (~> 1.3)
-      sys-filesystem (~> 1.3)
-      thor (>= 1.0.1, < 2.0)
-    faraday (2.7.11)
+    CFPropertyList (3.0.7)
       base64
-      faraday-net_http (>= 2.0, < 3.1)
-      ruby2_keywords (>= 0.0.4)
+      nkf
+      rexml
+    base64 (0.2.0)
+    colored2 (3.1.2)
+    concurrent-ruby (1.3.4)
+    cri (2.15.12)
+    deep_merge (1.2.2)
+    erubi (1.13.0)
+    facter (4.8.0)
+      hocon (~> 1.3)
+      thor (>= 1.0.1, < 1.3)
+    faraday (2.10.1)
+      faraday-net_http (>= 2.0, < 3.2)
+      logger
     faraday-follow_redirects (0.3.0)
       faraday (>= 1, < 3)
-    faraday-net_http (3.0.2)
-    fast_gettext (2.3.0)
-    ffi (1.15.5)
+    faraday-net_http (3.1.1)
+      net-http
+    fast_gettext (2.4.0)
+      prime
+    ffi (1.17.0)
+    ffi (1.17.0-aarch64-linux-gnu)
+    ffi (1.17.0-aarch64-linux-musl)
+    ffi (1.17.0-arm-linux-gnu)
+    ffi (1.17.0-arm-linux-musl)
+    ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x86-linux-gnu)
+    ffi (1.17.0-x86-linux-musl)
+    ffi (1.17.0-x86_64-darwin)
+    ffi (1.17.0-x86_64-linux-gnu)
+    ffi (1.17.0-x86_64-linux-musl)
     forwardable (1.3.3)
-    gettext (3.4.7)
+    getoptlong (0.2.1)
+    gettext (3.4.9)
       erubi
       locale (>= 2.0.5)
       prime
@@ -32,41 +46,45 @@ GEM
       fast_gettext (~> 2.1)
       gettext (~> 3.4)
       locale
-    hiera (3.12.0)
     hocon (1.4.0)
-    json (2.7.1)
-    jwt (2.7.1)
-    locale (2.1.3)
+    json (2.7.2)
+    jwt (2.8.2)
+      base64
+    locale (2.1.4)
     log4r (1.1.10)
-    minitar (0.9)
+    logger (1.6.0)
+    minitar (0.12)
     multi_json (1.15.0)
+    net-http (0.4.1)
+      uri
+    nkf (0.2.0)
     prime (0.1.2)
       forwardable
       singleton
-    puppet (7.26.0)
+    puppet (8.8.1)
       concurrent-ruby (~> 1.0)
       deep_merge (~> 1.0)
-      facter (> 2.0.1, < 5)
-      fast_gettext (>= 1.1, < 3)
-      hiera (>= 3.2.1, < 4)
+      facter (>= 4.3.0, < 5)
+      fast_gettext (>= 2.1, < 4)
+      getoptlong (~> 0.2.0)
       locale (~> 2.1)
-      multi_json (~> 1.10)
+      multi_json (~> 1.13)
       puppet-resource_api (~> 1.5)
       scanf (~> 1.0)
       semantic_puppet (~> 1.0)
-    puppet (7.26.0-universal-darwin)
-      CFPropertyList (~> 2.2)
+    puppet (8.8.1-universal-darwin)
+      CFPropertyList (>= 3.0.6, < 4)
       concurrent-ruby (~> 1.0)
       deep_merge (~> 1.0)
-      facter (> 2.0.1, < 5)
-      fast_gettext (>= 1.1, < 3)
-      hiera (>= 3.2.1, < 4)
+      facter (>= 4.3.0, < 5)
+      fast_gettext (>= 2.1, < 4)
+      getoptlong (~> 0.2.0)
       locale (~> 2.1)
-      multi_json (~> 1.10)
+      multi_json (~> 1.13)
       puppet-resource_api (~> 1.5)
       scanf (~> 1.0)
       semantic_puppet (~> 1.0)
-    puppet-lint (4.2.0)
+    puppet-lint (4.2.4)
     puppet-lint-absolute_classname-check (4.0.0)
       puppet-lint (>= 3.0, < 5)
     puppet-lint-anchor-check (2.0.0)
@@ -103,33 +121,36 @@ GEM
       puppet-lint (>= 3, < 5)
     puppet-resource_api (1.9.0)
       hocon (>= 1.0)
-    puppet-syntax (3.3.0)
-      puppet (>= 5)
-      rake
-    puppet_forge (5.0.1)
+    puppet-syntax (4.1.1)
+      puppet (>= 7, < 9)
+      rake (~> 13.1)
+    puppet_forge (5.0.4)
       faraday (~> 2.0)
       faraday-follow_redirects (~> 0.3.0)
-      minitar
+      minitar (< 1.0.0)
       semantic_puppet (~> 1.0)
-    r10k (4.0.0)
+    r10k (4.1.0)
       colored2 (= 3.1.2)
       cri (>= 2.15.10)
       gettext-setup (>= 0.24, < 2.0)
-      jwt (>= 2.2.3, < 2.8.0)
+      jwt (>= 2.2.3, < 3)
       log4r (= 1.1.10)
       minitar (~> 0.9)
       multi_json (~> 1.10)
       puppet_forge (>= 4.1, < 6)
-    racc (1.7.1)
-    rake (13.0.6)
-    ruby2_keywords (0.0.5)
+    racc (1.8.1)
+    rake (13.2.1)
+    rexml (3.3.5)
+      strscan
     scanf (1.0.0)
     semantic_puppet (1.1.0)
-    singleton (0.1.1)
-    sys-filesystem (1.4.4)
+    singleton (0.2.0)
+    strscan (3.1.0)
+    sys-filesystem (1.5.0)
       ffi (~> 1.1)
     text (1.3.1)
     thor (1.2.2)
+    uri (0.13.0)
     voxpupuli-puppet-lint-plugins (5.0.0)
       puppet-lint (~> 4.0)
       puppet-lint-absolute_classname-check (~> 4.0)
@@ -151,17 +172,27 @@ GEM
       puppet-lint-version_comparison-check (~> 2.0)
 
 PLATFORMS
-  arm64-darwin-22
-  x86_64-linux
+  aarch64-linux-gnu
+  aarch64-linux-musl
+  arm-linux-gnu
+  arm-linux-musl
+  arm64-darwin
+  ruby
+  universal-darwin
+  x86-linux-gnu
+  x86-linux-musl
+  x86_64-darwin
+  x86_64-linux-gnu
+  x86_64-linux-musl
 
 DEPENDENCIES
-  json (~> 2.7.1)
-  puppet (~> 7.26.0)
-  puppet-lint (~> 4.2.0)
-  puppet-syntax (~> 3.3.0)
-  r10k (~> 4.0.0)
-  sys-filesystem (~> 1.4.4)
+  json (~> 2.7.2)
+  puppet (~> 8.8.1)
+  puppet-lint (~> 4.2.4)
+  puppet-syntax (~> 4.1.1)
+  r10k (~> 4.1.0)
+  sys-filesystem (~> 1.5.0)
   voxpupuli-puppet-lint-plugins (~> 5.0.0)
 
 BUNDLED WITH
-   2.3.7
+   2.5.11
