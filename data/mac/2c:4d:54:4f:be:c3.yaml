@@ -26,9 +26,7 @@ vm_baseline: &vm_baseline
   cores: 2
   bridge: br0
 kvm::guests:
-  influxdb: *vm_baseline
   hub: *vm_baseline
-  cultivator: *vm_baseline
   unpoller: *vm_baseline
   grafana: *vm_baseline
   metrics:
