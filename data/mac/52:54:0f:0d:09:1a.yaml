@@ -1,11 +1,9 @@
 hostname::hostname: unpoller
 hostname::domain: servers.home.a-rwx.org
-unpoller::influx_url: https://influxdb.servers.home.a-rwx.org
-unpoller::influx_org: influx
-unpoller::influx_bucket: unifi
 unpoller::loki_url: https://logs.a-rwx.org
 unpoller::loki_user: unifi
 unpoller::unifi_url: https://gateway.infra.home.a-rwx.org
 unpoller::unifi_user: unpoller
+unpoller::prometheus_server_ip: "%{lookup('prometheus::server_ip')}"
 classes:
 - unpoller
