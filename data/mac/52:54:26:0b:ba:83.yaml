@@ -30,13 +30,17 @@ prometheus::server::targets:
   static_configs:
   - targets:
     - unpoller.servers.home.a-rwx.org:9130
-- job_name: "hass"
+- job_name: hass
   scrape_interval: 10s
   metrics_path: /api/prometheus
   scheme: https
   static_configs:
   - targets:
     - hass.a-rwx.org:443
+- job_name: ohmgraphite
+  static_configs:
+  - targets:
+    - hyrum.gaming.home.a-rwx.org:4445
 wireguard::networks:
   wg0:
     puppet-dmz:
