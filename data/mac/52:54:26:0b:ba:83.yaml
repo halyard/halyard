@@ -41,6 +41,10 @@ prometheus::server::targets:
   static_configs:
   - targets:
     - hyrum.gaming.home.a-rwx.org:4445
+- job_name: wh31e
+  static_configs:
+  - targets:
+    - kiosk-tea.iot.home.a-rwx.org:9131
 wireguard::networks:
   wg0:
     puppet-dmz:

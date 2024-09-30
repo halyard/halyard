@@ -13,24 +13,6 @@ zwave::tls_challengealias: zwave.certs.a-rwx.org
 zwave::backup_target: rclone:smb:hass/restic/zwave
 zwave::backup_password: zwave
 zwave::backup_watchdog: https://watchdog.akerl.app/checks/11A8BDF7-44D0-49A5-98B0-899BD780FC11
-wh31e::influx_url: https://influxdb.servers.home.a-rwx.org
-wh31e::influx_org: influx
-wh31e::influx_bucket: pumidor
-wh31e::sample_rate: 1024k
-wh31e::sensor_names:
-  253: hotbox
-  49: ambient
-  108: raw1
-  254: ripe2
-  144: raw2
-  55: ripe1
-  105: charger
-  185: servers
-  210: ripe3
-  246: ripe4
-  165: raw3
-  169: raw4
-  197: beer1
 nginx::ports:
   - 8443
 kiosk::urls:

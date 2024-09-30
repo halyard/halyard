@@ -7,9 +7,7 @@ kiosk::urls:
 kiosk::timezone: America/New_York
 kiosk::proxy_server: frameproxy.a-rwx.org:8080
 kiosk::proxy_bypass_list: localhost,127.0.0.1,grafana.a-rwx.org
-wh31e::influx_url: https://influxdb.servers.home.a-rwx.org
-wh31e::influx_org: influx
-wh31e::influx_bucket: pumidor
+wh31e:prometheus_server_ip: "%{lookup('prometheus::server_ip')}"
 wh31e::sample_rate: 1024k
 wh31e::sensor_names:
   253: hotbox
