@@ -31,3 +31,4 @@ packages:
   - tree
   - tmux
   - screen
+  - bind
