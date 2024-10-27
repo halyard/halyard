@@ -25,7 +25,7 @@ prometheus::server::targets:
   static_configs:
   - targets:
     - philote.standard.home.a-rwx.org:12345
-    - hyrum.gaming.home.a-rwx.org:12345
+    - szilard.gaming.home.a-rwx.org:12345
 - job_name: unpoller
   static_configs:
   - targets:
@@ -40,7 +40,7 @@ prometheus::server::targets:
 - job_name: ohmgraphite
   static_configs:
   - targets:
-    - hyrum.gaming.home.a-rwx.org:4445
+    - szilard.gaming.home.a-rwx.org:4445
 - job_name: wh31e
   static_configs:
   - targets:
