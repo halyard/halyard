@@ -41,6 +41,7 @@ prometheus::server::targets:
   static_configs:
   - targets:
     - szilard.gaming.home.a-rwx.org:4445
+    - philote.standard.home.a-rwx.org:4445
 - job_name: wh31e
   static_configs:
   - targets:
