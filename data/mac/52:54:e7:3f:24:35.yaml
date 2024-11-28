@@ -1,0 +1,27 @@
+hostname::hostname: heracles
+hostname::domain: servers.home.a-rwx.org
+prometheus::server::hostname: heracles.servers.home.a-rwx.org
+prometheus::server::retention: 365d
+prometheus::server::backup_target: rclone:smb:prometheus/backup
+prometheus::server::backup_password: prometheus
+prometheus::server::backup_watchdog: https://watchdog.akerl.app/checks/FA3E8137-B7A0-4BBB-998A-7D55A4F8F767
+prometheus::server::targets:
+- job_name: wh31e
+  static_configs:
+  - targets:
+    - kiosk-tea.iot.home.a-rwx.org:9131
+wireguard::networks:
+  wg0:
+    puppet-charts:
+      address: 10.255.255.7
+      endpoint: 172.234.40.89:41194
+      keepalive: 1
+    puppet-heracles:
+      address: 10.255.255.8
+      listenport: 41194
+loki::client::logpaths:
+  nginx: /var/log/nginx/*
+#classes:
+#  - prometheus::server
+#  - wireguard
+#  - prometheus::client::wireguard
