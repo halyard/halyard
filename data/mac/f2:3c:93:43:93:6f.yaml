@@ -29,6 +29,7 @@ wireguard::networks:
       allowedips: 10.255.255.4/32,10.0.1.114/32
     puppet-heracles:
       address: 10.255.255.8
+      allowedips: 10.255.255.8/32,10.0.1.120/32
 classes:
   - wireguard
   - grafana
