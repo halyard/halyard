@@ -2,5 +2,6 @@ hostname::hostname: ledgerdb
 hostname::domain: servers.home.a-rwx.org
 ledgerdb::datadir: /opt/ledgerdb
 ledgerdb::ledger_repo: 'git@github.com:akerl/accounting'
+ledgerdb::ledger_ssh_host_key: github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl
 classes:
   - ledgerdb
