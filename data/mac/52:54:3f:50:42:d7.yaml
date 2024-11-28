@@ -1,0 +1,3 @@
+hostname::hostname: ledgerdb
+hostname::domain: servers.home.a-rwx.org
+ledgerdb::datadir: /opt/ledgerdb
