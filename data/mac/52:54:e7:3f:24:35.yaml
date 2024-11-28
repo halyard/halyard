@@ -21,7 +21,7 @@ wireguard::networks:
       listenport: 41194
 loki::client::logpaths:
   nginx: /var/log/nginx/*
-#classes:
-#  - prometheus::server
-#  - wireguard
-#  - prometheus::client::wireguard
+classes:
+  - prometheus::server
+  - wireguard
+  - prometheus::client::wireguard
