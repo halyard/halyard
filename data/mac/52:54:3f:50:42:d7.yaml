@@ -1,3 +1,6 @@
 hostname::hostname: ledgerdb
 hostname::domain: servers.home.a-rwx.org
 ledgerdb::datadir: /opt/ledgerdb
+ledgerdb::ledger_repo: 'git@github.com:akerl/accounting'
+classes:
+  - ledgerdb
