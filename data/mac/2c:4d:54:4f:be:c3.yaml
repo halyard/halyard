@@ -32,6 +32,8 @@ kvm::guests:
   metrics: *vm_baseline
   syslog:
     <<: *vm_baseline
+    ram: 4096
+    cores: 4
     disks:
       root:
         size: 500G
