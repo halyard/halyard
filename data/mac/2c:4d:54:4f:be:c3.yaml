@@ -30,14 +30,7 @@ kvm::guests:
   unpoller: *vm_baseline
   grafana: *vm_baseline
   metrics: *vm_baseline
-  syslog:
-    <<: *vm_baseline
-    ram: 4096
-    cores: 4
-    disks:
-      root:
-        size: 500G
-        vg: vg2
+  syslog: *vm_baseline
   mqtt: *vm_baseline
   ledgerdb: *vm_baseline
   heracles: *vm_baseline
