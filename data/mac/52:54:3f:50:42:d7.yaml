@@ -5,6 +5,7 @@ ledgerdb::ledger_repo: 'git@github.com:akerl/accounting'
 ledgerdb::datadir: /opt/influxdb
 influxdb::hostname: ledgerdb.servers.home.a-rwx.org
 influxdb::email: admin@lesaker.org
+influxdb::datadir: /opt/influxdb
 classes:
   - ledgerdb
   - influxdb
