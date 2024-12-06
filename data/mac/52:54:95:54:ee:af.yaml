@@ -4,3 +4,5 @@ maybe::hostname: budget.servers.home.a-rwx.org
 maybe::email: admin@lesaker.org
 maybe::backup_target: rclone:smb:grafana/restic
 maybe::backup_password: maybe
+classes:
+  - maybe
