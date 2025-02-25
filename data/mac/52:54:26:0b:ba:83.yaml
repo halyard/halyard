@@ -52,6 +52,10 @@ wireguard::networks:
       address: 10.255.255.1
       endpoint: 172.234.40.148:41194
       keepalive: 1
+    puppet-k8s:
+      address: 10.255.255.3
+      endpoint: 69.164.214.57:41194
+      keepalive: 1
     puppet-codepad:
       address: 10.255.255.5
       endpoint: 172.234.40.128:41194
