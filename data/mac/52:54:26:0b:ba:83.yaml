@@ -76,7 +76,7 @@ loki::client::logpaths:
 prometheus::client::blackbox::http_urls:
   - https://metrics.servers.home.a-rwx.org
   - https://nas.servers.home.a-rwx.org
-  - https://printer.standard.home.a-rwx.org/
+  - https://printer.standard.home.a-rwx.org
   - https://blog.akerl.org
   - https://heracles.servers.home.a-rwx.org
 classes:
