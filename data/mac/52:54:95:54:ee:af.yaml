@@ -1,8 +1,0 @@
-hostname::hostname: budget
-hostname::domain: servers.home.a-rwx.org
-maybe::hostname: budget.servers.home.a-rwx.org
-maybe::email: admin@lesaker.org
-maybe::backup_target: rclone:smb:budget/restic
-maybe::backup_password: maybe
-classes:
-  - maybe
