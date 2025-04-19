@@ -49,7 +49,7 @@ prometheus::server::targets:
 - job_name: goat
   static_configs:
   - targets:
-    - goat.linode.a-rwx.org:8080
+    - goat.wg0.a-rwx.org:8080
 wireguard::networks:
   wg0:
     puppet-dmz:
