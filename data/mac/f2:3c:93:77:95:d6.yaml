@@ -5,7 +5,7 @@ goat::hostname: goat.akerl.app
 goat::backup_target: s3:s3.amazonaws.com/akerl-goat-backup
 goat::backup_password: goat
 goat::backup_watchdog: https://watchdog.akerl.app/checks/5009A071-2768-41F3-A95C-EC31994F3D63
-goat::prometheus_server_ip: "%{lookup('prometheus::server_ip')}"
+goat::prometheus_server_ip: 10.255.255.4/32
 wireguard::networks:
   wg0:
     puppet-hub:

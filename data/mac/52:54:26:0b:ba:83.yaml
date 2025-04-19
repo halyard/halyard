@@ -46,6 +46,10 @@ prometheus::server::targets:
   static_configs:
   - targets:
     - kiosk-tea.iot.home.a-rwx.org:9131
+- job_name: goat
+  static_configs:
+  - targets:
+    - goat.linode.a-rwx.org:8080
 wireguard::networks:
   wg0:
     puppet-dmz:
