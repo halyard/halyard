@@ -66,6 +66,7 @@ slackmastodon::frequency: '1800'
 frameproxy::datadir: /mnt/frameproxy
 frameproxy::intercept_hostname: frame.akerl.app
 frameproxy::proxy_hostname: frameproxy.a-rwx.org
+govee::mqtt_host: mqtt.servers.home.a-rwx.org
 classes:
   - acme
   - kiosk
@@ -75,3 +76,4 @@ classes:
   - prometheus::client::blackbox
   - slackmastodon
   - frameproxy
+  - govee
