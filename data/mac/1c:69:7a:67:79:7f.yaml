@@ -67,6 +67,7 @@ frameproxy::datadir: /mnt/frameproxy
 frameproxy::intercept_hostname: frame.akerl.app
 frameproxy::proxy_hostname: frameproxy.a-rwx.org
 govee::mqtt_host: mqtt.servers.home.a-rwx.org
+govee::ip: 172.17.0.5
 classes:
   - acme
   - kiosk
