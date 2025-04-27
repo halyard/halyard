@@ -14,8 +14,8 @@ disks::lvs:
 kvm::image_path: /mnt/images
 kvm::images:
   archlinux:
-    url: https://github.com/halyard/image-archlinux/releases/download/v0.0.18/image
-    checksum: 605b67d1f3f0d8647591441c3350b0dce89557f894232a941ea76bb722ce47e2
+    url: https://github.com/halyard/image-archlinux/releases/download/v0.1.1/image
+    checksum: 3fac364b282027e60f6e6be23986d6c7d7d27b7128c8864af18bf07e703647fc
 vm_baseline: &vm_baseline
   image: archlinux
   disks:
