@@ -33,5 +33,6 @@ kvm::guests:
   syslog: *vm_baseline
   mqtt: *vm_baseline
   heracles: *vm_baseline
+  baby: *vm_baseline
 classes:
   - kvm
