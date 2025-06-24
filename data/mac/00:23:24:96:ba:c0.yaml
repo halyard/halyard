@@ -2,8 +2,9 @@ hostname::hostname: kiosk-office
 hostname::domain: servers.home.a-rwx.org
 kiosk::urls:
   - "https://kiosk:%{lookup('frame_password')}@frame.akerl.app"
-  - https://grafana.a-rwx.org/d/J0YeJwc4z/kiosk-office?orgId=1&refresh=1m&from=now-3h&to=now&kiosk
+  #- https://grafana.a-rwx.org/d/J0YeJwc4z/kiosk-office?orgId=1&refresh=1m&from=now-3h&to=now&kiosk
   - https://grafana.a-rwx.org/d/J0YeJwc4z/kiosk-office?orgId=1&refresh=1m&kiosk
+  - https://grafana.a-rwx.org/d/cdgl4en0khz40a/kiosk-office-hvac?orgId=1&refresh=1m&kiosk
 kiosk::timezone: America/New_York
 kiosk::proxy_server: frameproxy.a-rwx.org:8080
 kiosk::proxy_bypass_list: localhost,127.0.0.1,grafana.a-rwx.org
