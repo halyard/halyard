@@ -29,7 +29,12 @@ kvm::guests:
   hub: *vm_baseline
   unpoller: *vm_baseline
   grafana: *vm_baseline
-  metrics: *vm_baseline
+  metrics:
+    <<: *vm_baseline
+    disks:
+      root:
+        size: 200G
+        vg: vg2
   syslog: *vm_baseline
   mqtt: *vm_baseline
   heracles: *vm_baseline
