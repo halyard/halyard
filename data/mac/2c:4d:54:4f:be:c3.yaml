@@ -39,5 +39,6 @@ kvm::guests:
   mqtt: *vm_baseline
   heracles: *vm_baseline
   baby: *vm_baseline
+  influx: *vm_baseline
 classes:
   - kvm
