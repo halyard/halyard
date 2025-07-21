@@ -2,6 +2,7 @@ hostname::hostname: garmin
 hostname::domain: servers.home.a-rwx.org
 garmin::token_dir: /opt/garmin
 garmin::influxdb_host: influx.servers.home.a-rwx.org
+garmin::influxdb_port: 443
 garmin::influxdb_username: garmin
 classes:
 - garmin
