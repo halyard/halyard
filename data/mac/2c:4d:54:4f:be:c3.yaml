@@ -40,5 +40,6 @@ kvm::guests:
   heracles: *vm_baseline
   baby: *vm_baseline
   influx: *vm_baseline
+  garmin: *vm_baseline
 classes:
   - kvm
