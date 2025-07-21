@@ -3,5 +3,8 @@ hostname::domain: servers.home.a-rwx.org
 influxdb::hostname: influx.servers.home.a-rwx.org
 influxdb::email: admin@lesaker.org
 influxdb::datadir: /opt/influxdb
+garmin::influxdb_host: influx.servers.home.a-rwx.org
+garmin::influxdb_username: garmin
 classes:
 - influxdb
+- garmin
