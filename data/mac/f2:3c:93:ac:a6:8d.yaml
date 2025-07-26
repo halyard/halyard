@@ -3,6 +3,7 @@ hostname::domain: linode.a-rwx.org
 wireguard::alternate_ports:
 - 443
 - 3269
+- 4500
 - 5353
 prometheus::address: dmz.wg0.a-rwx.org
 wireguard::networks:
