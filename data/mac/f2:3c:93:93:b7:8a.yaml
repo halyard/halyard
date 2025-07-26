@@ -1,11 +1,6 @@
 hostname::hostname: proxy
 hostname::domain: linode.a-rwx.org
 prometheus::address: proxy.wg0.a-rwx.org
-wireguard::alternate_ports:
-- 443
-- 3269
-- 4500
-- 5353
 wireguard::networks:
   wg0:
     puppet-hub:
@@ -30,6 +25,7 @@ wireguard::routers:
 wireguard::alternate_ports:
 - 443
 - 3269
+- 4500
 - 5353
 classes:
   - wireguard
