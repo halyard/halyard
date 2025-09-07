@@ -46,6 +46,10 @@ prometheus::server::targets:
   static_configs:
   - targets:
     - kiosk-tea.iot.home.a-rwx.org:9131
+- job_name: stocks
+  static_configs:
+  - targets:
+    - metrics.servers.home.a-rwx.org:9092
 - job_name: goat
   static_configs:
   - targets:
@@ -75,6 +79,16 @@ wireguard::networks:
     puppet-metrics:
       address: 10.255.255.4
       listenport: 41194
+stocks:
+  tickers:
+    - PLTR
+    - VWO
+    - VXUS
+    - VEA
+    - BND
+    - VUG
+    - VV
+    - VONG
 loki::client::logpaths:
   nginx: /var/log/nginx/*
 prometheus::client::blackbox::http_urls:
@@ -88,3 +102,4 @@ classes:
   - wireguard
   - prometheus::client::wireguard
   - prometheus::client::blackbox
+  - stocks
