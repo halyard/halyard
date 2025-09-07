@@ -79,8 +79,7 @@ wireguard::networks:
     puppet-metrics:
       address: 10.255.255.4
       listenport: 41194
-stocks:
-  tickers:
+stocks::tickers:
     - PLTR
     - VWO
     - VXUS
