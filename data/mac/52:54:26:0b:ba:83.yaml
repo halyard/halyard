@@ -92,7 +92,7 @@ stocks::tickers:
     - VUG
     - VV
     - VONG
-simplefin::version: v0.0.2
+simplefin::version: v0.0.3
 loki::client::logpaths:
   nginx: /var/log/nginx/*
 prometheus::client::blackbox::http_urls:
