@@ -50,6 +50,10 @@ prometheus::server::targets:
   static_configs:
   - targets:
     - metrics.servers.home.a-rwx.org:9092
+- job_name: simplefin
+  static_configs:
+  - targets:
+    - metrics.servers.home.a-rwx.org:9093
 - job_name: goat
   static_configs:
   - targets:
@@ -102,3 +106,4 @@ classes:
   - prometheus::client::wireguard
   - prometheus::client::blackbox
   - stocks
+  - simplefin
