@@ -23,7 +23,7 @@ wh31e::sensor_names:
   246: ripe4
   165: raw3
   169: raw4
-  197: beer1
+  #197: beer1
 network::ignore:
   - ^lo$
   - ^docker\d+$
