@@ -53,7 +53,7 @@ hmod 'sysctl', '0.0.2'
 hmod 'unpoller', '0.0.28'
 hmod 'updates', '0.0.24'
 hmod 'ups', '0.0.19'
-hmod 'wh31e', '0.0.29'
+hmod 'wh31e', '0.0.30'
 hmod 'wireguard', '0.0.43'
 hmod 'zwave', '0.0.23'
 
