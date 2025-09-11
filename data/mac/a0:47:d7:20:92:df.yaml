@@ -7,7 +7,6 @@ kiosk::urls:
 kiosk::timezone: America/New_York
 kiosk::proxy_server: frameproxy.a-rwx.org:8080
 kiosk::proxy_bypass_list: localhost,127.0.0.1,grafana.a-rwx.org
-sdr::rtl_433_version: 'e37c0d78354093bf779c7e050acfa38288dbcb32'
 wh31e:prometheus_server_ip: "%{lookup('prometheus::server_ip')}"
 wh31e::sample_rate: 1024k
 wh31e::sensor_names:
