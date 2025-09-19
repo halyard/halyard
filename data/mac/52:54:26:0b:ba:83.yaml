@@ -20,12 +20,14 @@ prometheus::server::targets:
   - targets:
     - philote.standard.home.a-rwx.org:12345
     - hyrum.gaming.home.a-rwx.org:12345
+    - garage.standard.home.a-rwx.org:12345
 - job_name: windows
-  metrics_path: /integrations/windows_exporter/metrics
+  metrics_path: /api/v0/component/prometheus.exporter.windows.integrations_windows_exporter/metrics
   static_configs:
   - targets:
     - philote.standard.home.a-rwx.org:12345
     - szilard.gaming.home.a-rwx.org:12345
+    - garage.standard.home.a-rwx.org:12345
 - job_name: unpoller
   static_configs:
   - targets:
@@ -42,6 +44,7 @@ prometheus::server::targets:
   - targets:
     - szilard.gaming.home.a-rwx.org:4445
     - philote.standard.home.a-rwx.org:4445
+    - garage.standard.home.a-rwx.org:4445
 - job_name: wh31e
   static_configs:
   - targets:
