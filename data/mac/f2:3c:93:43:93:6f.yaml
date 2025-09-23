@@ -1,12 +1,12 @@
 hostname::hostname: charts
 hostname::domain: linode.a-rwx.org
 prometheus::address: charts.wg0.a-rwx.org
-grafana::hostname: charts.akerl.app
+grafana::hostname: charts.akerl.org
 grafana::datadir: /opt/grafana
 grafana::email: admin@lesaker.org
 grafana::admin_user: admin
-grafana::root_domain: charts.akerl.app
-grafana::root_url: https://charts.akerl.app/
+grafana::root_domain: charts.akerl.org
+grafana::root_url: https://charts.akerl.org/
 grafana::allowed_organizations:
   - halyard
 grafana::role_attribute_path: "[login=='akerl'][0] && 'GrafanaAdmin' || 'Viewer'"
@@ -15,7 +15,7 @@ grafana::backup_password: grafana
 grafana::allow_anonymous: true
 grafana::viewers_can_edit: true
 prometheus::client::blackbox::http_urls:
-  - https://charts.akerl.app
+  - https://charts.akerl.org
 wireguard::networks:
   wg0:
     puppet-hub:
