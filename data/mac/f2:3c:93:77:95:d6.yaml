@@ -1,10 +1,10 @@
 hostname::hostname: goat
 hostname::domain: linode.a-rwx.org
 prometheus::address: goat.wg0.a-rwx.org
-goat::hostname: goat.akerl.app
+goat::hostname: goat.akerl.org
 goat::backup_target: s3:s3.amazonaws.com/akerl-goat-backup
 goat::backup_password: goat
-goat::backup_watchdog: https://watchdog.akerl.app/checks/5009A071-2768-41F3-A95C-EC31994F3D63
+goat::backup_watchdog: https://watchdog.akerl.org/checks/5009A071-2768-41F3-A95C-EC31994F3D63
 goat::prometheus_server_ip: 10.255.255.4/32
 wireguard::networks:
   wg0:
@@ -20,7 +20,7 @@ wireguard::networks:
 loki::client::logpaths:
   nginx: /var/log/nginx/*
 prometheus::client::blackbox::http_urls:
-  - https://goat.akerl.app
+  - https://goat.akerl.org
 classes:
   - goat
   - wireguard
