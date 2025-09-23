@@ -4,7 +4,7 @@ prometheus::server::hostname: heracles.servers.home.a-rwx.org
 prometheus::server::retention: 365d
 prometheus::server::backup_target: rclone:smb:heracles/backup
 prometheus::server::backup_password: prometheus
-prometheus::server::backup_watchdog: https://watchdog.akerl.app/checks/FA3E8137-B7A0-4BBB-998A-7D55A4F8F767
+prometheus::server::backup_watchdog: https://watchdog.akerl.org/checks/FA3E8137-B7A0-4BBB-998A-7D55A4F8F767
 prometheus::server::targets:
 - job_name: wh31e
   static_configs:

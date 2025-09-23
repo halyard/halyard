@@ -2,7 +2,7 @@ hostname::hostname: kiosk-tea
 hostname::domain: iot.home.a-rwx.org
 kiosk::urls:
   - https://grafana.a-rwx.org/d/KZ4Sbl1Gz/kiosk-tea?orgId=1&refresh=1m&kiosk
-  - "https://kiosk:%{lookup('frame_password')}@frame.akerl.app"
+  - "https://kiosk:%{lookup('frame_password')}@frame.akerl.org"
   - https://grafana.a-rwx.org/d/miSaKso4k/kiosk-tea-deviation?orgId=1&refresh=1m&kiosk
 kiosk::timezone: America/New_York
 kiosk::proxy_server: frameproxy.a-rwx.org:8080
