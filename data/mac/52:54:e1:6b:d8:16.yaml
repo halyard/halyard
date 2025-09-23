@@ -22,6 +22,8 @@ nginx::sites:
     proxy_params:
       proxy_ssl_protocols: TLSv1.2 TLSv1.3
       proxy_ssl_ciphers: ECDHE-RSA-AES256-GCM-SHA384
+  vrroom.a-rwx.org:
+    proxy_target: http://vrroom.iot.home.a-rwx.org
 wireguard::networks:
   wg0:
     puppet-dmz:
