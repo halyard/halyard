@@ -7,7 +7,7 @@ grafana::admin_user: admin
 grafana::root_domain: grafana.a-rwx.org
 grafana::root_url: https://grafana.a-rwx.org/
 grafana::allowed_organizations:
-  - scrtybybscrty
+  - halyard
 grafana::role_attribute_path: "[login=='akerl'][0] && 'GrafanaAdmin' || 'Viewer'"
 grafana::backup_target: rclone:smb:grafana/restic
 grafana::backup_password: grafana

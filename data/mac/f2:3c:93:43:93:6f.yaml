@@ -8,7 +8,7 @@ grafana::admin_user: admin
 grafana::root_domain: charts.akerl.app
 grafana::root_url: https://charts.akerl.app/
 grafana::allowed_organizations:
-  - scrtybybscrty
+  - halyard
 grafana::role_attribute_path: "[login=='akerl'][0] && 'GrafanaAdmin' || 'Viewer'"
 grafana::backup_target: s3:s3.amazonaws.com/akerl-charts-backup
 grafana::backup_password: grafana
