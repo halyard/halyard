@@ -109,4 +109,3 @@ classes:
   - prometheus::client::wireguard
   - prometheus::client::blackbox
   - stocks
-  - simplefin
