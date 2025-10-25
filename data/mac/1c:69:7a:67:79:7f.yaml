@@ -23,6 +23,7 @@ kiosk::width: 1600
 kiosk::height: 900
 kiosk::proxy_server: frameproxy.a-rwx.org:8080
 kiosk::proxy_bypass_list: localhost,127.0.0.1,grafana.a-rwx.org
+kiosk::debug_port: 8081
 ups::vendorid: '0764'
 ups::productid: '0601'
 loki::client::logpaths:
