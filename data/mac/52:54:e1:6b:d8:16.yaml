@@ -3,8 +3,6 @@ hostname::domain: servers.home.a-rwx.org
 nginx::sites:
   hass.a-rwx.org:
     proxy_target: https://hass.servers.home.a-rwx.org
-  baby.a-rwx.org:
-    proxy_target: https://baby.servers.home.a-rwx.org
   metrics.a-rwx.org:
     proxy_target: https://metrics.servers.home.a-rwx.org
     proxy_params:

@@ -1,6 +1,0 @@
-hostname::hostname: baby
-hostname::domain: servers.home.a-rwx.org
-babybuddy::hostname: baby.servers.home.a-rwx.org
-babybuddy::admin_email: admin@lesaker.org
-classes:
-- babybuddy
