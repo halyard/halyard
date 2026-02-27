@@ -103,7 +103,7 @@ prometheus::client::blackbox::http_urls:
   - https://printer.standard.home.a-rwx.org
   - https://blog.akerl.org
   - https://heracles.servers.home.a-rwx.org
-  - https://host-kvm.servers.home.a-rwx.org
+  - https://host-kvm.wg0.a-rwx.org
 classes:
   - prometheus::server
   - wireguard
