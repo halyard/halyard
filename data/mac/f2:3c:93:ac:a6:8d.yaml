@@ -35,6 +35,8 @@ wireguard::networks:
       address: 10.255.255.201
 wireguard::routers:
   - 10.255.255.0/24
+loki::client::syslog_sources:
+  - 10.255.255.201/32
 classes:
   - wireguard
   - prometheus::client::wireguard
