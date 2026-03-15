@@ -61,6 +61,10 @@ prometheus::server::targets:
   static_configs:
   - targets:
     - goat.wg0.a-rwx.org:8080
+- job_name: glinet
+  static_configs:
+  - targets:
+    - syl.wg0.a-rwx.org:9100
 wireguard::networks:
   wg0:
     puppet-dmz:
