@@ -102,6 +102,8 @@ stocks::tickers:
     - VONG
 loki::client::logpaths:
   nginx: /var/log/nginx/*
+loki::client::syslog_sources:
+  - 10.255.255.201/32
 prometheus::client::blackbox::http_urls:
   - https://metrics.servers.home.a-rwx.org
   - https://nas.servers.home.a-rwx.org
