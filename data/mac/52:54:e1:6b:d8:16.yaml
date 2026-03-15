@@ -28,6 +28,7 @@ wireguard::networks:
   wg0:
     puppet-dmz:
       address: 10.255.255.1
+      allowedips: 10.255.255.201/32
       endpoint: 172.234.40.148:41194
       keepalive: 1
     puppet-hub:
