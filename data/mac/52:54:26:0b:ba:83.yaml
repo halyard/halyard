@@ -110,6 +110,8 @@ prometheus::client::blackbox::http_urls:
   - https://blog.akerl.org
   - https://heracles.servers.home.a-rwx.org
   - https://host-kvm.wg0.a-rwx.org
+  - https://syl.wg0.a-rwx.org
+  - https://maya.wg0.a-rwx.org
 classes:
   - prometheus::server
   - wireguard
