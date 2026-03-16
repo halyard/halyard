@@ -65,11 +65,12 @@ prometheus::server::targets:
   static_configs:
   - targets:
     - syl.wg0.a-rwx.org:9100
+    - maya.wg0.a-rwx.org:9100
 wireguard::networks:
   wg0:
     puppet-dmz:
       address: 10.255.255.1
-      allowedips: 10.255.255.1/32,10.255.255.201/32
+      allowedips: 10.255.255.1/32,10.255.255.201/32,10.255.255.202/32
       endpoint: 172.234.40.148:41194
       keepalive: 1
     puppet-codepad:

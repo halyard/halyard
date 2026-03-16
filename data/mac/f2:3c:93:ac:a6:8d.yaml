@@ -33,10 +33,13 @@ wireguard::networks:
       address: 10.255.255.200
     client-syl:
       address: 10.255.255.201
+    client-maya:
+      address: 10.255.255.202
 wireguard::routers:
   - 10.255.255.0/24
 loki::client::syslog_sources:
   - 10.255.255.201/32
+  - 10.255.255.202/32
 classes:
   - wireguard
   - prometheus::client::wireguard
