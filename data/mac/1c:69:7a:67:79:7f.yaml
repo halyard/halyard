@@ -71,6 +71,7 @@ frameproxy::proxy_hostname: frameproxy.a-rwx.org
 govee::mqtt_host: mqtt.servers.home.a-rwx.org
 govee::ip: 172.17.0.5
 ecowitt::hostname: ecowitt.a-rwx.org
+ecowitt::port: 7777
 classes:
   - acme
   - kiosk
