@@ -15,7 +15,7 @@ def pmod(name, version)
   hmod(name, version, org: 'puppetlabs')
 end
 
-hmod 'acme', '0.0.42'
+hmod 'acme', '0.0.44'
 hmod 'backup', '0.0.44'
 hmod 'configvault', '0.0.53'
 hmod 'console', '0.0.24'
