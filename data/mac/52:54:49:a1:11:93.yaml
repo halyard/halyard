@@ -6,6 +6,8 @@ grafana::email: admin@lesaker.org
 grafana::admin_user: admin
 grafana::root_domain: grafana.a-rwx.org
 grafana::root_url: https://grafana.a-rwx.org/
+grafana::extra_config:
+  - GF_FEATURE_TOGGLES_ENABLE=datasourceLegacyIdApi,externalServiceAccounts
 grafana::allowed_organizations:
   - halyard
 grafana::role_attribute_path: "[login=='akerl'][0] && 'GrafanaAdmin' || 'Viewer'"
