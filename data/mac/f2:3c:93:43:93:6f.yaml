@@ -12,7 +12,7 @@ grafana::allowed_organizations:
 grafana::role_attribute_path: "[login=='akerl'][0] && 'GrafanaAdmin' || 'Viewer'"
 grafana::backup_target: s3:s3.amazonaws.com/akerl-charts-backup
 grafana::backup_password: grafana
-grafana::allow_anonymous: true
+grafana::allow_anonymous: false
 grafana::viewers_can_edit: true
 prometheus::client::blackbox::http_urls:
   - https://charts.akerl.org
