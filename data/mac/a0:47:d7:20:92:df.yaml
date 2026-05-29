@@ -30,6 +30,7 @@ network::ignore:
   - ^(tap|veth)
   - ^wg\d+
   - eno\d+
+  - ^wlp2s0$
 classes:
   - kiosk
   - wh31e
