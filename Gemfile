@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'openvox', '~> 8.25.0'
 gem 'r10k', '~> 5.0.2'
-gem 'sys-filesystem', '~> 1.5.5'
+gem 'sys-filesystem', '~> 1.6.0'
 gem 'json', '~> 2.19.3'
 gem 'syslog', '~> 0.4.0'
 gem 'ostruct', '~> 0.6.3'
