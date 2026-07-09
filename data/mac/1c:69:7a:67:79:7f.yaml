@@ -3,7 +3,6 @@ hostname::domain: servers.home.a-rwx.org
 homeassistant::hostname: hass.servers.home.a-rwx.org
 homeassistant::tls_challengealias: hass.servers.home.certs.a-rwx.org
 homeassistant::datadir: /mnt/hass
-homeassistant::version: dev #temporary
 homeassistant::backup_target: rclone:smb:hass/restic/homeasistant
 homeassistant::backup_password: hass
 homeassistant::backup_watchdog: https://watchdog.akerl.org/checks/2E7835BB-D953-4D6E-ADAD-4BD3E96D7777
