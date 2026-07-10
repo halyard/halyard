@@ -1,6 +1,8 @@
 hostname::hostname: ghbots
 hostname::domain: linode.a-rwx.org
 prometheus::address: ghbots.wg0.a-rwx.org
+policybot::hostname: policybot.akerl.org
+policybot::email: admin@lesaker.org
 wireguard::networks:
   wg0:
     puppet-hub:
@@ -15,3 +17,4 @@ wireguard::networks:
 classes:
   - wireguard
   - prometheus::client::wireguard
+  - policybot
