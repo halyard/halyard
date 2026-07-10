@@ -66,6 +66,18 @@ prometheus::server::targets:
   - targets:
     - syl.wg0.a-rwx.org:9100
     - maya.wg0.a-rwx.org:9100
+- job_name: policybot
+  static_configs:
+  metrics_path: /api/metrics
+  scheme: https
+  - targets:
+    - policybot.akerl.org
+- job_name: bulldozer
+  static_configs:
+  metrics_path: /api/metrics
+  scheme: https
+  - targets:
+    - bulldozer.akerl.org
 wireguard::networks:
   wg0:
     puppet-dmz:
