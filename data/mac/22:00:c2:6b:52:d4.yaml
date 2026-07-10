@@ -3,6 +3,7 @@ hostname::domain: linode.a-rwx.org
 prometheus::address: ghbots.wg0.a-rwx.org
 policybot::hostname: policybot.akerl.org
 policybot::email: admin@lesaker.org
+policybot::datadir: /opt/policybot
 wireguard::networks:
   wg0:
     puppet-hub:
