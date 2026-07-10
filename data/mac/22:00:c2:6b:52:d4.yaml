@@ -4,6 +4,9 @@ prometheus::address: ghbots.wg0.a-rwx.org
 policybot::hostname: policybot.akerl.org
 policybot::email: admin@lesaker.org
 policybot::datadir: /opt/policybot
+bulldozer::datadir: /opt/bulldozer
+bulldozer::email: admin@lesaker.org
+bulldozer::hostname: bulldozer.akerl.org
 wireguard::networks:
   wg0:
     puppet-hub:
@@ -19,3 +22,4 @@ classes:
   - wireguard
   - prometheus::client::wireguard
   - policybot
+  - bulldozer
