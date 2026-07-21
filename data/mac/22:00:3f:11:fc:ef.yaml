@@ -18,4 +18,4 @@ wireguard::networks:
 classes:
   - wireguard
   - prometheus::client::wireguard
-#  - fleet
+  - fleet
