@@ -40,6 +40,10 @@ wireguard::networks:
       address: 10.255.255.10
       endpoint: 172.233.200.138:41194
       keepalive: 1
+    puppet-fleet:
+      address: 10.255.255.11
+      endpoint: 172.233.198.141:41194
+      keepalive: 1
     puppet-charts:
       address: 10.255.255.7
       endpoint: 172.234.40.89:41194

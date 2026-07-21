@@ -1,6 +1,9 @@
 hostname::hostname: fleet
 hostname::domain: linode.a-rwx.org
 prometheus::address: fleet.wg0.a-rwx.org
+fleet::hostname: fleet.akerl.org
+fleet::datadir: /opt/fleet
+fleet::email: admin@lesaker.org
 wireguard::networks:
   wg0:
     puppet-hub:
@@ -12,7 +15,7 @@ wireguard::networks:
     puppet-metrics:
       address: 10.255.255.4
       allowedips: 10.255.255.4/32,10.0.1.114/32
-#classes:
-#  - wireguard
-#  - prometheus::client::wireguard
+classes:
+  - wireguard
+  - prometheus::client::wireguard
 #  - fleet
