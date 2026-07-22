@@ -1,0 +1,29 @@
+hostname::hostname: fleetproxy
+hostname::domain: linode.a-rwx.org
+prometheus::address: fleetproxy.wg0.a-rwx.org
+nginx::sites:
+  fleet.akerl.org:
+    proxy_target: https://fleet.servers.home.a-rwx.org
+wireguard::networks:
+  wg0:
+    puppet-hub:
+      address: 10.255.255.2
+      allowedips: 10.255.255.2/32,10.0.1.112/32
+    puppet-fleetproxy:
+      address: 10.255.255.11
+      listenport: 41194
+    puppet-fleet:
+      address: 10.255.255.12
+      allowedips: 10.255.255.12/32,10.0.1.117/32
+    puppet-metrics:
+      address: 10.255.255.4
+      allowedips: 10.255.255.4/32,10.0.1.114/32
+loki::client::logpaths:
+  nginx: /var/log/nginx/*
+prometheus::client::blackbox::http_urls:
+  - https://fleet.akerl.org
+#classes:
+#  - wireguard
+#  - prometheus::client::wireguard
+#  - nginx
+#  - prometheus::client::blackbox

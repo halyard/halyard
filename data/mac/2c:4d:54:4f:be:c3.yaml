@@ -40,5 +40,8 @@ kvm::guests:
   heracles: *vm_baseline
   influx: *vm_baseline
   garmin: *vm_baseline
+  fleet:
+    <<: *vm_baseline
+    ram: 8192
 classes:
   - kvm
