@@ -1,3 +1,7 @@
+lookup_options:
+  prometheus::server::targets:
+    merge:
+      strategy: deep
 hostname::hostname: metrics
 hostname::domain: servers.home.a-rwx.org
 prometheus::server::hostname: metrics.servers.home.a-rwx.org
