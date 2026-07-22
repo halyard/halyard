@@ -12,7 +12,7 @@ wireguard::networks:
       address: 10.255.255.11
       endpoint: 139.144.214.122:41194
       keepalive: 1
-#classes:
-#  - wireguard
-#  - prometheus::client::wireguard
-#  - fleet
+classes:
+  - wireguard
+  - prometheus::client::wireguard
+  - fleet

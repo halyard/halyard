@@ -22,8 +22,8 @@ loki::client::logpaths:
   nginx: /var/log/nginx/*
 prometheus::client::blackbox::http_urls:
   - https://fleet.akerl.org
-#classes:
-#  - wireguard
-#  - prometheus::client::wireguard
-#  - nginx
-#  - prometheus::client::blackbox
+classes:
+  - wireguard
+  - prometheus::client::wireguard
+  - nginx
+  - prometheus::client::blackbox
