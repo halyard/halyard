@@ -1,6 +1,6 @@
 hostname::hostname: fleet
 hostname::domain: servers.home.a-rwx.org
-fleet::hostname: fleet.akerl.org
+fleet::hostname: fleet.servers.home.a-rwx.org
 fleet::datadir: /opt/fleet
 fleet::email: admin@lesaker.org
 wireguard::networks:
