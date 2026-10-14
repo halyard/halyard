@@ -12,5 +12,5 @@ gem 'benchmark', '~> 0.5.0'
 group :development do
   gem 'puppet-lint', '~> 5.1.1'
   gem 'voxpupuli-puppet-lint-plugins', '~> 7.0.0'
-  gem 'puppet-syntax', '~> 7.2.0'
+  gem 'puppet-syntax', '~> 7.3.0'
 end
