@@ -43,5 +43,9 @@ kvm::guests:
   fleet:
     <<: *vm_baseline
     ram: 8192
+    disks:
+      root:
+        size: 200G
+        vg: vg2
 classes:
   - kvm
