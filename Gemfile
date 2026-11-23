@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'openvox', '~> 9.4.0'
+gem 'openvox', '~> 9.5.0'
 gem 'r10k', '~> 5.0.2'
 gem 'sys-filesystem', '~> 1.5.5'
 gem 'json', '~> 3.1.0'
